@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Toybox::Attention
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::Attention";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Toybox.html" title="Toybox (module)">Toybox</a></span></span>
+     &raquo; 
+    <span class="title">Attention</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../class_list.html"></iframe>
+
+      <div id="content"><h1>Module: Toybox::Attention
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>The Attention module provides the ability to play pre-defined sounds,
+methods for managing vibration, and control of the back light.</p>
+
+<p>Not all devices fully support this module, so <code>has</code> checks are
+recommended. For example, the vivoactive does not have a tone generator and
+will trigger an error if an app attempts to play sounds.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">App Types:</p>
+<ul class="apptype">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Data Field</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Widget</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>App</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Audio Content Provider App</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Background Services</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Attention/ToneProfile.html" title="Toybox::Attention::ToneProfile (class)">ToneProfile</a></span>, <span class='object_link'><a href="Attention/VibeProfile.html" title="Toybox::Attention::VibeProfile (class)">VibeProfile</a></span>
+    
+  
+</p>
+
+  <h2>Constant Summary</h2>
+  <dl class="constants">
+    
+      <dt id="TONE_KEY-constant" class="">TONE_KEY = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates that a key was pressed</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_START-constant" class="">TONE_START = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates that an activity has started</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_STOP-constant" class="">TONE_STOP = 2
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates that an activity has stopped</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_MSG-constant" class="">TONE_MSG = 3
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates that a message is available</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_ALERT_HI-constant" class="">TONE_ALERT_HI = 4
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>An alert ending with a high note</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_ALERT_LO-constant" class="">TONE_ALERT_LO = 5
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>An alert ending with a low note</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_LOUD_BEEP-constant" class="">TONE_LOUD_BEEP = 6
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>A loud beep</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_INTERVAL_ALERT-constant" class="">TONE_INTERVAL_ALERT = 7
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates a change in interval</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_ALARM-constant" class="">TONE_ALARM = 8
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates an alarm has triggered</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_RESET-constant" class="">TONE_RESET = 9
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates that the activity was reset</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_LAP-constant" class="">TONE_LAP = 10
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates that the user has completed a lap</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_CANARY-constant" class="">TONE_CANARY = 11
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>An annoying sound to get the users attention</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_TIME_ALERT-constant" class="">TONE_TIME_ALERT = 12
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>An alert that a time threshold has been met</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_DISTANCE_ALERT-constant" class="">TONE_DISTANCE_ALERT = 13
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>An alert that a distance threshold has been met</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_FAILURE-constant" class="">TONE_FAILURE = 14
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates that the activity was a failure</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_SUCCESS-constant" class="">TONE_SUCCESS = 15
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates that the activity was a success</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_POWER-constant" class="">TONE_POWER = 16
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>The power on tone</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_LOW_BATTERY-constant" class="">TONE_LOW_BATTERY = 17
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates that the device has low battery power</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="TONE_ERROR-constant" class="">TONE_ERROR = 18
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates an error occurred</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+  </dl>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#backlight-instance_method" title="#backlight (instance method)"><strong>backlight</strong>(onOff)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Turn the back light on or off.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#playTone-instance_method" title="#playTone (instance method)"><strong>playTone</strong>(tone)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Play a tone.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#vibrate-instance_method" title="#vibrate (instance method)"><strong>vibrate</strong>(vibeProfiles)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Engage the vibration motor.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="backlight-instance_method">
+  
+    <strong>backlight</strong>(onOff)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Turn the back light on or off.</p>
+
+<p>The back light will always respect the back light timeout settings on the
+device. Behavior of this feature may also change depending on device
+settings. For example, if a device is set to activate the back light with
+key presses, the back light will toggle on with key presses in a Connect IQ
+app even if the app is written to turn off the back light with a key press.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Turn on the back light</p>
+</div></p>
+      
+      <pre class="example code"><code>if (Attention has :backlight) {
+    Attention.backlight(true);
+}</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>onOff</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Set to <code>true</code> to turn on the back light, otherwise set to
+<code>false</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Edge 130</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2670
+2671</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2670</span>
+
+def backlight(onOff)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="playTone-instance_method">
+  
+    <strong>playTone</strong>(tone)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Play a tone.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.Attention;
+
+// Play a predefined tone
+if (Attention has :playTone) {
+   Attention.playTone(Attention.TONE_LOUD_BEEP);
+}
+
+// Use an array of ToneProfile objects to build and play a custom tone
+if (Attention has :ToneProfile) {
+    var toneProfile =
+    [
+        new Attention.ToneProfile( 2500, 250),
+        new Attention.ToneProfile( 5000, 250),
+        new Attention.ToneProfile(10000, 250),
+        new Attention.ToneProfile( 5000, 250),
+        new Attention.ToneProfile( 2500, 250),
+    ];
+    Attention.playTone({:toneProfile=&gt;toneProfile});
+   }</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>tone</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A TONE_* value or [Toybox::Lang::Dictionary] of options.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>tone</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:toneProfile</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Array containing at least one <span class='object_link'><a href="Attention/ToneProfile.html" title="Toybox::Attention::ToneProfile (class)">ToneProfile</a></span>
+object to be played in sequence.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:repeatCount</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Number of times to repeat the given tone sequence.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/InvalidOptionsException.html" title="Toybox::Lang::InvalidOptionsException (class)">Toybox::Lang::InvalidOptionsException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Raised if passing an options hash with invalid values when using new
+ToneProfile objects</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Approach S60 / vivoactive / vivoactive HR / vivoactive 3
+/ vivoactive 3 music / vivoactive 4 / vivoactive 4s / Venu</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2585
+2586</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2585</span>
+
+def playTone(tone)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="vibrate-instance_method">
+  
+    <strong>vibrate</strong>(vibeProfiles)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Forerunner devices do not support vibration patterns. Vibration may still
+be used, but the vibration will always run at the same duty cycle.</p>
+</div>
+  </div>
+
+
+<p>Engage the vibration motor.</p>
+
+<p>The vibrate method takes an Array containing at least one
+<span class='object_link'><a href="Attention/VibeProfile.html" title="Toybox::Attention::VibeProfile (class)">VibeProfile</a></span> object, up to a maximum of 8,
+and runs them in sequence.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Vibrate in an on/off pattern</p>
+</div></p>
+      
+      <pre class="example code"><code>if (Attention has :vibrate) {
+    vibeData =
+    [
+        new Attention.VibeProfile(50, 2000), // On for two seconds
+        new Attention.VibeProfile(0, 2000),  // Off for two seconds
+        new Attention.VibeProfile(50, 2000), // On for two seconds
+        new Attention.VibeProfile(0, 2000),  // Off for two seconds
+        new Attention.VibeProfile(50, 2000)  // on for two seconds
+    ];
+}
+Attention.vibrate(vibeData);</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>vibeProfiles</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Array of <span class='object_link'><a href="Attention/VibeProfile.html" title="Toybox::Attention::VibeProfile (class)">VibeProfile</a></span> objects</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Attention/VibeProfile.html" title="Toybox::Attention::VibeProfile (class)">VibeProfile</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices except Edge / Oregon / Rino</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2652
+2653</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2652</span>
+
+def vibrate(vibeProfiles)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:30 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

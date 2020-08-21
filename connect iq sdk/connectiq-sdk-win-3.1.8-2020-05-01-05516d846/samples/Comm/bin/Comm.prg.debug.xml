@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="3" lineNum="12" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="3" lineNum="13" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="4" lineNum="16" pc="268435483" symbol="onComplete"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="4" lineNum="17" pc="268435487" symbol="onComplete"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="5" lineNum="20" pc="268435509" symbol="onError"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="5" lineNum="21" pc="268435513" symbol="onError"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="7" lineNum="26" pc="268435535" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="7" lineNum="27" pc="268435539" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="8" lineNum="30" pc="268435562" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="8" lineNum="31" pc="268435566" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="8" lineNum="32" pc="268435594" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="8" lineNum="34" pc="268435594" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="8" lineNum="35" pc="268435616" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="8" lineNum="36" pc="268435638" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="8" lineNum="37" pc="268435662" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="8" lineNum="39" pc="268435690" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="9" lineNum="42" pc="268435694" symbol="onTap"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="11" lineNum="48" pc="268435699" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="11" lineNum="49" pc="268435703" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="52" pc="268435726" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="53" pc="268435730" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="54" pc="268435758" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="56" pc="268435761" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="57" pc="268435772" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="58" pc="268435794" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="59" pc="268435816" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="60" pc="268435838" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="61" pc="268435865" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="62" pc="268435876" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="63" pc="268435893" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="64" pc="268435908" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="66" pc="268435933" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="67" pc="268435955" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="68" pc="268435977" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="12" lineNum="71" pc="268436004" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="14" lineNum="76" pc="268436033" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="14" lineNum="77" pc="268436037" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="15" lineNum="80" pc="268436060" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="15" lineNum="81" pc="268436064" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="15" lineNum="83" pc="268436088" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="15" lineNum="84" pc="268436099" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="15" lineNum="85" pc="268436126" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="15" lineNum="86" pc="268436137" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="15" lineNum="87" pc="268436164" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="15" lineNum="88" pc="268436175" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="15" lineNum="91" pc="268436202" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="17" lineNum="96" pc="268436227" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="17" lineNum="97" pc="268436231" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="18" lineNum="100" pc="268436254" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="18" lineNum="101" pc="268436258" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="18" lineNum="102" pc="268436269" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="18" lineNum="103" pc="268436284" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="18" lineNum="105" pc="268436314" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="18" lineNum="106" pc="268436325" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="18" lineNum="107" pc="268436342" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="18" lineNum="108" pc="268436362" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="18" lineNum="109" pc="268436373" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="18" lineNum="110" pc="268436383" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommDelegate.mc" id="18" lineNum="113" pc="268436410" symbol="onMenuItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="20" lineNum="19" pc="268436435" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="20" lineNum="20" pc="268436439" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="20" lineNum="22" pc="268436461" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="20" lineNum="23" pc="268436485" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="20" lineNum="24" pc="268436500" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="20" lineNum="26" pc="268436527" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="21" lineNum="31" pc="268436538" symbol="onStart"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="22" lineNum="35" pc="268436543" symbol="onStop"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="23" lineNum="39" pc="268436548" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="23" lineNum="40" pc="268436552" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="24" lineNum="43" pc="268436620" symbol="onPhone"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="24" lineNum="44" pc="268436624" symbol="onPhone"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="24" lineNum="46" pc="268436624" symbol="onPhone"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="24" lineNum="47" pc="268436666" symbol="onPhone"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="24" lineNum="50" pc="268436681" symbol="onPhone"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommApp.mc" id="24" lineNum="52" pc="268436706" symbol="onPhone"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommView.mc" id="26" lineNum="15" pc="268436723" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommView.mc" id="26" lineNum="16" pc="268436727" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommView.mc" id="27" lineNum="19" pc="268436746" symbol="onLayout"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommView.mc" id="28" lineNum="22" pc="268436751" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommView.mc" id="28" lineNum="23" pc="268436755" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommView.mc" id="28" lineNum="24" pc="268436791" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommView.mc" id="28" lineNum="25" pc="268436803" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommView.mc" id="28" lineNum="27" pc="268436839" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommView.mc" id="28" lineNum="28" pc="268436850" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Comm\\source\\CommView.mc" id="28" lineNum="30" pc="268436919" symbol="onUpdate"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="31" symbol="phoneFail"/>
+<entry id="8388716" symbol="trap"/>
+<entry id="30" symbol="none"/>
+<entry id="11" object="true" symbol="BaseMenuDelegate"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8388637" module="true" symbol="Communications"/>
+<entry id="27" symbol="hello"/>
+<entry id="13" object="true" symbol="ListnerMenuDelegate"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="29" symbol="phone"/>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="12" object="true" symbol="SendMenuDelegate"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="10" object="true" symbol="CommInputDelegate"/>
+<entry id="8389098" method="true" symbol="onTap"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="24" symbol="AppName"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry id="8389481" method="true" symbol="setListener"/>
+<entry field="true" id="23" symbol="LauncherIcon"/>
+<entry id="9" object="true" symbol="CommListener"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8388829" method="true" symbol="onComplete"/>
+<entry id="26" symbol="sendData"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="8389670" symbol="screenShape"/>
+<entry field="true" id="22" symbol="id_monkey"/>
+<entry id="8389109" method="true" symbol="onMenuItem"/>
+<entry field="true" id="15" symbol="phoneMethod"/>
+<entry id="19" object="true" symbol="CommView"/>
+<entry id="18" object="true" symbol="CommExample"/>
+<entry id="20" module="true" symbol="Layouts"/>
+<entry id="8389939" method="true" symbol="registerForPhoneAppMessages"/>
+<entry id="28" symbol="garmin"/>
+<entry id="8388828" method="true" symbol="onError"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry id="25" method="true" symbol="onPhone"/>
+<entry field="true" id="17" symbol="hasDirectMessagingSupport"/>
+<entry id="21" module="true" symbol="Menus"/>
+<entry field="true" id="14" symbol="strings"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry field="true" id="16" symbol="crashOnMessage"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435693" name="delegate" stackId="2" startPc="268435566"/>
+<entry endPc="268435693" name="menu" stackId="1" startPc="268435566"/>
+<entry endPc="268435699" name="event" stackId="1" startPc="268435694"/>
+<entry endPc="268436032" name="delegate" stackId="3" startPc="268435730"/>
+<entry endPc="268436032" name="menu" stackId="2" startPc="268435730"/>
+<entry endPc="268436033" name="item" stackId="1" startPc="268435726"/>
+<entry endPc="268436226" name="listener" stackId="2" startPc="268436064"/>
+<entry endPc="268436227" name="item" stackId="1" startPc="268436060"/>
+<entry endPc="268436435" name="item" stackId="1" startPc="268436254"/>
+<entry endPc="268436543" name="state" stackId="1" startPc="268436538"/>
+<entry endPc="268436548" name="state" stackId="1" startPc="268436543"/>
+<entry endPc="268436722" name="i" stackId="2" startPc="268436624"/>
+<entry endPc="268436723" name="msg" stackId="1" startPc="268436620"/>
+<entry endPc="268436751" name="dc" stackId="1" startPc="268436746"/>
+<entry endPc="268436995" name="dc" stackId="1" startPc="268436751"/>
+</localVars>
+<annotations/>
+<dataEntryOffsetMappings>
+<dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry offset="222" parentId="globals" symbolId="SendMenuDelegate" type="class"/>
+<dataEntry offset="277" parentId="globals" symbolId="BaseMenuDelegate" type="class"/>
+<dataEntry offset="332" parentId="globals" symbolId="ListnerMenuDelegate" type="class"/>
+<dataEntry offset="387" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="466" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="513" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="544" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="575" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="606" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="637" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="676" parentId="globals" symbolId="CommView" type="class"/>
+<dataEntry offset="747" parentId="globals" symbolId="CommExample" type="class"/>
+<dataEntry offset="826" parentId="globals" symbolId="CommListener" type="class"/>
+<dataEntry offset="889" parentId="globals" symbolId="CommInputDelegate" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" name="initialize" parent="CommListener">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onComplete" parent="CommListener">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onError" parent="CommListener">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CommInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onMenu" parent="CommInputDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onTap" parent="CommInputDelegate">
+<param id="event"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="BaseMenuDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onMenuItem" parent="BaseMenuDelegate">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="SendMenuDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onMenuItem" parent="SendMenuDelegate">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="ListnerMenuDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onMenuItem" parent="ListnerMenuDelegate">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CommExample">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStart" parent="CommExample">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStop" parent="CommExample">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getInitialView" parent="CommExample">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onPhone" parent="CommExample">
+<param id="msg"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CommView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onLayout" parent="CommView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onUpdate" parent="CommView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

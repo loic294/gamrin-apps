@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Toybox::Cryptography
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::Cryptography";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (C)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Toybox.html" title="Toybox (module)">Toybox</a></span></span>
+     &raquo; 
+    <span class="title">Cryptography</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../class_list.html"></iframe>
+
+      <div id="content"><h1>Module: Toybox::Cryptography
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>The Cryptography Module will allow the application to create a
+<span class='object_link'><a href="Cryptography/Cipher.html" title="Toybox::Cryptography::Cipher (class)">Cipher</a></span> object that can encrypt and decrypt
+<span class='object_link'><a href="Lang/ByteArray.html" title="Toybox::Lang::ByteArray (class)">ByteArray</a></span> objects.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Cryptography/Cipher.html" title="Toybox::Cryptography::Cipher (class)">Cipher</a></span>, <span class='object_link'><a href="Cryptography/CipherBasedMessageAuthenticationCode.html" title="Toybox::Cryptography::CipherBasedMessageAuthenticationCode (class)">CipherBasedMessageAuthenticationCode</a></span>, <span class='object_link'><a href="Cryptography/Hash.html" title="Toybox::Cryptography::Hash (class)">Hash</a></span>, <span class='object_link'><a href="Cryptography/HashBasedMessageAuthenticationCode.html" title="Toybox::Cryptography::HashBasedMessageAuthenticationCode (class)">HashBasedMessageAuthenticationCode</a></span>, <span class='object_link'><a href="Cryptography/InvalidBlockSizeException.html" title="Toybox::Cryptography::InvalidBlockSizeException (class)">InvalidBlockSizeException</a></span>, <span class='object_link'><a href="Cryptography/Key.html" title="Toybox::Cryptography::Key (class)">Key</a></span>, <span class='object_link'><a href="Cryptography/KeyAgreement.html" title="Toybox::Cryptography::KeyAgreement (class)">KeyAgreement</a></span>, <span class='object_link'><a href="Cryptography/KeyPair.html" title="Toybox::Cryptography::KeyPair (class)">KeyPair</a></span>
+    
+  
+</p>
+
+  <h2>Constant Summary</h2>
+  <dl class="constants">
+    
+      <dt id="HASH_SHA1-constant" class="">HASH_SHA1 = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>SHA-1 implementation for Hash objects</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/SHA-1" target="_parent" title="https://en.wikipedia.org/wiki/SHA-1">https://en.wikipedia.org/wiki/SHA-1</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HASH_SHA256-constant" class="">HASH_SHA256 = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>SHA-256 implementation for Hash objects</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/SHA-2" target="_parent" title="https://en.wikipedia.org/wiki/SHA-2">https://en.wikipedia.org/wiki/SHA-2</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HASH_MD5-constant" class="">HASH_MD5 = 2
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>MD5 implementation for Hash objects</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/MD5" target="_parent" title="https://en.wikipedia.org/wiki/MD5">https://en.wikipedia.org/wiki/MD5</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="CIPHER_AES128-constant" class="">CIPHER_AES128 = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>AES128 implementation for Cipher objects</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_parent" title="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">https://en.wikipedia.org/wiki/Advanced_Encryption_Standard</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="CIPHER_AES256-constant" class="">CIPHER_AES256 = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>AES256 implementation for Cipher objects</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard" target="_parent" title="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">https://en.wikipedia.org/wiki/Advanced_Encryption_Standard</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="MODE_ECB-constant" class="">MODE_ECB = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Electronic Code Book (ECB)</p>
+
+<p>This is the simplest encryption mode. Each plaintext block is directly
+encrypted into a ciphertext block, independent of any other block. This
+mode exposes frequency of symbols in your plaintext. Other modes (e.g. CBC)
+are recommended.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_(ECB)" target="_parent" title="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_(ECB)">https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_(ECB)</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="MODE_CBC-constant" class="">MODE_CBC = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Cipher-Block Chaining</p>
+
+<p>Each ciphertext block depends on the current and all previous plaintext
+blocks. An Initialization Vector (IV) is required. The IV is a data block
+to be transmitted to the receiver. The IV can be made public, but it must
+be authenticated by the receiver and it should be picked randomly.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_(CBC)" target="_parent" title="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_(CBC)">https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_(CBC)</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="KEY_PAIR_ELLIPTIC_CURVE_SECP224R1-constant" class="">KEY_PAIR_ELLIPTIC_CURVE_SECP224R1 = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>224-bit secp224r1 Elliptic Curve</p>
+
+<p>Based on the algebraic structure of elliptic curves over finite fields. ECC
+requires smaller keys compared to non-ECC cryptography to provide
+equivalent security.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Elliptic-curve_cryptography" target="_parent" title="https://en.wikipedia.org/wiki/Elliptic-curve_cryptography">https://en.wikipedia.org/wiki/Elliptic-curve_cryptography</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="KEY_PAIR_ELLIPTIC_CURVE_SECP256R1-constant" class="">KEY_PAIR_ELLIPTIC_CURVE_SECP256R1 = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>256-bit secp256r1 Elliptic Curve</p>
+
+<p>Based on the algebraic structure of elliptic curves over finite fields. ECC
+requires smaller keys compared to non-ECC cryptography to provide
+equivalent security.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Elliptic-curve_cryptography" target="_parent" title="https://en.wikipedia.org/wiki/Elliptic-curve_cryptography">https://en.wikipedia.org/wiki/Elliptic-curve_cryptography</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="KEY_AGREEMENT_ECDH-constant" class="">KEY_AGREEMENT_ECDH = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Elliptic Curve Diffie-Hellman (ECDH)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman" target="_parent" title="https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman">https://en.wikipedia.org/wiki/Elliptic-curve_Diffie%E2%80%93Hellman</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+  </dl>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createPublicKey-instance_method" title="#createPublicKey (instance method)"><strong>createPublicKey</strong>(algorithm, bytes)  &#x21d2; Toybox::Cryptography::Key </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a public <span class='object_link'><a href="Cryptography/Key.html" title="Toybox::Cryptography::Key (class)">Key</a></span> object from bytes to be
+added to a <span class='object_link'><a href="Cryptography/KeyAgreement.html" title="Toybox::Cryptography::KeyAgreement (class)">KeyAgreement</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#randomBytes-instance_method" title="#randomBytes (instance method)"><strong>randomBytes</strong>(size)  &#x21d2; Toybox::Lang::ByteArray </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Generates cryptographically random bytes.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="createPublicKey-instance_method">
+  
+    <strong>createPublicKey</strong>(algorithm, bytes)  &#x21d2; <tt><span class='object_link'><a href="Cryptography/Key.html" title="Toybox::Cryptography::Key (class)">Toybox::Cryptography::Key</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a public <span class='object_link'><a href="Cryptography/Key.html" title="Toybox::Cryptography::Key (class)">Key</a></span> object from bytes to be
+added to a <span class='object_link'><a href="Cryptography/KeyAgreement.html" title="Toybox::Cryptography::KeyAgreement (class)">KeyAgreement</a></span>.</p>
+
+<p>If a public key is received from another party, it can be converted to a
+<span class='object_link'><a href="Cryptography/Key.html" title="Toybox::Cryptography::Key (class)">Key</a></span> object using this method.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>algorithm</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The hash algorithm to use as a
+<span class='object_link'><a href="#KEY_PAIR_ELLIPTIC_CURVE_SECP224R1-constant" title="Toybox::Cryptography::KEY_PAIR_ELLIPTIC_CURVE_SECP224R1 (constant)">KEY_PAIR_ELLIPTIC_CURVE_*</a></span> constant</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>bytes</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/ByteArray.html" title="Toybox::Lang::ByteArray (class)">Toybox::Lang::ByteArray</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The public key bytes to be used to generate the <span class='object_link'><a href="Cryptography/Key.html" title="Toybox::Cryptography::Key (class)">Key</a></span></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Cryptography/Key.html" title="Toybox::Cryptography::Key (class)">Toybox::Cryptography::Key</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/UnexpectedTypeException.html" title="Toybox::Lang::UnexpectedTypeException (class)">Toybox::Lang::UnexpectedTypeException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Thrown if an argument is not the correct type</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/InvalidValueException.html" title="Toybox::Lang::InvalidValueException (class)">Toybox::Lang::InvalidValueException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Thrown if the ByteArray provided is not the correct size for the selected
+algorithm, or the algorithm selected is not supported.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4758
+4759</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4758</span>
+
+def createPublicKey(algorithm, bytes)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="randomBytes-instance_method">
+  
+    <strong>randomBytes</strong>(size)  &#x21d2; <tt><span class='object_link'><a href="Lang/ByteArray.html" title="Toybox::Lang::ByteArray (class)">Toybox::Lang::ByteArray</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Generates cryptographically random bytes.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>size</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The number of requested random bytes</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/ByteArray.html" title="Toybox::Lang::ByteArray (class)">Toybox::Lang::ByteArray</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A ByteArray of the requested size filled with cryptographically random
+bytes</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4841
+4842</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4841</span>
+
+def randomBytes(size)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:31 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

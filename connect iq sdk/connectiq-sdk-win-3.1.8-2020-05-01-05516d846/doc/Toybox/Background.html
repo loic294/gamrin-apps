@@ -1,0 +1,2975 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Toybox::Background
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::Background";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (B)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Toybox.html" title="Toybox (module)">Toybox</a></span></span>
+     &raquo; 
+    <span class="title">Background</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../class_list.html"></iframe>
+
+      <div id="content"><h1>Module: Toybox::Background
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Background events are special events that trigger in the background when
+either certain system events occur, such as when an activity goal has been
+met, or at certain times (called temporal events). This allows an
+application to update its data even when the application is not active.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="System/ServiceDelegate.html" title="Toybox::System::ServiceDelegate (class)">System::ServiceDelegate</a></span></li>
+    
+      <li><span class='object_link'><a href="Application/AppBase.html#onBackgroundData-instance_method" title="Toybox::Application::AppBase#onBackgroundData (method)">AppBase.onBackgroundData()</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Requires Permission:</p>
+<ul class="permission">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Background</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Background/ExitDataSizeLimitException.html" title="Toybox::Background::ExitDataSizeLimitException (class)">ExitDataSizeLimitException</a></span>, <span class='object_link'><a href="Background/InvalidBackgroundTimeException.html" title="Toybox::Background::InvalidBackgroundTimeException (class)">InvalidBackgroundTimeException</a></span>, <span class='object_link'><a href="Background/MessageSizeLimitException.html" title="Toybox::Background::MessageSizeLimitException (class)">MessageSizeLimitException</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#deleteActivityCompletedEvent-instance_method" title="#deleteActivityCompletedEvent (instance method)"><strong>deleteActivityCompletedEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Stops the application from receiving activity completed events.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#deleteGoalEvent-instance_method" title="#deleteGoalEvent (instance method)"><strong>deleteGoalEvent</strong>(goalType)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Remove the active goal background event of specified type for the
+application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#deleteOAuthResponseEvent-instance_method" title="#deleteOAuthResponseEvent (instance method)"><strong>deleteOAuthResponseEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Remove the OAuth response background event.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#deletePushNotificationEvent-instance_method" title="#deletePushNotificationEvent (instance method)"><strong>deletePushNotificationEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Stops the application from receiving silent and actionable push
+notifications.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#deleteSleepEvent-instance_method" title="#deleteSleepEvent (instance method)"><strong>deleteSleepEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Remove the active sleep background event for the application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#deleteStepsEvent-instance_method" title="#deleteStepsEvent (instance method)"><strong>deleteStepsEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Remove the active steps background event for the application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#deleteTemporalEvent-instance_method" title="#deleteTemporalEvent (instance method)"><strong>deleteTemporalEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Remove the active temporal background event for the application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#deleteWakeEvent-instance_method" title="#deleteWakeEvent (instance method)"><strong>deleteWakeEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Remove the active wake background event for the application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#exit-instance_method" title="#exit (instance method)"><strong>exit</strong>(backgroundData)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Terminates the current background process.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getActivityCompletedEventRegistered-instance_method" title="#getActivityCompletedEventRegistered (instance method)"><strong>getActivityCompletedEventRegistered</strong>  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForActivityCompletedEvent-instance_method" title="Toybox::Background#registerForActivityCompletedEvent (method)">registerForActivityCompletedEvent()</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getBackgroundData-instance_method" title="#getBackgroundData (instance method)"><strong>getBackgroundData</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get data previously saved by a background process.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getGoalEventRegistered-instance_method" title="#getGoalEventRegistered (instance method)"><strong>getGoalEventRegistered</strong>(goalType)  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForGoalEvent-instance_method" title="Toybox::Background#registerForGoalEvent (method)">registerForGoalEvent()</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getLastTemporalEventTime-instance_method" title="#getLastTemporalEventTime (instance method)"><strong>getLastTemporalEventTime</strong>  &#x21d2; Toybox::Time::Moment </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the time the last temporal background event was triggered.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getOAuthResponseEventRegistered-instance_method" title="#getOAuthResponseEventRegistered (instance method)"><strong>getOAuthResponseEventRegistered</strong>  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForOAuthResponseEvent-instance_method" title="Toybox::Background#registerForOAuthResponseEvent (method)">registerForOAuthResponseEvent()</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getPushNotificationEventRegistered-instance_method" title="#getPushNotificationEventRegistered (instance method)"><strong>getPushNotificationEventRegistered</strong>  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForPushNotificationEvent-instance_method" title="Toybox::Background#registerForPushNotificationEvent (method)">registerForPushNotificationEvent()</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getSleepEventRegistered-instance_method" title="#getSleepEventRegistered (instance method)"><strong>getSleepEventRegistered</strong>  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForSleepEvent-instance_method" title="Toybox::Background#registerForSleepEvent (method)">registerForSleepEvent()</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getStepsEventRegistered-instance_method" title="#getStepsEventRegistered (instance method)"><strong>getStepsEventRegistered</strong>  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForStepsEvent-instance_method" title="Toybox::Background#registerForStepsEvent (method)">registerForStepsEvent()</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getTemporalEventRegisteredTime-instance_method" title="#getTemporalEventRegisteredTime (instance method)"><strong>getTemporalEventRegisteredTime</strong>  &#x21d2; Toybox::Time::Moment, Toybox::Time::Duration </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the Moment or Duration with which a background event is registered by
+<span class='object_link'><a href="#registerForTemporalEvent-instance_method" title="Toybox::Background#registerForTemporalEvent (method)">registerForTemporalEvent()</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getWakeEventRegistered-instance_method" title="#getWakeEventRegistered (instance method)"><strong>getWakeEventRegistered</strong>  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForWakeEvent-instance_method" title="Toybox::Background#registerForWakeEvent (method)">registerForWakeEvent()</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#registerForActivityCompletedEvent-instance_method" title="#registerForActivityCompletedEvent (instance method)"><strong>registerForActivityCompletedEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Registers the application to receive an event whenever an activity is
+completed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#registerForGoalEvent-instance_method" title="#registerForGoalEvent (instance method)"><strong>registerForGoalEvent</strong>(goalType)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Register a background event that triggers when the user reaches a specified
+goal.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#registerForOAuthResponseEvent-instance_method" title="#registerForOAuthResponseEvent (instance method)"><strong>registerForOAuthResponseEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Registers a background event that triggers each time an OAuth login request
+completes and the token becomes available on the system for use.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#registerForPushNotificationEvent-instance_method" title="#registerForPushNotificationEvent (instance method)"><strong>registerForPushNotificationEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Registers the application to receive silent and actionable push
+notifications.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#registerForSleepEvent-instance_method" title="#registerForSleepEvent (instance method)"><strong>registerForSleepEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Register a background event that triggers at the sleep time configured on
+the device.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#registerForStepsEvent-instance_method" title="#registerForStepsEvent (instance method)"><strong>registerForStepsEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Registers a background event that triggers each time a multiple of 1000
+steps is reached.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#registerForTemporalEvent-instance_method" title="#registerForTemporalEvent (instance method)"><strong>registerForTemporalEvent</strong>(time)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Register a background event that triggers at a specific time or at a
+regular interval.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#registerForWakeEvent-instance_method" title="#registerForWakeEvent (instance method)"><strong>registerForWakeEvent</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Register a background event that triggers at the wake time configured on
+the device.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#requestApplicationWake-instance_method" title="#requestApplicationWake (instance method)"><strong>requestApplicationWake</strong>(message)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Display a confirmation dialog requesting to launch the application to which
+the background task belongs.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="deleteActivityCompletedEvent-instance_method">
+  
+    <strong>deleteActivityCompletedEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Stops the application from receiving activity completed events.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.10</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+3024
+3025</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 3024</span>
+
+def deleteActivityCompletedEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="deleteGoalEvent-instance_method">
+  
+    <strong>deleteGoalEvent</strong>(goalType)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Remove the active goal background event of specified type for the
+application.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>Background.deleteGoalEvent(GOAL_TYPE_STEPS);</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>goalType</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An <span class='object_link'><a href="Application.html#GOAL_TYPE_STEPS-constant" title="Toybox::Application::GOAL_TYPE_STEPS (constant)">Application.GOAL_TYPE_*</a></span> value
+representing the goal type of the event to remove</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2830
+2831</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2830</span>
+
+def deleteGoalEvent(goalType)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="deleteOAuthResponseEvent-instance_method">
+  
+    <strong>deleteOAuthResponseEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Remove the OAuth response background event.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2876
+2877</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2876</span>
+
+def deleteOAuthResponseEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="deletePushNotificationEvent-instance_method">
+  
+    <strong>deletePushNotificationEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Stops the application from receiving silent and actionable push
+notifications.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.10</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+3006
+3007</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 3006</span>
+
+def deletePushNotificationEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="deleteSleepEvent-instance_method">
+  
+    <strong>deleteSleepEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Remove the active sleep background event for the application.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2778
+2779</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2778</span>
+
+def deleteSleepEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="deleteStepsEvent-instance_method">
+  
+    <strong>deleteStepsEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Remove the active steps background event for the application.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2852
+2853</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2852</span>
+
+def deleteStepsEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="deleteTemporalEvent-instance_method">
+  
+    <strong>deleteTemporalEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Remove the active temporal background event for the application.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2733
+2734</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2733</span>
+
+def deleteTemporalEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="deleteWakeEvent-instance_method">
+  
+    <strong>deleteWakeEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Remove the active wake background event for the application.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2797
+2798</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2797</span>
+
+def deleteWakeEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="exit-instance_method">
+  
+    <strong>exit</strong>(backgroundData)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Terminates the current background process.</p>
+
+<p>All background processes should call this method when they have completed
+the desired tasks. Data passed to this method will either be passed
+immediately to the active application if it is running, or will be saved
+and passed to the application the next time it runs. Data must be one of
+the following types:</p>
+<ul><li>
+<p><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">String</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Number</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="Lang/Float.html" title="Toybox::Lang::Float (class)">Float</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Boolean</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="Lang/Char.html" title="Toybox::Lang::Char (class)">Char</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="Lang/Long.html" title="Toybox::Lang::Long (class)">Long</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="Lang/Double.html" title="Toybox::Lang::Double (class)">Double</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="Lang/Array.html" title="Toybox::Lang::Array (class)">Array</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Dictionary</a></span></p>
+</li></ul>
+
+<p>Arrays and Dictionaries may contain null values or any of the above listed
+types. If no data should be passed to the main process, <code>null</code>
+may be specified.</p>
+
+<p>This method will exit if called by a background process, but will do
+nothing if called by the main application process.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>backgroundData</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Object.html" title="Toybox::Lang::Object (class)">Toybox::Lang::Object</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The object to pass to the main process&#39;s
+<span class='object_link'><a href="Application/AppBase.html#onBackgroundData-instance_method" title="Toybox::Application::AppBase#onBackgroundData (method)">AppBase.onBackgroundData()</a></span>
+method. Passing <code>null</code> will not override previous data values
+not yet conusmed by the parent application&#39;s AppBase.onBackgroundData()
+method.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Background/ExitDataSizeLimitException.html" title="Toybox::Background::ExitDataSizeLimitException (class)">Toybox::Background::ExitDataSizeLimitException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Indicates the data provided exceeds the data size limit (approximately 8
+KB). If this exception is caught, the process will not exit and should
+attempt to call <tt>Background.exit()</tt> again with less data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2923
+2924</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2923</span>
+
+def exit(backgroundData)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getActivityCompletedEventRegistered-instance_method">
+  
+    <strong>getActivityCompletedEventRegistered</strong>  &#x21d2; <tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForActivityCompletedEvent-instance_method" title="Toybox::Background#registerForActivityCompletedEvent (method)">registerForActivityCompletedEvent()</a></span></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><code>true</code> if a background event is registered with
+registerForActivityCompletedEvent(), otherwise <code>false</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.10</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+3032
+3033</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 3032</span>
+
+def getActivityCompletedEventRegistered()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getBackgroundData-instance_method">
+  
+    <strong>getBackgroundData</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get data previously saved by a background process.</p>
+
+<p>Data is delivered via <span class='object_link'><a href="Application/AppBase.html#onBackgroundData-instance_method" title="Toybox::Application::AppBase#onBackgroundData (method)">AppBase.onBackgroundData()</a></span>, and is reset to <code>null</code> once data
+has been delivered to the main process. This method always returns
+<code>null</code> in the main application&#39;s process.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Application/AppBase.html#onBackgroundData-instance_method" title="Toybox::Application::AppBase#onBackgroundData (method)">AppBase.onBackgroundData()</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2887
+2888</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2887</span>
+
+def getBackgroundData()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getGoalEventRegistered-instance_method">
+  
+    <strong>getGoalEventRegistered</strong>(goalType)  &#x21d2; <tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForGoalEvent-instance_method" title="Toybox::Background#registerForGoalEvent (method)">registerForGoalEvent()</a></span>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>goalType</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An <span class='object_link'><a href="Application.html#GOAL_TYPE_STEPS-constant" title="Toybox::Application::GOAL_TYPE_STEPS (constant)">Application.GOAL_TYPE_*</a></span> value
+representing the goal type to check for registered background events</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><code>true</code> if a background event is registered with
+registerForGoalEvent(), otherwise <code>false</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2819
+2820</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2819</span>
+
+def getGoalEventRegistered(goalType)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getLastTemporalEventTime-instance_method">
+  
+    <strong>getLastTemporalEventTime</strong>  &#x21d2; <tt><span class='object_link'><a href="Time/Moment.html" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the time the last temporal background event was triggered.</p>
+
+<p>This is useful for ensuring new events are not scheduled within the five
+minute minimum time allowed between temporal events.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Register a new temporal background event as soon as allowed</p>
+</div></p>
+      
+      <pre class="example code"><code>using Toybox.Background;
+using Toybox.Time;
+const FIVE_MINUTES = new Time.Duration(5 * 60);
+var lastTime = Background.getLastTemporalEventTime();
+if (lastTime != null) {
+    // Events scheduled for a time in the past trigger immediately
+    var nextTime = lastTime.add(FIVE_MINUTES);
+    Background.registerForTemporalEvent(nextTime);
+} else {
+    Background.registerForTemporalEvent(Time.now());
+}</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Time/Moment.html" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The time the last background event was triggered, but may be
+<code>null</code> if no previous temporal background event has occurred or
+if the device app or widget has been started since the event was last
+triggered</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#registerForTemporalEvent-instance_method" title="Toybox::Background#registerForTemporalEvent (method)">registerForTemporalEvent()</a></span></li>
+    
+      <li><span class='object_link'><a href="Time.html" title="Toybox::Time (module)">Time</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2759
+2760</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2759</span>
+
+def getLastTemporalEventTime()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getOAuthResponseEventRegistered-instance_method">
+  
+    <strong>getOAuthResponseEventRegistered</strong>  &#x21d2; <tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForOAuthResponseEvent-instance_method" title="Toybox::Background#registerForOAuthResponseEvent (method)">registerForOAuthResponseEvent()</a></span></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><code>true</code> if a background event is registered with
+registerForOAuthResponseEvent(), otherwise <code>false</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2871
+2872</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2871</span>
+
+def getOAuthResponseEventRegistered()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getPushNotificationEventRegistered-instance_method">
+  
+    <strong>getPushNotificationEventRegistered</strong>  &#x21d2; <tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForPushNotificationEvent-instance_method" title="Toybox::Background#registerForPushNotificationEvent (method)">registerForPushNotificationEvent()</a></span></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><code>true</code> if a background event is registered with
+registerForPushNotificationEvent(), otherwise <code>false</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.10</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+3014
+3015</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 3014</span>
+
+def getPushNotificationEventRegistered()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getSleepEventRegistered-instance_method">
+  
+    <strong>getSleepEventRegistered</strong>  &#x21d2; <tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForSleepEvent-instance_method" title="Toybox::Background#registerForSleepEvent (method)">registerForSleepEvent()</a></span>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><code>true</code> if a background event is registered with
+registerForSleepEvent(), otherwise <code>false</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2773
+2774</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2773</span>
+
+def getSleepEventRegistered()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getStepsEventRegistered-instance_method">
+  
+    <strong>getStepsEventRegistered</strong>  &#x21d2; <tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForStepsEvent-instance_method" title="Toybox::Background#registerForStepsEvent (method)">registerForStepsEvent()</a></span>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><code>true</code> if a background event is registered with
+registerForStepsEvent(), otherwise <code>false</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2847
+2848</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2847</span>
+
+def getStepsEventRegistered()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getTemporalEventRegisteredTime-instance_method">
+  
+    <strong>getTemporalEventRegisteredTime</strong>  &#x21d2; <tt><span class='object_link'><a href="Time/Moment.html" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt>, <tt><span class='object_link'><a href="Time/Duration.html" title="Toybox::Time::Duration (class)">Toybox::Time::Duration</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the Moment or Duration with which a background event is registered by
+<span class='object_link'><a href="#registerForTemporalEvent-instance_method" title="Toybox::Background#registerForTemporalEvent (method)">registerForTemporalEvent()</a></span>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Time/Moment.html" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt>, <tt><span class='object_link'><a href="Time/Duration.html" title="Toybox::Time::Duration (class)">Toybox::Time::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The specific Moment in time at which a background event is registered to
+trigger, or the interval Duration at which to repeat a background event.
+May be <code>null</code> if no temporal background event is registered.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Time.html" title="Toybox::Time (module)">Time</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2728
+2729</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2728</span>
+
+def getTemporalEventRegisteredTime()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getWakeEventRegistered-instance_method">
+  
+    <strong>getWakeEventRegistered</strong>  &#x21d2; <tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get whether a background event is registered with
+<span class='object_link'><a href="#registerForWakeEvent-instance_method" title="Toybox::Background#registerForWakeEvent (method)">registerForWakeEvent()</a></span>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><code>true</code> if a background event is registered with
+registerForWakeEvent(), otherwise <code>false</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2792
+2793</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2792</span>
+
+def getWakeEventRegistered()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="registerForActivityCompletedEvent-instance_method">
+  
+    <strong>registerForActivityCompletedEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Registers the application to receive an event whenever an activity is
+completed.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.10</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+3019
+3020</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 3019</span>
+
+def registerForActivityCompletedEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="registerForGoalEvent-instance_method">
+  
+    <strong>registerForGoalEvent</strong>(goalType)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Register a background event that triggers when the user reaches a specified
+goal.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>Background.registerForGoalEvent(GOAL_TYPE_STEPS);</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>goalType</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An <span class='object_link'><a href="Application.html#GOAL_TYPE_STEPS-constant" title="Toybox::Application::GOAL_TYPE_STEPS (constant)">Application.GOAL_TYPE_*</a></span> value
+representing the goal type on which to trigger the background event</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2808
+2809</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2808</span>
+
+def registerForGoalEvent(goalType)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="registerForOAuthResponseEvent-instance_method">
+  
+    <strong>registerForOAuthResponseEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Registers a background event that triggers each time an OAuth login request
+completes and the token becomes available on the system for use.</p>
+
+<p>This event is triggered when a OAuth response is received by the system.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2863
+2864</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2863</span>
+
+def registerForOAuthResponseEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="registerForPushNotificationEvent-instance_method">
+  
+    <strong>registerForPushNotificationEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Registers the application to receive silent and actionable push
+notifications.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.10</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+3001
+3002</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 3001</span>
+
+def registerForPushNotificationEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="registerForSleepEvent-instance_method">
+  
+    <strong>registerForSleepEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Register a background event that triggers at the sleep time configured on
+the device.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2765
+2766</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2765</span>
+
+def registerForSleepEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="registerForStepsEvent-instance_method">
+  
+    <strong>registerForStepsEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Registers a background event that triggers each time a multiple of 1000
+steps is reached.</p>
+
+<p>This event is triggered only by device-recorded steps, and will not trigger
+based on synced steps.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2839
+2840</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2839</span>
+
+def registerForStepsEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="registerForTemporalEvent-instance_method">
+  
+    <strong>registerForTemporalEvent</strong>(time)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Register a background event that triggers at a specific time or at a
+regular interval.</p>
+
+<p>Temporal background events may be registered to run at a specific point in
+time by providing a <span class='object_link'><a href="Time/Moment.html" title="Toybox::Time::Moment (class)">Moment</a></span> at which the event should
+trigger, or may be registered to run at a periodically by specifying an
+interval <span class='object_link'><a href="Time/Duration.html" title="Toybox::Time::Duration (class)">Duration</a></span>. If a temporal event is
+scheduled for a time in the past, the event will trigger immediately.</p>
+
+<p>Temporal events cannot be set to occur less than 5 minutes after the last
+temporal event occurred. For watch-apps and widgets the 5 minute
+restriction is cleared on application startup if the event was specified
+using a <span class='object_link'><a href="Time/Moment.html" title="Toybox::Time::Moment (class)">Moment</a></span>.</p>
+
+<p>Only one temporal event may be registered at a time. Calling
+<code>registerForTemporalEvent</code> will overwrite any previously
+registered temporal events.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Schedule a background event to run five minutes from now</p>
+</div></p>
+      
+      <pre class="example code"><code>using Toybox.Background;
+using Toybox.Time;
+const FIVE_MINUTES = new Time.Duration(5 * 60);
+var eventTime = Time.now().add(FIVE_MINUTES);
+Background.registerForTemporalEvent(eventTime);</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>time</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Time/Moment.html" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt>, <tt><span class='object_link'><a href="Time/Duration.html" title="Toybox::Time::Duration (class)">Toybox::Time::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The specific Moment in time at which to run a background event, or the
+interval Duration at which to repeat a background event</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Background/InvalidBackgroundTimeException.html" title="Toybox::Background::InvalidBackgroundTimeException (class)">Toybox::Background::InvalidBackgroundTimeException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Indicates an application has attempted to schedule a background event which
+either:</p>
+<ul><li>
+<p>Occurs less than five minutes after the last background event occurred</p>
+</li><li>
+<p>Has a duration of less than five minutes</p>
+</li></ul>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Time.html" title="Toybox::Time (module)">Time</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2717
+2718</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2717</span>
+
+def registerForTemporalEvent(time)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="registerForWakeEvent-instance_method">
+  
+    <strong>registerForWakeEvent</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Register a background event that triggers at the wake time configured on
+the device.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2784
+2785</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2784</span>
+
+def registerForWakeEvent()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="requestApplicationWake-instance_method">
+  
+    <strong>requestApplicationWake</strong>(message)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Display a confirmation dialog requesting to launch the application to which
+the background task belongs.</p>
+
+<p>If the dialog is confirmed, the application will open. If the dialog is
+declined, the application will not open and the dialog will be dismissed.
+This request is only valid for widget or device app background tasks, and
+will be ignored by watch face apps. <span class='object_link'><a href="#exit-instance_method" title="Toybox::Background#exit (method)">Background.exit()</a></span> must be called at some point in the background process
+after this method is invoked because the confirmation dialog will only
+trigger after the background task exits.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.Background;
+(:background)
+class BackgroundServiceDelegate extends System.ServiceDelegate {
+    function initialize() {
+        ServiceDelegate.initialize();
+    }
+
+    function onTemporalEvent() {
+        Background.requestApplicationWake(&quot;Launch Cool App?&quot;);
+        Background.exit(null);
+    }
+}</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>message</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The message to display in the dialog when requesting to launch the app</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Background/MessageSizeLimitException.html" title="Toybox::Background::MessageSizeLimitException (class)">Toybox::Background::MessageSizeLimitException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Indicates the provided message exceeds the size limit (255 Bytes). Note
+that some characters may be larger than 1 Byte</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="System/ServiceDelegate.html" title="Toybox::System::ServiceDelegate (class)">System::ServiceDelegate</a></span></li>
+    
+      <li><span class='object_link'><a href="#exit-instance_method" title="Toybox::Background#exit (method)">Background.exit()</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2957
+2958</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2957</span>
+
+def requestApplicationWake(message)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:30 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

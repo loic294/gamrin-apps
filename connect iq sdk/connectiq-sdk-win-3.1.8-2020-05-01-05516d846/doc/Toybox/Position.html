@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Toybox::Position
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::Position";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (P)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Toybox.html" title="Toybox (module)">Toybox</a></span></span>
+     &raquo; 
+    <span class="title">Position</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../class_list.html"></iframe>
+
+      <div id="content"><h1>Module: Toybox::Position
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>The Position module provides an interface for location information and
+positioning sensors.</p>
+
+<p>This module also provides two sets of constants:</p>
+<ul><li>
+<p><strong>GEO:</strong> Used to specify the <span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Location</a></span> formatting.</p>
+</li><li>
+<p><strong>QUALITY:</strong> Represents the GPS fix quality when the
+<span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Location</a></span> information was calculated</p>
+</li></ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.Position;
+using Toybox.System;
+Position.enableLocationEvents(Position.LOCATION_ONE_SHOT, method(:onPosition));
+function onPosition(info) {
+    var myLocation = info.position.toDegrees();
+    System.println(&quot;Latitude: &quot; + myLocation[0]); // e.g. 38.856147
+    System.println(&quot;Longitude: &quot; + myLocation[1]); // e.g -94.800953
+}</code></pre>
+    
+  </div>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Position/Info.html" title="Toybox::Position::Info (class)">Info</a></span>, <span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Location</a></span>
+    
+  
+</p>
+
+  <h2>Constant Summary</h2>
+  <dl class="constants">
+    
+      <dt id="GEO_DEG-constant" class="">GEO_DEG = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>The decimal degree format: ddd.dddddd (e.g. 38.278652)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Decimal_degrees" target="_parent" title="Decimal Degrees">Decimal Degrees</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="GEO_DM-constant" class="">GEO_DM = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>The degrees/decimal minutes format: dddmm.mmm  (e.g 38 27.865&#39;)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="GEO_DMS-constant" class="">GEO_DMS = 2
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>degrees/minutes/seconds (DMS) format: ddd mm ss (e.g. 38 27&#39; 8“)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="GEO_MGRS-constant" class="">GEO_MGRS = 3
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Military Grid Reference System, or MGRS (e.g. 4QFJ12345678)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Military_Grid_Reference_System" target="_parent" title="Military Grid Reference System">Military Grid Reference System</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="QUALITY_NOT_AVAILABLE-constant" class="">QUALITY_NOT_AVAILABLE = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>GPS is not available</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="QUALITY_LAST_KNOWN-constant" class="">QUALITY_LAST_KNOWN = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>The Location is based on the last known GPS fix.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="QUALITY_POOR-constant" class="">QUALITY_POOR = 2
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>The Location was calculated with a poor GPS fix. Only a 2-D GPS fix is
+available, likely due to a limited number of tracked satellites.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="QUALITY_USABLE-constant" class="">QUALITY_USABLE = 3
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>The Location was calculated with a usable GPS fix. A 3-D GPS fix is
+available, with marginal HDOP (horizontal dilution of precision)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)" target="_parent" title="Dilution of Precision">Dilution of Precision</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="QUALITY_GOOD-constant" class="">QUALITY_GOOD = 4
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>The Location was calculated with a good GPS fix. A 3-D GPS fix is
+available, with good-to-excellent HDOP (horizontal dilution of precision).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)" target="_parent" title="Dilution of Precision">Dilution of Precision</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="LOCATION_ONE_SHOT-constant" class="">LOCATION_ONE_SHOT = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Enables a one-time Location acquisition</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="LOCATION_CONTINUOUS-constant" class="">LOCATION_CONTINUOUS = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Enables continuous Location tracking</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="LOCATION_DISABLE-constant" class="">LOCATION_DISABLE = 2
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Disables Location tracking</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+  </dl>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#createBoundingBox-instance_method" title="#createBoundingBox (instance method)"><strong>createBoundingBox</strong>(locations)  &#x21d2; Toybox::Lang::Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Create a bounding box from an array of <span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Location</a></span> objects.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#enableLocationEvents-instance_method" title="#enableLocationEvents (instance method)"><strong>enableLocationEvents</strong>(type, listener)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Request a Location event.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInfo-instance_method" title="#getInfo (instance method)"><strong>getInfo</strong>  &#x21d2; Toybox::Position::Info </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the current <span class='object_link'><a href="Position/Info.html" title="Toybox::Position::Info (class)">Position.Info</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#parse-instance_method" title="#parse (instance method)"><strong>parse</strong>(string, format)  &#x21d2; Toybox::Position::Location </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Convert a String to a Location object.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="createBoundingBox-instance_method">
+  
+    <strong>createBoundingBox</strong>(locations)  &#x21d2; <tt><span class='object_link'><a href="Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a bounding box from an array of <span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Location</a></span> objects.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>locations</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of <span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Location</a></span> objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Array of <span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Location</a></span> objects that specify the
+bounds of the input array or <code>null</code> if the the input array is
+empty. The first element describes the top left corner, the second
+describes the bottom right.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.3</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9736
+9737</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9736</span>
+
+def createBoundingBox(locations)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="enableLocationEvents-instance_method">
+  
+    <strong>enableLocationEvents</strong>(type, listener)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Request a Location event.</p>
+
+<p>Using this API requires enabling the Positioning Permission. Only Device
+Apps and Widgets may use this API.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.Position;
+Position.enableLocationEvents(Position.LOCATION_ONE_SHOT, method(:onPosition));
+function onPosition(info) {
+    var myLocation = info.position.toDegrees();
+}</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>type</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A LOCATION_* value:</p>
+<ul><li>
+<p>LOCATION_ONE_SHOT for a single location request</p>
+</li><li>
+<p>LOCATION_CONTINUOUS to enable location tracking</p>
+</li><li>
+<p>LOCATION_DISABLE to turn off location tracking</p>
+</li></ul>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>listener</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Method.html" title="Toybox::Lang::Method (class)">Toybox::Lang::Method</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A reference to a listener method:</p>
+<ul><li>
+<p>Called when location updates are received</p>
+</li><li>
+<p>Receives a Position.Info object</p>
+</li></ul>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9639
+9640</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9639</span>
+
+def enableLocationEvents(type, listener)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInfo-instance_method">
+  
+    <strong>getInfo</strong>  &#x21d2; <tt><span class='object_link'><a href="Position/Info.html" title="Toybox::Position::Info (class)">Toybox::Position::Info</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the current <span class='object_link'><a href="Position/Info.html" title="Toybox::Position::Info (class)">Position.Info</a></span>.</p>
+
+<p>Using this API requires enabling the Positioning Permission. This is useful
+for retrieving the current position info either on demand or periodically
+within a <span class='object_link'><a href="Timer/Timer.html" title="Toybox::Timer::Timer (class)">Timer</a></span>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Get position info once per second</p>
+</div></p>
+      
+      <pre class="example code"><code>using Toybox.Position;
+using Toybox.System;
+using Toybox.Timer;
+var dataTimer = new Timer.Timer();
+dataTimer.start(method(:timerCallback), 1000, true); // A one-second timer
+function timerCallback() {
+    var positionInfo = Position.getInfo();
+    if (positionInfo has :altitude &amp;&amp; positionInfo.altitude != null) {
+        var altitude = positionInfo.altitude;
+        System.println(&quot;Altitude: &quot; + altitude);
+    }
+}</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Position/Info.html" title="Toybox::Position::Info (class)">Toybox::Position::Info</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9725
+9726</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9725</span>
+
+def getInfo()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="parse-instance_method">
+  
+    <strong>parse</strong>(string, format)  &#x21d2; <tt><span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Toybox::Position::Location</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Convert a String to a Location object.</p>
+
+<p>The input String must be in one of the four formats described by the
+Position.GEO_* constants.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.Position;
+using Toybox.System;
+var locString = &quot;38.856147, -94.800953&quot;;
+var myLocation = Position.parse(locString, Position.GEO_DEG);
+System.println(myLocation.toRadians()); // [0.678168, -1.654589]</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>string</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The String to parse</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>format</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A Position.GEO_* value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Toybox::Position::Location</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A Location object representing the position described by the input String</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9603
+9604</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9603</span>
+
+def parse(string, format)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:32 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

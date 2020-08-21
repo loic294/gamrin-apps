@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\SelectableApp.mc" id="3" lineNum="11" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\SelectableApp.mc" id="3" lineNum="12" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\SelectableApp.mc" id="4" lineNum="16" pc="268435479" symbol="onStart"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\SelectableApp.mc" id="5" lineNum="20" pc="268435484" symbol="onStop"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\SelectableApp.mc" id="6" lineNum="24" pc="268435489" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\SelectableApp.mc" id="6" lineNum="25" pc="268435493" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="8" lineNum="12" pc="268435561" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="8" lineNum="13" pc="268435565" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="9" lineNum="16" pc="268435584" symbol="onBack"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="9" lineNum="17" pc="268435588" symbol="onBack"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="9" lineNum="18" pc="268435616" symbol="onBack"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="10" lineNum="21" pc="268435620" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="10" lineNum="22" pc="268435624" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="10" lineNum="23" pc="268435652" symbol="onPreviousPage"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="11" lineNum="26" pc="268435656" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="11" lineNum="27" pc="268435660" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="11" lineNum="28" pc="268435675" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="11" lineNum="36" pc="268435991" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonDelegate.mc" id="11" lineNum="38" pc="268436012" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="13" lineNum="13" pc="268436016" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="13" lineNum="14" pc="268436020" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="14" lineNum="17" pc="268436039" symbol="onSelectable"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="14" lineNum="18" pc="268436043" symbol="onSelectable"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="14" lineNum="20" pc="268436056" symbol="onSelectable"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="14" lineNum="21" pc="268436070" symbol="onSelectable"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="14" lineNum="23" pc="268436110" symbol="onSelectable"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="15" lineNum="26" pc="268436114" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="15" lineNum="27" pc="268436118" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="15" lineNum="28" pc="268436135" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="15" lineNum="29" pc="268436161" symbol="onMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="16" lineNum="32" pc="268436165" symbol="onNextPage"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="16" lineNum="33" pc="268436169" symbol="onNextPage"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="17" lineNum="36" pc="268436194" symbol="pushMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="17" lineNum="37" pc="268436198" symbol="pushMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="17" lineNum="38" pc="268436222" symbol="pushMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="17" lineNum="39" pc="268436246" symbol="pushMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="17" lineNum="40" pc="268436268" symbol="pushMenu"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="18" lineNum="43" pc="268436272" symbol="onKey"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="18" lineNum="44" pc="268436276" symbol="onKey"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="18" lineNum="46" pc="268436289" symbol="onKey"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="18" lineNum="47" pc="268436303" symbol="onKey"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxDelegate.mc" id="18" lineNum="50" pc="268436330" symbol="onKey"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonView.mc" id="20" lineNum="12" pc="268436334" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonView.mc" id="20" lineNum="13" pc="268436338" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonView.mc" id="21" lineNum="17" pc="268436357" symbol="onLayout"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonView.mc" id="21" lineNum="18" pc="268436361" symbol="onLayout"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonView.mc" id="22" lineNum="22" pc="268436399" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\ButtonView.mc" id="22" lineNum="23" pc="268436403" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="24" lineNum="22" pc="268436424" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="24" lineNum="23" pc="268436428" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="24" lineNum="26" pc="268436448" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="25" lineNum="30" pc="268436473" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="25" lineNum="32" pc="268436477" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="25" lineNum="33" pc="268436497" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="25" lineNum="36" pc="268436517" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="25" lineNum="37" pc="268436537" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="26" lineNum="42" pc="268436558" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="26" lineNum="45" pc="268436562" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="26" lineNum="46" pc="268436573" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="26" lineNum="48" pc="268436593" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="26" lineNum="49" pc="268436604" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="27" lineNum="54" pc="268436625" symbol="highlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="27" lineNum="57" pc="268436629" symbol="highlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="27" lineNum="58" pc="268436640" symbol="highlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="28" lineNum="63" pc="268436661" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="28" lineNum="65" pc="268436665" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="28" lineNum="66" pc="268436676" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="28" lineNum="69" pc="268436696" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="28" lineNum="70" pc="268436707" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="28" lineNum="73" pc="268436727" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="28" lineNum="74" pc="268436738" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="87" pc="268436759" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="88" pc="268436763" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="91" pc="268436772" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="94" pc="268436779" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="95" pc="268436841" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="96" pc="268436903" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="97" pc="268436965" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="98" pc="268437027" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="101" pc="268437041" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="102" pc="268437054" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="104" pc="268437068" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="105" pc="268437068" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="106" pc="268437094" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="107" pc="268437101" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="108" pc="268437120" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="109" pc="268437136" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="110" pc="268437146" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="112" pc="268437183" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="113" pc="268437190" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="114" pc="268437209" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="115" pc="268437225" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="116" pc="268437235" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="120" pc="268437269" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="131" pc="268437379" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="134" pc="268437417" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="135" pc="268437442" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="138" pc="268437480" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="30" lineNum="139" pc="268437508" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="31" lineNum="143" pc="268437547" symbol="getList"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="31" lineNum="144" pc="268437551" symbol="getList"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="32" lineNum="148" pc="268437561" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="32" lineNum="150" pc="268437565" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="32" lineNum="152" pc="268437585" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="32" lineNum="153" pc="268437624" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="32" lineNum="157" pc="268437645" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="32" lineNum="158" pc="268437655" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="32" lineNum="160" pc="268437672" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="32" lineNum="161" pc="268437692" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="32" lineNum="163" pc="268437709" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="32" lineNum="164" pc="268437729" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="34" lineNum="175" pc="268437747" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="34" lineNum="176" pc="268437751" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="34" lineNum="179" pc="268437769" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="35" lineNum="183" pc="268437780" symbol="onLayout"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="35" lineNum="184" pc="268437784" symbol="onLayout"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="35" lineNum="185" pc="268437816" symbol="onLayout"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="36" lineNum="189" pc="268437846" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846\\samples\\Selectable\\source\\CheckBoxView.mc" id="36" lineNum="190" pc="268437850" symbol="onUpdate"/>
+<entry filename="Rez" id="42" lineNum="23" pc="268437871" symbol="ButtonLayout"/>
+<entry filename="Rez" id="42" lineNum="25" pc="268437883" symbol="ButtonLayout"/>
+<entry filename="Rez" id="42" lineNum="27" pc="268437896" symbol="ButtonLayout"/>
+<entry filename="Rez" id="42" lineNum="28" pc="268438260" symbol="ButtonLayout"/>
+<entry filename="Rez" id="42" lineNum="30" pc="268438624" symbol="ButtonLayout"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="37" method="true" symbol="unHighlight"/>
+<entry id="8388987" method="true" symbol="vibrate"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389097" method="true" symbol="onKey"/>
+<entry field="true" id="11" symbol="keyToSelectable"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="25" symbol="checkBoxHighlighted"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="8389897" symbol="stateDefault"/>
+<entry id="39" method="true" symbol="highlight"/>
+<entry field="true" id="27" symbol="DefaultBackButton"/>
+<entry field="true" id="19" symbol="currentHighlight"/>
+<entry id="13" object="true" symbol="ButtonView"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="12" object="true" symbol="CheckBoxDelegate"/>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="18" symbol="list"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="9" object="true" symbol="SelectableApp"/>
+<entry field="true" id="14" symbol="currentView"/>
+<entry field="true" id="8389103" symbol="behavior"/>
+<entry field="true" id="29" symbol="DefaultMenuButton"/>
+<entry id="8388636" module="true" symbol="Attention"/>
+<entry field="true" id="24" symbol="checkBoxSelected"/>
+<entry field="true" id="8389900" symbol="stateDisabled"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="33" symbol="AppName"/>
+<entry field="true" id="8389898" symbol="stateHighlighted"/>
+<entry field="true" id="8389899" symbol="stateSelected"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry id="8389084" method="true" symbol="handleEvent"/>
+<entry id="8389078" method="true" symbol="onNextPage"/>
+<entry id="16" object="true" symbol="CheckBoxList"/>
+<entry id="35" method="true" symbol="pushMenu"/>
+<entry field="true" id="31" symbol="LauncherIcon"/>
+<entry id="8389081" method="true" symbol="onBack"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="23" symbol="checkBoxDefault"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="32" method="true" symbol="ButtonLayout"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="17" object="true" symbol="CheckBoxView"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="40" method="true" symbol="select"/>
+<entry field="true" id="8389067" symbol="height"/>
+<entry id="38" method="true" symbol="reset"/>
+<entry id="10" object="true" symbol="ButtonDelegate"/>
+<entry id="8389890" method="true" symbol="onSelectable"/>
+<entry id="21" module="true" symbol="Layouts"/>
+<entry id="8389079" method="true" symbol="onPreviousPage"/>
+<entry field="true" id="8389892" symbol="background"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="28" symbol="PressedBackButton"/>
+<entry field="true" id="8389066" symbol="width"/>
+<entry field="true" id="34" symbol="checkBoxes"/>
+<entry id="22" module="true" symbol="Menus"/>
+<entry field="true" id="36" symbol="stateHighlightedSelected"/>
+<entry id="15" object="true" symbol="Checkbox"/>
+<entry id="20" method="true" symbol="getList"/>
+<entry field="true" id="26" symbol="checkBoxHighlightedSelected"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry field="true" id="30" symbol="PressedMenuButton"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435484" name="state" stackId="1" startPc="268435479"/>
+<entry endPc="268435489" name="state" stackId="1" startPc="268435484"/>
+<entry endPc="268436009" name="vibrateData" stackId="1" startPc="268435675"/>
+<entry endPc="268436113" name="instance" stackId="2" startPc="268436043"/>
+<entry endPc="268436114" name="event" stackId="1" startPc="268436039"/>
+<entry endPc="268436271" name="view" stackId="2" startPc="268436198"/>
+<entry endPc="268436271" name="delegate" stackId="3" startPc="268436198"/>
+<entry endPc="268436272" name="slideDir" stackId="1" startPc="268436194"/>
+<entry endPc="268436333" name="key" stackId="2" startPc="268436276"/>
+<entry endPc="268436334" name="evt" stackId="1" startPc="268436272"/>
+<entry endPc="268436399" name="dc" stackId="1" startPc="268436357"/>
+<entry endPc="268436424" name="dc" stackId="1" startPc="268436399"/>
+<entry endPc="268436473" name="options" stackId="1" startPc="268436424"/>
+<entry endPc="268436625" name="previousState" stackId="1" startPc="268436558"/>
+<entry endPc="268436661" name="previousState" stackId="1" startPc="268436625"/>
+<entry endPc="268436759" name="previousState" stackId="1" startPc="268436661"/>
+<entry endPc="268437546" name="offset" stackId="11" startPc="268436763"/>
+<entry endPc="268437546" name="checkBoxHighlightedSelected" stackId="6" startPc="268436763"/>
+<entry endPc="268437546" name="BORDER_PAD" stackId="2" startPc="268436763"/>
+<entry endPc="268437546" name="checkBoxHighlighted" stackId="4" startPc="268436763"/>
+<entry endPc="268437546" name="checkBoxSelected" stackId="5" startPc="268436763"/>
+<entry endPc="268437546" name="checkBoxDisabled" stackId="7" startPc="268436763"/>
+<entry endPc="268437546" name="spacing" stackId="10" startPc="268436763"/>
+<entry endPc="268437546" name="initY" stackId="13" startPc="268436763"/>
+<entry endPc="268437546" name="initX" stackId="12" startPc="268436763"/>
+<entry endPc="268437546" name="dims" stackId="8" startPc="268436763"/>
+<entry endPc="268437546" name="checkBoxDefault" stackId="3" startPc="268436763"/>
+<entry endPc="268437546" name="options" stackId="14" startPc="268436763"/>
+<entry endPc="268437546" name="slideSymbol" stackId="9" startPc="268436763"/>
+<entry endPc="268437547" name="dc" stackId="1" startPc="268436759"/>
+<entry endPc="268437747" name="instance" stackId="1" startPc="268437561"/>
+<entry endPc="268437747" name="previousState" stackId="2" startPc="268437561"/>
+<entry endPc="268437846" name="dc" stackId="1" startPc="268437780"/>
+<entry endPc="268437871" name="dc" stackId="1" startPc="268437846"/>
+<entry endPc="268438651" name="rez_cmp_local_custom_selectable_58286740610230590311" stackId="4" startPc="268437883"/>
+<entry endPc="268438651" name="rez_cmp_local_var_dc_getHeight" stackId="2" startPc="268437883"/>
+<entry endPc="268438651" name="rez_cmp_local_custom_selectable_21250867931558790013" stackId="3" startPc="268437883"/>
+<entry endPc="268438652" name="dc" stackId="1" startPc="268437871"/>
+</localVars>
+<annotations/>
+<dataEntryOffsetMappings>
+<dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry offset="206" parentId="globals" symbolId="CheckBoxList" type="class"/>
+<dataEntry offset="285" parentId="globals" symbolId="ButtonDelegate" type="class"/>
+<dataEntry offset="356" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="435" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="538" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="569" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="600" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="639" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="670" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="709" parentId="globals" symbolId="ButtonView" type="class"/>
+<dataEntry offset="772" parentId="globals" symbolId="CheckBoxView" type="class"/>
+<dataEntry offset="843" parentId="globals" symbolId="CheckBoxDelegate" type="class"/>
+<dataEntry offset="930" parentId="globals" symbolId="SelectableApp" type="class"/>
+<dataEntry offset="1001" parentId="globals" symbolId="Checkbox" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" name="initialize" parent="SelectableApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStart" parent="SelectableApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStop" parent="SelectableApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getInitialView" parent="SelectableApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="ButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onBack" parent="ButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onPreviousPage" parent="ButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onMenu" parent="ButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CheckBoxDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onSelectable" parent="CheckBoxDelegate">
+<param id="event"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onMenu" parent="CheckBoxDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onNextPage" parent="CheckBoxDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="pushMenu" parent="CheckBoxDelegate">
+<param id="slideDir"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onKey" parent="CheckBoxDelegate">
+<param id="evt"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="ButtonView">
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onLayout" parent="ButtonView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Load your resources here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onUpdate" parent="ButtonView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Update the view<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="Checkbox">
+<param id="options"/>
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="unHighlight" parent="Checkbox">
+<documentation><![CDATA[<div class="description"> Special case - handle unhighlighting of a CheckBox<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="reset" parent="Checkbox">
+<param id="previousState"/>
+<documentation><![CDATA[<div class="description"> Handle onSelectable() returning stateDefault<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="highlight" parent="Checkbox">
+<param id="previousState"/>
+<documentation><![CDATA[<div class="description"> Handle onSelectable() returning stateHighlighted<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="select" parent="Checkbox">
+<param id="previousState"/>
+<documentation><![CDATA[<div class="description"> Handle onSelectable() returning stateSelected<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CheckBoxList">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="getList" parent="CheckBoxList">
+<documentation><![CDATA[<div class="description"> Return instance of current list of CheckBoxes<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="handleEvent" parent="CheckBoxList">
+<param id="instance"/>
+<param id="previousState"/>
+<documentation><![CDATA[<div class="description"> General handler for onSelectable() events<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CheckBoxView">
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onLayout" parent="CheckBoxView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Load your resources here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onUpdate" parent="CheckBoxView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Update the view<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="ButtonLayout" parent="Layouts">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

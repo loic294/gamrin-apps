@@ -1,0 +1,6163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Toybox::Activity::Info
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::Activity::Info";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (I)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Toybox.html" title="Toybox (module)">Toybox</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Activity.html" title="Toybox::Activity (module)">Activity</a></span></span>
+     &raquo; 
+    <span class="title">Info</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../../class_list.html"></iframe>
+
+      <div id="content"><h1>Class: Toybox::Activity::Info
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></li>
+          
+            <li class="next">Toybox::Activity::Info</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>The Activity.Info class contains information about the current activity.</p>
+
+<p>This information can be retrieved with the
+<span class='object_link'><a href="../Activity.html#getActivityInfo-instance_method" title="Toybox::Activity#getActivityInfo (method)">getActivityInfo()</a></span> method. Fields in this
+class may return <code>null</code> so should be checked for null values
+prior to use.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#altitude-instance_method" title="#altitude (instance method)"><strong>altitude</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current altitude in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ambientPressure-instance_method" title="#ambientPressure (instance method)"><strong>ambientPressure</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The ambient pressure in Pascals (Pa).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#averageCadence-instance_method" title="#averageCadence (instance method)"><strong>averageCadence</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The average cadence during the current activity in revolutions per minute
+(rpm).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#averageDistance-instance_method" title="#averageDistance (instance method)"><strong>averageDistance</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The average swim stroke distance from the previous interval in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#averageHeartRate-instance_method" title="#averageHeartRate (instance method)"><strong>averageHeartRate</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The average heart rate during the current activity in beats per minute
+(bpm).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#averagePower-instance_method" title="#averagePower (instance method)"><strong>averagePower</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The average power during the current activity in Watts (W).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#averageSpeed-instance_method" title="#averageSpeed (instance method)"><strong>averageSpeed</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The average speed during the current activity in meters per second (mps).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#bearing-instance_method" title="#bearing (instance method)"><strong>bearing</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current bearing in radians.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#bearingFromStart-instance_method" title="#bearingFromStart (instance method)"><strong>bearingFromStart</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The bearing from the starting location to the destination in radians.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calories-instance_method" title="#calories (instance method)"><strong>calories</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The calories burned throughout the current activity in kilocalories (kcal).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#currentCadence-instance_method" title="#currentCadence (instance method)"><strong>currentCadence</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current cadence in revolutions per minute (rpm).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#currentHeading-instance_method" title="#currentHeading (instance method)"><strong>currentHeading</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The true north referenced heading in radians.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#currentHeartRate-instance_method" title="#currentHeartRate (instance method)"><strong>currentHeartRate</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current heart rate in beats per minute (bpm).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#currentLocation-instance_method" title="#currentLocation (instance method)"><strong>currentLocation</strong>  &#x21d2; Toybox::Position::Location </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current location.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#currentLocationAccuracy-instance_method" title="#currentLocationAccuracy (instance method)"><strong>currentLocationAccuracy</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current GPS accuracy.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#currentPower-instance_method" title="#currentPower (instance method)"><strong>currentPower</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current power in Watts (W).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#currentSpeed-instance_method" title="#currentSpeed (instance method)"><strong>currentSpeed</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current speed in meters per second (mps).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#distanceToDestination-instance_method" title="#distanceToDestination (instance method)"><strong>distanceToDestination</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The distance to the destination in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#distanceToNextPoint-instance_method" title="#distanceToNextPoint (instance method)"><strong>distanceToNextPoint</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The distance to the next point in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#elapsedDistance-instance_method" title="#elapsedDistance (instance method)"><strong>elapsedDistance</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The elapsed distance of the current activity in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#elapsedTime-instance_method" title="#elapsedTime (instance method)"><strong>elapsedTime</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Elapsed time of the current activity in milliseconds (ms).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#elevationAtDestination-instance_method" title="#elevationAtDestination (instance method)"><strong>elevationAtDestination</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The elevation at the destination in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#elevationAtNextPoint-instance_method" title="#elevationAtNextPoint (instance method)"><strong>elevationAtNextPoint</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The elevation at the next point in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#energyExpenditure-instance_method" title="#energyExpenditure (instance method)"><strong>energyExpenditure</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current energy expenditure in kilocalories per minute (kcals/min).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#frontDerailleurIndex-instance_method" title="#frontDerailleurIndex (instance method)"><strong>frontDerailleurIndex</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current front bicycle derailleur index.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#frontDerailleurMax-instance_method" title="#frontDerailleurMax (instance method)"><strong>frontDerailleurMax</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The front bicycle derailleur maximum index.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#frontDerailleurSize-instance_method" title="#frontDerailleurSize (instance method)"><strong>frontDerailleurSize</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The front bicycle derailleur gear size in number of teeth.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#maxCadence-instance_method" title="#maxCadence (instance method)"><strong>maxCadence</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The maximum cadence recorded during the current activity in revolutions per
+minute (rpm).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#maxHeartRate-instance_method" title="#maxHeartRate (instance method)"><strong>maxHeartRate</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The maximum heart rate recorded during the current activity in beats per
+minute (bpm).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#maxPower-instance_method" title="#maxPower (instance method)"><strong>maxPower</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The maximum power recorded during the current activity in Watts (W).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#maxSpeed-instance_method" title="#maxSpeed (instance method)"><strong>maxSpeed</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The maximum speed recorded during the current activity in meters per second
+(mps).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#meanSeaLevelPressure-instance_method" title="#meanSeaLevelPressure (instance method)"><strong>meanSeaLevelPressure</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The mean sea level barometric pressure in Pascals (Pa).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#nameOfDestination-instance_method" title="#nameOfDestination (instance method)"><strong>nameOfDestination</strong>  &#x21d2; Toybox::Lang::String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The name of the destination.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#nameOfNextPoint-instance_method" title="#nameOfNextPoint (instance method)"><strong>nameOfNextPoint</strong>  &#x21d2; Toybox::Lang::String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The name of the next point.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#offCourseDistance-instance_method" title="#offCourseDistance (instance method)"><strong>offCourseDistance</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The distance to the nearest point on the current course in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rawAmbientPressure-instance_method" title="#rawAmbientPressure (instance method)"><strong>rawAmbientPressure</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The raw ambient pressure in Pascals (Pa).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rearDerailleurIndex-instance_method" title="#rearDerailleurIndex (instance method)"><strong>rearDerailleurIndex</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current front bicycle derailleur index.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rearDerailleurMax-instance_method" title="#rearDerailleurMax (instance method)"><strong>rearDerailleurMax</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The rear bicycle derailleur maximum index.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#rearDerailleurSize-instance_method" title="#rearDerailleurSize (instance method)"><strong>rearDerailleurSize</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The rear bicycle derailleur gear size in number of teeth.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#startLocation-instance_method" title="#startLocation (instance method)"><strong>startLocation</strong>  &#x21d2; Toybox::Position::Location </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The starting location of the current activity.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#startTime-instance_method" title="#startTime (instance method)"><strong>startTime</strong>  &#x21d2; Toybox::Time::Moment </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The starting time of the current activity.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#swimStrokeType-instance_method" title="#swimStrokeType (instance method)"><strong>swimStrokeType</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The swim stroke type from the previous length.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#swimSwolf-instance_method" title="#swimSwolf (instance method)"><strong>swimSwolf</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The SWOLF score from the previous length.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#timerState-instance_method" title="#timerState (instance method)"><strong>timerState</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The recording timer state.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#timerTime-instance_method" title="#timerTime (instance method)"><strong>timerTime</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current Timer value in milliseconds (ms).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#totalAscent-instance_method" title="#totalAscent (instance method)"><strong>totalAscent</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The total ascent during the current activity in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#totalDescent-instance_method" title="#totalDescent (instance method)"><strong>totalDescent</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The total descent during the current activity in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#track-instance_method" title="#track (instance method)"><strong>track</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current track in radians.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#trainingEffect-instance_method" title="#trainingEffect (instance method)"><strong>trainingEffect</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The Training Effect score of the current activity.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  <h2>Method Summary</h2>
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Lang/Object.html#equals-instance_method" title="Toybox::Lang::Object#equals (method)">equals</a></span>, <span class='object_link'><a href="../Lang/Object.html#hashCode-instance_method" title="Toybox::Lang::Object#hashCode (method)">hashCode</a></span>, <span class='object_link'><a href="../Lang/Object.html#method-instance_method" title="Toybox::Lang::Object#method (method)">method</a></span>, <span class='object_link'><a href="../Lang/Object.html#toString-instance_method" title="Toybox::Lang::Object#toString (method)">toString</a></span>, <span class='object_link'><a href="../Lang/Object.html#weak-instance_method" title="Toybox::Lang::Object#weak (method)">weak</a></span></p>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="altitude=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="altitude-instance_method">
+  
+    <strong>altitude</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current altitude in meters (m).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+301
+302
+303</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 301</span>
+
+def altitude
+  @altitude
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="ambientPressure=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="ambientPressure-instance_method">
+  
+    <strong>ambientPressure</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The ambient pressure in Pascals (Pa).</p>
+
+<p>This returns ambient (local) barometric pressure as measured by the
+pressure sensor. The data is smoothed by a two-stage filter to reduce noise
+and instantaneous variation.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+476
+477
+478</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 476</span>
+
+def ambientPressure
+  @ambientPressure
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="averageCadence=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="averageCadence-instance_method">
+  
+    <strong>averageCadence</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The average cadence during the current activity in revolutions per minute
+(rpm).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+237
+238
+239</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 237</span>
+
+def averageCadence
+  @averageCadence
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="averageDistance=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="averageDistance-instance_method">
+  
+    <strong>averageDistance</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The average swim stroke distance from the previous interval in meters (m).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.2</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Approach S60</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>vivoactive HR</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>vivoactive 3</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+289
+290
+291</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 289</span>
+
+def averageDistance
+  @averageDistance
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="averageHeartRate=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="averageHeartRate-instance_method">
+  
+    <strong>averageHeartRate</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The average heart rate during the current activity in beats per minute
+(bpm).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+219
+220
+221</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 219</span>
+
+def averageHeartRate
+  @averageHeartRate
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="averagePower=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="averagePower-instance_method">
+  
+    <strong>averagePower</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The average power during the current activity in Watts (W).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All Edge devices</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>epix</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>D2 Bravo/Titanium</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 3/HR</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 920XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+184
+185
+186</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 184</span>
+
+def averagePower
+  @averagePower
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="averageSpeed=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="averageSpeed-instance_method">
+  
+    <strong>averageSpeed</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The average speed during the current activity in meters per second (mps).</p>
+
+<p>The average is computed as the elapsed 3-D accumulated distance divided by
+the elapsed time.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+149
+150
+151</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 149</span>
+
+def averageSpeed
+  @averageSpeed
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="bearing=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="bearing-instance_method">
+  
+    <strong>bearing</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current bearing in radians.</p>
+
+<p>Bearing is the direction from your current location or position to the
+destination of navigation, dependent on your current location.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+433
+434
+435</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 433</span>
+
+def bearing
+  @bearing
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="bearingFromStart=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="bearingFromStart-instance_method">
+  
+    <strong>bearingFromStart</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The bearing from the starting location to the destination in radians.</p>
+
+<p>Bearing from start is the direction of desired track from the start of
+navigation to the destination in radians. This is only dependent on your
+location when a course is set, and it is not dependent on where you may
+have moved to during an activity</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+443
+444
+445</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 443</span>
+
+def bearingFromStart
+  @bearingFromStart
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="calories=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="calories-instance_method">
+  
+    <strong>calories</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The calories burned throughout the current activity in kilocalories (kcal).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+135
+136
+137</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 135</span>
+
+def calories
+  @calories
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="currentCadence=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="currentCadence-instance_method">
+  
+    <strong>currentCadence</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current cadence in revolutions per minute (rpm).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>(rpm)</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+231
+232
+233</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 231</span>
+
+def currentCadence
+  @currentCadence
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="currentHeading=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="currentHeading-instance_method">
+  
+    <strong>currentHeading</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The true north referenced heading in radians.</p>
+
+<p>This provides compass orientation if it is supported by the device.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+296
+297
+298</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 296</span>
+
+def currentHeading
+  @currentHeading
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="currentHeartRate=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="currentHeartRate-instance_method">
+  
+    <strong>currentHeartRate</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current heart rate in beats per minute (bpm).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+213
+214
+215</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 213</span>
+
+def currentHeartRate
+  @currentHeartRate
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="currentLocation=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="currentLocation-instance_method">
+  
+    <strong>currentLocation</strong>  &#x21d2; <tt><span class='object_link'><a href="../Position/Location.html" title="Toybox::Position::Location (class)">Toybox::Position::Location</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current location.</p>
+
+<p>This member will always provide a <code>null</code> value unless the
+Positioning Permission is enabled.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Position/Location.html" title="Toybox::Position::Location (class)">Toybox::Position::Location</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+129
+130
+131</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 129</span>
+
+def currentLocation
+  @currentLocation
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="currentLocationAccuracy=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="currentLocationAccuracy-instance_method">
+  
+    <strong>currentLocationAccuracy</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current GPS accuracy.</p>
+
+<p>GPS accuracy values range from 0-4. A value of 0 indicates an accuracy
+value is not available, while a value of 4 indicates a good GPS fix.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A Position.QUALITY_* value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../Position/Info.html#accuracy-instance_method" title="Toybox::Position::Info#accuracy (method)">Positional Accuracy</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+121
+122
+123</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 121</span>
+
+def currentLocationAccuracy
+  @currentLocationAccuracy
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="currentPower=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="currentPower-instance_method">
+  
+    <strong>currentPower</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current power in Watts (W).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All Edge devices</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>epix</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>D2 Bravo/Titanium</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 3/HR</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 920XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+170
+171
+172</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 170</span>
+
+def currentPower
+  @currentPower
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="currentSpeed=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="currentSpeed-instance_method">
+  
+    <strong>currentSpeed</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current speed in meters per second (mps).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../Position/Info.html#speed-instance_method" title="Toybox::Position::Info#speed (method)">Positional Speed</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+141
+142
+143</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 141</span>
+
+def currentSpeed
+  @currentSpeed
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="distanceToDestination=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="distanceToDestination-instance_method">
+  
+    <strong>distanceToDestination</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The distance to the destination in meters (m).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+400
+401
+402</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 400</span>
+
+def distanceToDestination
+  @distanceToDestination
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="distanceToNextPoint=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="distanceToNextPoint-instance_method">
+  
+    <strong>distanceToNextPoint</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The distance to the next point in meters (m).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+415
+416
+417</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 415</span>
+
+def distanceToNextPoint
+  @distanceToNextPoint
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="elapsedDistance=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="elapsedDistance-instance_method">
+  
+    <strong>elapsedDistance</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The elapsed distance of the current activity in meters (m).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+112
+113
+114</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 112</span>
+
+def elapsedDistance
+  @elapsedDistance
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="elapsedTime=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="elapsedTime-instance_method">
+  
+    <strong>elapsedTime</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Elapsed time of the current activity in milliseconds (ms).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+102
+103
+104</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 102</span>
+
+def elapsedTime
+  @elapsedTime
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="elevationAtDestination=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="elevationAtDestination-instance_method">
+  
+    <strong>elevationAtDestination</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The elevation at the destination in meters (m).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+405
+406
+407</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 405</span>
+
+def elevationAtDestination
+  @elevationAtDestination
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="elevationAtNextPoint=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="elevationAtNextPoint-instance_method">
+  
+    <strong>elevationAtNextPoint</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The elevation at the next point in meters (m).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+420
+421
+422</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 420</span>
+
+def elevationAtNextPoint
+  @elevationAtNextPoint
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="energyExpenditure=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="energyExpenditure-instance_method">
+  
+    <strong>energyExpenditure</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current energy expenditure in kilocalories per minute (kcals/min).</p>
+
+<p>Energy expenditure is a metric developed by FirstBeat that provides an
+estimation of the calorie burn rate calculated from heart rate data.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://www.firstbeat.com/en/consumer-products/features/#energy-expenditure" target="_parent" title="Energy Expenditure">Energy Expenditure</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+322
+323
+324</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 322</span>
+
+def energyExpenditure
+  @energyExpenditure
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="frontDerailleurIndex=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="frontDerailleurIndex-instance_method">
+  
+    <strong>frontDerailleurIndex</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current front bicycle derailleur index.</p>
+
+<p>Index values range from from 1 to the frontDerailleurMax.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All Edge devices except Edge 130</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+343
+344
+345</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 343</span>
+
+def frontDerailleurIndex
+  @frontDerailleurIndex
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="frontDerailleurMax=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="frontDerailleurMax-instance_method">
+  
+    <strong>frontDerailleurMax</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The front bicycle derailleur maximum index.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All Edge devices except Edge 130</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+353
+354
+355</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 353</span>
+
+def frontDerailleurMax
+  @frontDerailleurMax
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="frontDerailleurSize=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="frontDerailleurSize-instance_method">
+  
+    <strong>frontDerailleurSize</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The front bicycle derailleur gear size in number of teeth.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All Edge devices except Edge 130</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+363
+364
+365</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 363</span>
+
+def frontDerailleurSize
+  @frontDerailleurSize
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="maxCadence=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="maxCadence-instance_method">
+  
+    <strong>maxCadence</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The maximum cadence recorded during the current activity in revolutions per
+minute (rpm).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+243
+244
+245</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 243</span>
+
+def maxCadence
+  @maxCadence
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="maxHeartRate=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="maxHeartRate-instance_method">
+  
+    <strong>maxHeartRate</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The maximum heart rate recorded during the current activity in beats per
+minute (bpm).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+225
+226
+227</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 225</span>
+
+def maxHeartRate
+  @maxHeartRate
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="maxPower=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="maxPower-instance_method">
+  
+    <strong>maxPower</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The maximum power recorded during the current activity in Watts (W).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All Edge devices</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>epix</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>D2 Bravo/Titanium</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 3/HR</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 920XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+198
+199
+200</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 198</span>
+
+def maxPower
+  @maxPower
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="maxSpeed=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="maxSpeed-instance_method">
+  
+    <strong>maxSpeed</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The maximum speed recorded during the current activity in meters per second
+(mps).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>(mps)</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+156
+157
+158</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 156</span>
+
+def maxSpeed
+  @maxSpeed
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="meanSeaLevelPressure=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="meanSeaLevelPressure-instance_method">
+  
+    <strong>meanSeaLevelPressure</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The mean sea level barometric pressure in Pascals (Pa).</p>
+
+<p>This returns barometric pressure calibrated to sea level. Since pressure
+varies dues to several factors, a GPS-based altitude must first be
+obtained, then the ambient (local) pressure is measured by the pressure
+sensor before conversion to a calibrated barometric pressure value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+467
+468
+469</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 467</span>
+
+def meanSeaLevelPressure
+  @meanSeaLevelPressure
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="nameOfDestination=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="nameOfDestination-instance_method">
+  
+    <strong>nameOfDestination</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The name of the destination.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+410
+411
+412</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 410</span>
+
+def nameOfDestination
+  @nameOfDestination
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="nameOfNextPoint=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="nameOfNextPoint-instance_method">
+  
+    <strong>nameOfNextPoint</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The name of the next point.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+425
+426
+427</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 425</span>
+
+def nameOfNextPoint
+  @nameOfNextPoint
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="offCourseDistance=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="offCourseDistance-instance_method">
+  
+    <strong>offCourseDistance</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The distance to the nearest point on the current course in meters (m).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+457
+458
+459</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 457</span>
+
+def offCourseDistance
+  @offCourseDistance
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="rawAmbientPressure=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="rawAmbientPressure-instance_method">
+  
+    <strong>rawAmbientPressure</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The raw ambient pressure in Pascals (Pa).</p>
+
+<p>This returns ambient (local) barometric pressure as measured by the
+internal pressure sensor. The data is the temperature compensated
+information read directly from the internal sensor.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+485
+486
+487</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 485</span>
+
+def rawAmbientPressure
+  @rawAmbientPressure
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="rearDerailleurIndex=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="rearDerailleurIndex-instance_method">
+  
+    <strong>rearDerailleurIndex</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current front bicycle derailleur index.</p>
+
+<p>Index values range from from 1 to the rearDerailleurMax.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All Edge devices except Edge 130</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+375
+376
+377</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 375</span>
+
+def rearDerailleurIndex
+  @rearDerailleurIndex
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="rearDerailleurMax=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="rearDerailleurMax-instance_method">
+  
+    <strong>rearDerailleurMax</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The rear bicycle derailleur maximum index.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All Edge devices except Edge 130</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+385
+386
+387</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 385</span>
+
+def rearDerailleurMax
+  @rearDerailleurMax
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="rearDerailleurSize=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="rearDerailleurSize-instance_method">
+  
+    <strong>rearDerailleurSize</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The rear bicycle derailleur gear size in number of teeth.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All Edge devices except Edge 130</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+395
+396
+397</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 395</span>
+
+def rearDerailleurSize
+  @rearDerailleurSize
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="startLocation=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="startLocation-instance_method">
+  
+    <strong>startLocation</strong>  &#x21d2; <tt><span class='object_link'><a href="../Position/Location.html" title="Toybox::Position::Location (class)">Toybox::Position::Location</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The starting location of the current activity.</p>
+
+<p>This member will always provide a <code>null</code> value unless the
+Positioning Permission is enabled.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Position/Location.html" title="Toybox::Position::Location (class)">Toybox::Position::Location</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+92
+93
+94</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 92</span>
+
+def startLocation
+  @startLocation
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="startTime=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="startTime-instance_method">
+  
+    <strong>startTime</strong>  &#x21d2; <tt><span class='object_link'><a href="../Time/Moment.html" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The starting time of the current activity.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Time/Moment.html" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+97
+98
+99</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 97</span>
+
+def startTime
+  @startTime
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="swimStrokeType=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="swimStrokeType-instance_method">
+  
+    <strong>swimStrokeType</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The swim stroke type from the previous length.</p>
+
+<p>Swim stroke type values range from 0-6. Each Number value represents a
+different swim stroke type (e.g. freestyle, backstroke, etc.).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Activity.SWIM_STROKE_* value</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.2</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Approach S60</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>vivoactive HR</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>vivoactive 3</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+258
+259
+260</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 258</span>
+
+def swimStrokeType
+  @swimStrokeType
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="swimSwolf=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="swimSwolf-instance_method">
+  
+    <strong>swimSwolf</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The SWOLF score from the previous length.</p>
+
+<p>SWOLF is an abbreviation for Swim-Golf, a measure of swimming efficiency.
+The score is obtained by adding the strokes per length to the total time of
+the length. For example, if it takes ten strokes and thirty seconds to swim
+a pool length, the SWOLF score is 40. Just like golf, a lower SWOLF score
+is better.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.2</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Approach S60</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix 5/S/X</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>fenix Chronos</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Forerunner 935</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>vivoactive HR</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>vivoactive 3</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+276
+277
+278</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 276</span>
+
+def swimSwolf
+  @swimSwolf
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="timerState=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="timerState-instance_method">
+  
+    <strong>timerState</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The recording timer state.</p>
+
+<p>The timer state ranges from 0-3. A value of 0 indicates that the timer is
+off and there is no active recording, while a value of 3 indicates timer is
+on and there is an active recording.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Activity.TIMER_STATE_* value</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+331
+332
+333</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 331</span>
+
+def timerState
+  @timerState
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="timerTime=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="timerTime-instance_method">
+  
+    <strong>timerTime</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current Timer value in milliseconds (ms).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+107
+108
+109</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 107</span>
+
+def timerTime
+  @timerTime
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="totalAscent=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="totalAscent-instance_method">
+  
+    <strong>totalAscent</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The total ascent during the current activity in meters (m).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+203
+204
+205</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 203</span>
+
+def totalAscent
+  @totalAscent
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="totalDescent=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="totalDescent-instance_method">
+  
+    <strong>totalDescent</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The total descent during the current activity in meters (m).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+208
+209
+210</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 208</span>
+
+def totalDescent
+  @totalDescent
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="track=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="track-instance_method">
+  
+    <strong>track</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current track in radians.</p>
+
+<p>Track is the direction of travel in radians based on GPS movement. If
+supported by the device, this provides compass orientation when stopped.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+452
+453
+454</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 452</span>
+
+def track
+  @track
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="trainingEffect=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="trainingEffect-instance_method">
+  
+    <strong>trainingEffect</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The Training Effect score of the current activity.</p>
+
+<p>Training Effect is a score developed by FirstBeat, which indicates an
+activity&#39;s level of effect on aerobic fitness. Scores range from 1.0
+(easy) to 5.0 (overreaching).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://www.firstbeat.com/en/consumer-products/features/#training-effect" target="_parent" title="Training Effect">Training Effect</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+312
+313
+314</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 312</span>
+
+def trainingEffect
+  @trainingEffect
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:34 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

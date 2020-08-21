@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Toybox::ActivityMonitor::Info
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::ActivityMonitor::Info";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (I)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Toybox.html" title="Toybox (module)">Toybox</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../ActivityMonitor.html" title="Toybox::ActivityMonitor (module)">ActivityMonitor</a></span></span>
+     &raquo; 
+    <span class="title">Info</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../../class_list.html"></iframe>
+
+      <div id="content"><h1>Class: Toybox::ActivityMonitor::Info
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></li>
+          
+            <li class="next">Toybox::ActivityMonitor::Info</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Unless otherwise indicated, Info data is calculated for the current day
+starting at midnight as provided by the device.</p>
+</div>
+  </div>
+
+
+<p>The ActivityMonitor.Info contains information about the user&#39;s current
+activity status.</p>
+
+<p>The fields in this class may return <code>null</code>. It is recommended to
+<code>null</code> check a value before using it. If the value is not
+available, an error indicating that the symbol was not found will be
+thrown.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#activeMinutesDay-instance_method" title="#activeMinutesDay (instance method)"><strong>activeMinutesDay</strong>  &#x21d2; Toybox::ActivityMonitor::ActiveMinutes </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The number of active minutes for the current day.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#activeMinutesWeek-instance_method" title="#activeMinutesWeek (instance method)"><strong>activeMinutesWeek</strong>  &#x21d2; Toybox::ActivityMonitor::ActiveMinutes </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The number of active minutes for the current week.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#activeMinutesWeekGoal-instance_method" title="#activeMinutesWeekGoal (instance method)"><strong>activeMinutesWeekGoal</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The value of the active minutes goal for the current week.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#calories-instance_method" title="#calories (instance method)"><strong>calories</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The calories burned so far for the current day in kilocalories (kCal).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#distance-instance_method" title="#distance (instance method)"><strong>distance</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The distance since midnight for the current day in centimeters (cm).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#floorsClimbed-instance_method" title="#floorsClimbed (instance method)"><strong>floorsClimbed</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The number of floors climbed for the current day.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#floorsClimbedGoal-instance_method" title="#floorsClimbedGoal (instance method)"><strong>floorsClimbedGoal</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current floor climb goal.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#floorsDescended-instance_method" title="#floorsDescended (instance method)"><strong>floorsDescended</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The number of floors descended for the current day.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#isSleepMode-instance_method" title="#isSleepMode (instance method)"><strong>isSleepMode</strong>  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>This member will be removed in Connect IQ 4.0.0</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#metersClimbed-instance_method" title="#metersClimbed (instance method)"><strong>metersClimbed</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The vertical distance of floors climbed in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#metersDescended-instance_method" title="#metersDescended (instance method)"><strong>metersDescended</strong>  &#x21d2; Toybox::Lang::Float </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The vertical distance of floors descended in meters (m).</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#moveBarLevel-instance_method" title="#moveBarLevel (instance method)"><strong>moveBarLevel</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The current level of the move bar between
+<span class='object_link'><a href="../ActivityMonitor.html#MOVE_BAR_LEVEL_MIN-constant" title="Toybox::ActivityMonitor::MOVE_BAR_LEVEL_MIN (constant)">MOVE_BAR_LEVEL_MIN</a></span> and
+<span class='object_link'><a href="../ActivityMonitor.html#MOVE_BAR_LEVEL_MAX-constant" title="Toybox::ActivityMonitor::MOVE_BAR_LEVEL_MAX (constant)">MOVE_BAR_LEVEL_MAX</a></span>.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stepGoal-instance_method" title="#stepGoal (instance method)"><strong>stepGoal</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The step goal for the current day in number of steps.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#steps-instance_method" title="#steps (instance method)"><strong>steps</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The step count since midnight for the current day in number of steps.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  <h2>Method Summary</h2>
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Lang/Object.html#equals-instance_method" title="Toybox::Lang::Object#equals (method)">equals</a></span>, <span class='object_link'><a href="../Lang/Object.html#hashCode-instance_method" title="Toybox::Lang::Object#hashCode (method)">hashCode</a></span>, <span class='object_link'><a href="../Lang/Object.html#method-instance_method" title="Toybox::Lang::Object#method (method)">method</a></span>, <span class='object_link'><a href="../Lang/Object.html#toString-instance_method" title="Toybox::Lang::Object#toString (method)">toString</a></span>, <span class='object_link'><a href="../Lang/Object.html#weak-instance_method" title="Toybox::Lang::Object#weak (method)">weak</a></span></p>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="activeMinutesDay=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="activeMinutesDay-instance_method">
+  
+    <strong>activeMinutesDay</strong>  &#x21d2; <tt><span class='object_link'><a href="ActiveMinutes.html" title="Toybox::ActivityMonitor::ActiveMinutes (class)">Toybox::ActivityMonitor::ActiveMinutes</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The number of active minutes for the current day.</p>
+
+<p>Contains the moderate, vigorous, and total accumulated minutes for the day.
+Value may be <code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ActiveMinutes.html" title="Toybox::ActivityMonitor::ActiveMinutes (class)">Toybox::ActivityMonitor::ActiveMinutes</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All CIQ 2.x devices</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+614
+615
+616</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 614</span>
+
+def activeMinutesDay
+  @activeMinutesDay
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="activeMinutesWeek=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="activeMinutesWeek-instance_method">
+  
+    <strong>activeMinutesWeek</strong>  &#x21d2; <tt><span class='object_link'><a href="ActiveMinutes.html" title="Toybox::ActivityMonitor::ActiveMinutes (class)">Toybox::ActivityMonitor::ActiveMinutes</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The number of active minutes for the current week.</p>
+
+<p>Contains the moderate, vigorous, and total accumulated minutes for the
+week. Value may be <code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ActiveMinutes.html" title="Toybox::ActivityMonitor::ActiveMinutes (class)">Toybox::ActivityMonitor::ActiveMinutes</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All CIQ 2.x devices</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+604
+605
+606</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 604</span>
+
+def activeMinutesWeek
+  @activeMinutesWeek
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="activeMinutesWeekGoal=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="activeMinutesWeekGoal-instance_method">
+  
+    <strong>activeMinutesWeekGoal</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The value of the active minutes goal for the current week. Value may be
+<code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All CIQ 2.x devices</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+621
+622
+623</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 621</span>
+
+def activeMinutesWeekGoal
+  @activeMinutesWeekGoal
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="calories=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="calories-instance_method">
+  
+    <strong>calories</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The calories burned so far for the current day in kilocalories (kCal).
+Value may be <code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+560
+561
+562</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 560</span>
+
+def calories
+  @calories
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="distance=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="distance-instance_method">
+  
+    <strong>distance</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The distance since midnight for the current day in centimeters (cm). Value
+may be <code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+566
+567
+568</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 566</span>
+
+def distance
+  @distance
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="floorsClimbed=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="floorsClimbed-instance_method">
+  
+    <strong>floorsClimbed</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The number of floors climbed for the current day. Value may be
+<code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All CIQ 2.x devices except Approach S60 and Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+628
+629
+630</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 628</span>
+
+def floorsClimbed
+  @floorsClimbed
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="floorsClimbedGoal=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="floorsClimbedGoal-instance_method">
+  
+    <strong>floorsClimbedGoal</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current floor climb goal. Value may be <code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All CIQ 2.x devices except Approach S60 and Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+642
+643
+644</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 642</span>
+
+def floorsClimbedGoal
+  @floorsClimbedGoal
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="floorsDescended=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="floorsDescended-instance_method">
+  
+    <strong>floorsDescended</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The number of floors descended for the current day. Value may be
+<code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All CIQ 2.x devices except Approach S60 and Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+635
+636
+637</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 635</span>
+
+def floorsDescended
+  @floorsDescended
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="isSleepMode=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="isSleepMode-instance_method">
+  
+    <strong>isSleepMode</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>This member will be removed in Connect IQ 4.0.0</p>
+</div></div>
+
+<p>Determine whether the device is in sleep mode. Value may be
+<code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+594
+595
+596</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 594</span>
+
+def isSleepMode
+  @isSleepMode
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="metersClimbed=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="metersClimbed-instance_method">
+  
+    <strong>metersClimbed</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The vertical distance of floors climbed in meters (m).</p>
+
+<p>This only counts the vertical distance associated with the floors climbed
+metric recorded by the device. Value may be <code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All CIQ 2.x devices except Approach S60 and Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+652
+653
+654</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 652</span>
+
+def metersClimbed
+  @metersClimbed
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="metersDescended=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="metersDescended-instance_method">
+  
+    <strong>metersDescended</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The vertical distance of floors descended in meters (m).</p>
+
+<p>This only counts the vertical distance associated with the floors descended
+metric recorded by the device. Value may be <code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All CIQ 2.x devices except Approach S60 and Forerunner 735XT</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+662
+663
+664</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 662</span>
+
+def metersDescended
+  @metersDescended
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="moveBarLevel=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="moveBarLevel-instance_method">
+  
+    <strong>moveBarLevel</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current level of the move bar between
+<span class='object_link'><a href="../ActivityMonitor.html#MOVE_BAR_LEVEL_MIN-constant" title="Toybox::ActivityMonitor::MOVE_BAR_LEVEL_MIN (constant)">MOVE_BAR_LEVEL_MIN</a></span> and
+<span class='object_link'><a href="../ActivityMonitor.html#MOVE_BAR_LEVEL_MAX-constant" title="Toybox::ActivityMonitor::MOVE_BAR_LEVEL_MAX (constant)">MOVE_BAR_LEVEL_MAX</a></span>. Value may
+be <code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+587
+588
+589</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 587</span>
+
+def moveBarLevel
+  @moveBarLevel
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="stepGoal=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="stepGoal-instance_method">
+  
+    <strong>stepGoal</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The step goal for the current day in number of steps. Value may be
+<code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+579
+580
+581</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 579</span>
+
+def stepGoal
+  @stepGoal
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="steps=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="steps-instance_method">
+  
+    <strong>steps</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The step count since midnight for the current day in number of steps. Value
+may be <code>null</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+573
+574
+575</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 573</span>
+
+def steps
+  @steps
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:34 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

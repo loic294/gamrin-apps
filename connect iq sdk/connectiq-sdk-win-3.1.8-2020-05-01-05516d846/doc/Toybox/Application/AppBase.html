@@ -1,0 +1,2602 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Toybox::Application::AppBase
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::Application::AppBase";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Toybox.html" title="Toybox (module)">Toybox</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Application.html" title="Toybox::Application (module)">Application</a></span></span>
+     &raquo; 
+    <span class="title">AppBase</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../../class_list.html"></iframe>
+
+      <div id="content"><h1>Class: Toybox::Application::AppBase
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></li>
+          
+            <li class="next">Toybox::Application::AppBase</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>AppBase is the base class for an app.</p>
+
+<p>All apps inherit from this class and use it&#39;s methods to manage the
+life cycle of an app.</p>
+<ul><li>
+<p>Your app overrides the class to provide entry points with the following
+methods:</p>
+<ul><li>
+<p><span class='object_link'><a href="#onStart-instance_method" title="Toybox::Application::AppBase#onStart (method)">onStart()</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="#getInitialView-instance_method" title="Toybox::Application::AppBase#getInitialView (method)">getInitialView()</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="#getGoalView-instance_method" title="Toybox::Application::AppBase#getGoalView (method)">getGoalView()</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="#getServiceDelegate-instance_method" title="Toybox::Application::AppBase#getServiceDelegate (method)">getServiceDelegate()</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="#onSettingsChanged-instance_method" title="Toybox::Application::AppBase#onSettingsChanged (method)">onSettingsChanged()</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="#onStop-instance_method" title="Toybox::Application::AppBase#onStop (method)">onStop()</a></span></p>
+</li></ul>
+</li><li>
+<p>These functions are called in the following order:</p>
+<ol><li>
+<p><span class='object_link'><a href="#onStart-instance_method" title="Toybox::Application::AppBase#onStart (method)">onStart()</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="#getInitialView-instance_method" title="Toybox::Application::AppBase#getInitialView (method)">getInitialView()</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="#onStop-instance_method" title="Toybox::Application::AppBase#onStop (method)">onStop()</a></span></p>
+</li></ol>
+</li></ul>
+
+<p>Every AppBase object has access to an object store to persist data.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Shows basic app life cycle</p>
+</div></p>
+      
+      <pre class="example code"><code>using Toybox.Application;
+class AppLifeCycle extends Application.AppBase {
+    // initialize the AppBase class
+    function initialize() {
+        AppBase.initialize();
+    }
+    // onStart() is called on application start up
+    function onStart(state) {
+    }
+    // onStop() is called when your application is exiting
+    function onStop(state) {
+    }
+    // Return the initial view of your application here
+    function getInitialView() {
+        return [new AppLifeCycleView()];
+    }
+}</code></pre>
+    
+  </div>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="AudioContentProviderApp.html" title="Toybox::Application::AudioContentProviderApp (class)">AudioContentProviderApp</a></span></p>
+</div>
+<div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="AudioContentProviderApp.html" title="Toybox::Application::AudioContentProviderApp (class)">AudioContentProviderApp</a></span></p>
+</div>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#allowTrialMessage-instance_method" title="#allowTrialMessage (instance method)"><strong>allowTrialMessage</strong>  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Check if application trial messages are allowed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#clearProperties-instance_method" title="#clearProperties (instance method)"><strong>clearProperties</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#deleteProperty-instance_method" title="#deleteProperty (instance method)"><strong>deleteProperty</strong>(key)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getGlanceView-instance_method" title="#getGlanceView (instance method)"><strong>getGlanceView</strong>  &#x21d2; Toybox::Lang::Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return user defined glance view for content preview purpose.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getGoalView-instance_method" title="#getGoalView (instance method)"><strong>getGoalView</strong>(goalType)  &#x21d2; Toybox::Lang::Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Override to provide a <span class='object_link'><a href="../WatchUi/View.html" title="Toybox::WatchUi::View (class)">WatchUi.View</a></span> for a goal that
+has triggered within a watch face.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getInitialView-instance_method" title="#getInitialView (instance method)"><strong>getInitialView</strong>  &#x21d2; Toybox::Lang::Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Override to provide the initial <span class='object_link'><a href="../WatchUi/View.html" title="Toybox::WatchUi::View (class)">WatchUi.View</a></span> and
+<span class='object_link'><a href="../WatchUi/InputDelegate.html" title="Toybox::WatchUi::InputDelegate (class)">WatchUi.InputDelegate</a></span> of the application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getProperty-instance_method" title="#getProperty (instance method)"><strong>getProperty</strong>(key)  &#x21d2; Toybox::Lang::Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the data associated with a given key from the object store.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getServiceDelegate-instance_method" title="#getServiceDelegate (instance method)"><strong>getServiceDelegate</strong>  &#x21d2; Toybox::Lang::Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get a <span class='object_link'><a href="../System/ServiceDelegate.html" title="Toybox::System::ServiceDelegate (class)">ServiceDelegate</a></span> to run background
+tasks for this app.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getSyncDelegate-instance_method" title="#getSyncDelegate (instance method)"><strong>getSyncDelegate</strong>  &#x21d2; Toybox::Communications::SyncDelegate </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get a <span class='object_link'><a href="../Communications/SyncDelegate.html" title="Toybox::Communications::SyncDelegate (class)">SyncDelegate</a></span> object that
+communicates sync status to the system for syncing content to the device.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getTrialDaysRemaining-instance_method" title="#getTrialDaysRemaining (instance method)"><strong>getTrialDaysRemaining</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Override to return the number of days remaining in the trial.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#isTrial-instance_method" title="#isTrial (instance method)"><strong>isTrial</strong>  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Check if the application is in trial mode.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#loadProperties-instance_method" title="#loadProperties (instance method)"><strong>loadProperties</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 3.0.0</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#onAppInstall-instance_method" title="#onAppInstall (instance method)"><strong>onAppInstall</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The callback method that is triggered in the background when the app is
+installed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#onAppUpdate-instance_method" title="#onAppUpdate (instance method)"><strong>onAppUpdate</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The callback method that is triggered in the background when the app is
+updated Requires the Background permission to be enabled and your
+application class to carry the :background annotation.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#onBackgroundData-instance_method" title="#onBackgroundData (instance method)"><strong>onBackgroundData</strong>(data)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Handle data passed from a ServiceDelegate to the application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#onSettingsChanged-instance_method" title="#onSettingsChanged (instance method)"><strong>onSettingsChanged</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Called when the application settings have been changed by Garmin Connect
+Mobile (GCM) while while the app is running.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#onStart-instance_method" title="#onStart (instance method)"><strong>onStart</strong>(state)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Method called at startup to allow handling of app initialization.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#onStop-instance_method" title="#onStop (instance method)"><strong>onStop</strong>(state)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Override to handle application cleanup upon termination.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#saveProperties-instance_method" title="#saveProperties (instance method)"><strong>saveProperties</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 3.0.0</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setProperty-instance_method" title="#setProperty (instance method)"><strong>setProperty</strong>(key, value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Store the given data in the object.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#validateProperty-instance_method" title="#validateProperty (instance method)"><strong>validateProperty</strong>(key, value)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Validate a property being stored.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Lang/Object.html#equals-instance_method" title="Toybox::Lang::Object#equals (method)">equals</a></span>, <span class='object_link'><a href="../Lang/Object.html#hashCode-instance_method" title="Toybox::Lang::Object#hashCode (method)">hashCode</a></span>, <span class='object_link'><a href="../Lang/Object.html#method-instance_method" title="Toybox::Lang::Object#method (method)">method</a></span>, <span class='object_link'><a href="../Lang/Object.html#toString-instance_method" title="Toybox::Lang::Object#toString (method)">toString</a></span>, <span class='object_link'><a href="../Lang/Object.html#weak-instance_method" title="Toybox::Lang::Object#weak (method)">weak</a></span></p>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="allowTrialMessage-instance_method">
+  
+    <strong>allowTrialMessage</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Check if application trial messages are allowed.</p>
+
+<p>Returns <code>true</code> if the application should allow the product to
+push unlock instruction pages for locked apps. Returns <code>true</code> by
+default.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Returns <code>true</code> if trial messages should be shown, otherwise
+<code>false</code>.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1857
+1858</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 1857</span>
+
+def allowTrialMessage()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="clearProperties-instance_method">
+  
+    <strong>clearProperties</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></div>
+
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Background processes cannot clear properties.</p>
+</div>
+  </div>
+
+
+<p>Clear the object store for the application.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ObjectStoreAccessException.html" title="Toybox::Application::ObjectStoreAccessException (class)">Toybox::Application::ObjectStoreAccessException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Thrown if called from a <span class='object_link'><a href="../Background.html" title="Toybox::Background (module)">Background</a></span> process</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Storage.html" title="Toybox::Application::Storage (module)">Storage</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2118
+2119</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2118</span>
+
+def clearProperties()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="deleteProperty-instance_method">
+  
+    <strong>deleteProperty</strong>(key)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></div>
+
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Background processes cannot delete properties.</p>
+</div>
+  </div>
+
+
+<p>Delete the given key from the object store.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>key</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Toybox::Lang::Object</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The key to delete</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ObjectStoreAccessException.html" title="Toybox::Application::ObjectStoreAccessException (class)">Toybox::Application::ObjectStoreAccessException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Thrown if called from a <span class='object_link'><a href="../Background.html" title="Toybox::Background (module)">Background</a></span> process</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Storage.html" title="Toybox::Application::Storage (module)">Storage</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2108
+2109</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2108</span>
+
+def deleteProperty(key)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getGlanceView-instance_method">
+  
+    <strong>getGlanceView</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Return user defined glance view for content preview purpose.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Array containing a <span class='object_link'><a href="../WatchUi/GlanceView.html" title="Toybox::WatchUi::GlanceView (class)">WatchUi.GlanceView</a></span> and
+an optional <span class='object_link'><a href="../WatchUi/GlanceViewDelegate.html" title="Toybox::WatchUi::GlanceViewDelegate (class)">WatchUi.GlanceViewDelegate</a></span> can be <code>null</code>, in which case app
+name will be used as preview content.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1917
+1918</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 1917</span>
+
+def getGlanceView()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getGoalView-instance_method">
+  
+    <strong>getGoalView</strong>(goalType)  &#x21d2; <tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Override to provide a <span class='object_link'><a href="../WatchUi/View.html" title="Toybox::WatchUi::View (class)">WatchUi.View</a></span> for a goal that
+has triggered within a watch face.</p>
+<ul><li>
+<p>If a goal is reached when a watch face is running, this function will be
+triggered.</p>
+</li><li>
+<p>The type of goal that was met will be provided, and the AppBase should
+return a View that displays a goal reached message and/or animations for
+that goal.</p>
+</li><li>
+<p>If a View is returned from this function, the main watch face view will be
+shutdown, and then new View will pushed.</p>
+</li><li>
+<p>If this method is not overridden in the AppBase, or if it returns
+<code>null</code>, the native goal screens will be shown.</p>
+</li></ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>goalType</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The goal type that has triggered. The goalType will be from the GOAL_TYPE_*
+enumeration.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Array containing a <span class='object_link'><a href="../WatchUi/View.html" title="Toybox::WatchUi::View (class)">WatchUi.View</a></span></p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1907
+1908</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 1907</span>
+
+def getGoalView(goalType)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getInitialView-instance_method">
+  
+    <strong>getInitialView</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Override to provide the initial <span class='object_link'><a href="../WatchUi/View.html" title="Toybox::WatchUi::View (class)">WatchUi.View</a></span> and
+<span class='object_link'><a href="../WatchUi/InputDelegate.html" title="Toybox::WatchUi::InputDelegate (class)">WatchUi.InputDelegate</a></span> of the application.</p>
+<ul><li>
+<p>Providing a <span class='object_link'><a href="../WatchUi/InputDelegate.html" title="Toybox::WatchUi::InputDelegate (class)">WatchUi.InputDelegate</a></span> is
+optional for widgets and watch-apps.</p>
+</li><li>
+<p>For watch faces and data fields, an Array containing just a
+<span class='object_link'><a href="../WatchUi/View.html" title="Toybox::WatchUi::View (class)">WatchUi.View</a></span> should be returned as
+<code>input</code> is not available for these app types.</p>
+</li></ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Array containing a <span class='object_link'><a href="../WatchUi/View.html" title="Toybox::WatchUi::View (class)">WatchUi.View</a></span> and an optional
+<span class='object_link'><a href="../WatchUi/InputDelegate.html" title="Toybox::WatchUi::InputDelegate (class)">WatchUi.InputDelegate</a></span></p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1892
+1893</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 1892</span>
+
+def getInitialView()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getProperty-instance_method">
+  
+    <strong>getProperty</strong>(key)  &#x21d2; <tt><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Toybox::Lang::Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Symbols can change from build to build and are not to be used for for Keys
+or Values.</p>
+</div>
+  </div>
+
+
+<p>Get the data associated with a given key from the object store.</p>
+
+<p>Properties must first be set with <span class='object_link'><a href="#setProperty-instance_method" title="Toybox::Application::AppBase#setProperty (method)">setProperty()</a></span> before they are can be obtained with
+<code>getProperty</code>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>key</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The key of the value to retrieve from the object store (cannot be a Symbol)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Toybox::Lang::Object</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The content associated with the key, or <code>null</code> if the key is not
+in the object store</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#setProperty-instance_method" title="Toybox::Application::AppBase#setProperty (method)">setProperty()</a></span></li>
+    
+      <li><span class='object_link'><a href="../Background.html" title="Toybox::Background (module)">Background</a></span></li>
+    
+      <li><span class='object_link'><a href="Properties.html" title="Toybox::Application::Properties (module)">Properties</a></span></li>
+    
+      <li><span class='object_link'><a href="Storage.html" title="Toybox::Application::Storage (module)">Storage</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2040
+2041</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2040</span>
+
+def getProperty(key)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getServiceDelegate-instance_method">
+  
+    <strong>getServiceDelegate</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get a <span class='object_link'><a href="../System/ServiceDelegate.html" title="Toybox::System::ServiceDelegate (class)">ServiceDelegate</a></span> to run background
+tasks for this app.</p>
+
+<p>When a ServiceDelegate is retrieved, the following will occur:</p>
+<ul><li>
+<p>The method triggered within the ServiceDelegate will be run</p>
+</li><li>
+<p>The background task will exit using <span class='object_link'><a href="../Background.html#exit-instance_method" title="Toybox::Background#exit (method)">Background.exit()</a></span> or <span class='object_link'><a href="../System.html#exit-instance_method" title="Toybox::System#exit (method)">System.exit()</a></span></p>
+</li><li>
+<p>The background task will be automatically terminated after 30 seconds if it
+is not exited by these methods</p>
+</li></ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Array containing a <span class='object_link'><a href="../System/ServiceDelegate.html" title="Toybox::System::ServiceDelegate (class)">System.ServiceDelegate</a></span></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../Background.html" title="Toybox::Background (module)">Background</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1960
+1961</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 1960</span>
+
+def getServiceDelegate()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getSyncDelegate-instance_method">
+  
+    <strong>getSyncDelegate</strong>  &#x21d2; <tt><span class='object_link'><a href="../Communications/SyncDelegate.html" title="Toybox::Communications::SyncDelegate (class)">Toybox::Communications::SyncDelegate</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get a <span class='object_link'><a href="../Communications/SyncDelegate.html" title="Toybox::Communications::SyncDelegate (class)">SyncDelegate</a></span> object that
+communicates sync status to the system for syncing content to the device.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Communications/SyncDelegate.html" title="Toybox::Communications::SyncDelegate (class)">Toybox::Communications::SyncDelegate</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2143
+2144</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2143</span>
+
+def getSyncDelegate()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getTrialDaysRemaining-instance_method">
+  
+    <strong>getTrialDaysRemaining</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Override to return the number of days remaining in the trial</p>
+
+<p>If a developer wishes to implement time-based app trials, they will need to
+override this function to return the number of days remaining in the trial.
+This function will be called on app startup to determine if a trial is
+active and push a notice to the user of how many days remain in the trial.
+Note that if <span class='object_link'><a href="#allowTrialMessage-instance_method" title="Toybox::Application::AppBase#allowTrialMessage (method)">allowTrialMessage()</a></span> is overridden to return <code>false</code>, no
+notifications will be displayed.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A Number object indicating the number of days remaining in the trial, or
+<code>null</code> if no timed trial is active.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1932
+1933</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 1932</span>
+
+def getTrialDaysRemaining()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="isTrial-instance_method">
+  
+    <strong>isTrial</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Check if the application is in trial mode.</p>
+
+<p>This will always return <code>true</code> for development build apps. If
+the app has been signed by the store it will return the current unlock
+state of the app. This method should not be overridden or your trial mode
+functionality could cease to function correctly.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Return <code>true</code> if the app is “locked” and considered to be in
+trial mode, otherwise <code>false</code> if the app has been unlocked.</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1946
+1947</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 1946</span>
+
+def isTrial()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="loadProperties-instance_method">
+  
+    <strong>loadProperties</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 3.0.0</p>
+</div></div>
+
+<p>Load the properties for the application</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2124
+2125</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2124</span>
+
+def loadProperties()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="onAppInstall-instance_method">
+  
+    <strong>onAppInstall</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The callback method that is triggered in the background when the app is
+installed. Requires the Background permission to be enabled and your
+application class to carry the :background annotation.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2014
+2015</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2014</span>
+
+def onAppInstall()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="onAppUpdate-instance_method">
+  
+    <strong>onAppUpdate</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The callback method that is triggered in the background when the app is
+updated Requires the Background permission to be enabled and your
+application class to carry the :background annotation.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2021
+2022</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2021</span>
+
+def onAppUpdate()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="onBackgroundData-instance_method">
+  
+    <strong>onBackgroundData</strong>(data)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Handle data passed from a ServiceDelegate to the application.</p>
+
+<p>When the <span class='object_link'><a href="../Background.html" title="Toybox::Background (module)">Background</a></span> process terminates, a data payload
+may be available. If the main application is active when this occurs, the
+data will be passed directly to the application&#39;s <tt>onBackgroundData()</tt>
+method. If the main application is not active, the data will be saved until
+the next time the application is launched and will be passed to the
+application after the <span class='object_link'><a href="#onStart-instance_method" title="Toybox::Application::AppBase#onStart (method)">onStart()</a></span>
+method completes.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Toybox::Lang::Object</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The data passed from the background process.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../Background.html" title="Toybox::Background (module)">Background</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1992
+1993</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 1992</span>
+
+def onBackgroundData(data)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="onSettingsChanged-instance_method">
+  
+    <strong>onSettingsChanged</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Called when the application settings have been changed by Garmin Connect
+Mobile (GCM) while while the app is running. Override this method to change
+app behavior when settings change. This is typically used to call for an
+update to the <span class='object_link'><a href="../WatchUi.html#requestUpdate-instance_method" title="Toybox::WatchUi#requestUpdate (method)">WatchUi.requestUpdate()</a></span></p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>function onSettingsChanged() { // triggered by settings change in GCM
+    _mainView.handleSettingUpdate();
+    WatchUi.requestUpdate();   // update the view to reflect changes
+}</code></pre>
+    
+  </div>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../WatchUi.html#requestUpdate-instance_method" title="Toybox::WatchUi#requestUpdate (method)">WatchUi.requestUpdate() details</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1976
+1977</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 1976</span>
+
+def onSettingsChanged()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="onStart-instance_method">
+  
+    <strong>onStart</strong>(state)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Method called at startup to allow handling of app initialization.</p>
+
+<p>Before the initial <span class='object_link'><a href="../WatchUi/View.html" title="Toybox::WatchUi::View (class)">WatchUi.View</a></span> is retrieved,
+onStart() is called. Application level settings can be initialized or
+retrieved from the object store before the initial View is created. This
+method must be overridden to handle your own app initialization.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>onStart() used with Intent</p>
+</div></p>
+      
+      <pre class="example code"><code>function onStart(state) {
+    if (state != null) {
+        infoString = &quot;Args:&quot; + state.toString();
+    }
+}</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>state</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Required. If an <span class='object_link'><a href="../System/Intent.html" title="Toybox::System::Intent (class)">Intent</a></span> is not used to launch the
+application, then an empty “state” Dictionary is used. If an Intent is used
+to start the application the Dictionary contains the arguments from the
+Intent.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../System/Intent.html" title="Toybox::System::Intent (class)">System::Intent</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+1879
+1880</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 1879</span>
+
+def onStart(state)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="onStop-instance_method">
+  
+    <strong>onStop</strong>(state)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Override to handle application cleanup upon termination.</p>
+
+<p>If the application needs to save data to the object store it should be done
+in this function. Once the function is complete, the application will
+terminate.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>state</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Required. If an <span class='object_link'><a href="../System/Intent.html" title="Toybox::System::Intent (class)">Intent</a></span> is not used to launch an
+application on stop of the current application an empty “state” Dictionary
+is used. If an Intent is used to start another application, then the
+Dictionary contains the arguments from the Intent.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../System/Intent.html" title="Toybox::System::Intent (class)">System::Intent</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2007
+2008</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2007</span>
+
+def onStop(state)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="saveProperties-instance_method">
+  
+    <strong>saveProperties</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 3.0.0</p>
+</div></div>
+
+<p>Save the properties for the application</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2130
+2131</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2130</span>
+
+def saveProperties()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setProperty-instance_method">
+  
+    <strong>setProperty</strong>(key, value)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Background processes cannot save properties.</p>
+</div>
+  </div>
+
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Symbols can change from build to build and are not to be used for for Keys
+or Values.</p>
+</div>
+  </div>
+
+
+<p>Store the given data in the object.</p>
+
+<p>Keys can be of the following types:</p>
+<ul><li>
+<p><span class='object_link'><a href="../Lang/String.html" title="Toybox::Lang::String (class)">String</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Number</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Float</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Boolean</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Char.html" title="Toybox::Lang::Char (class)">Char</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Long.html" title="Toybox::Lang::Long (class)">Long</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Double.html" title="Toybox::Lang::Double (class)">Double</a></span></p>
+</li></ul>
+
+<p>Values can be of the following types:</p>
+<ul><li>
+<p><span class='object_link'><a href="../Lang/String.html" title="Toybox::Lang::String (class)">String</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Number</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Float</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Boolean</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Char.html" title="Toybox::Lang::Char (class)">Char</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Long.html" title="Toybox::Lang::Long (class)">Long</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Double.html" title="Toybox::Lang::Double (class)">Double</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Array</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="../Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Dictionary</a></span></p>
+</li></ul>
+
+<p>Array and Dictionary values may contain null values or any of the above
+listed types. There is a limit on the size of the Properties of 32 KB. If
+this limit is reached, the properties will not be saved or reloaded.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.Application;
+var app = Application.getApp();
+
+app.setProperty(&quot;number&quot;, 2);               // set value for &quot;number&quot; key
+app.setProperty(&quot;float&quot;, 3.14);             // set value for &quot;float&quot; key
+app.setProperty(&quot;string&quot;, &quot;Hello World!&quot;);  // set value for &quot;string&quot; key
+app.setProperty(&quot;boolean&quot;, true);           // set value for &quot;boolean&quot; key
+
+var int = app.getProperty(&quot;number&quot;);          // get value for &quot;number&quot; key
+var float = app.getProperty(&quot;float&quot;);         // get value for &quot;float&quot; key
+var string = app.getProperty(&quot;string&quot;);       // get value for &quot;string&quot; key
+var boolean = app.getProperty(&quot;boolean&quot;);     // get value for &quot;boolean&quot; key</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>key</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The key used to store and retrieve the value from the object store (cannot
+be a Symbol)</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The value to put into the object store</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ObjectStoreAccessException.html" title="Toybox::Application::ObjectStoreAccessException (class)">Toybox::Application::ObjectStoreAccessException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Thrown if called from a <span class='object_link'><a href="../Background.html" title="Toybox::Background (module)">Background</a></span> process (data
+should be passed back to the main application from background processes
+with <span class='object_link'><a href="../Background.html#exit-instance_method" title="Toybox::Background#exit (method)">Background.exit()</a></span>)</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/UnexpectedTypeException.html" title="Toybox::Lang::UnexpectedTypeException (class)">Toybox::Lang::UnexpectedTypeException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Thrown if called with a key or value of a disallowed type</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#getProperty-instance_method" title="Toybox::Application::AppBase#getProperty (method)">getProperty()</a></span></li>
+    
+      <li><span class='object_link'><a href="../Background.html" title="Toybox::Background (module)">Background</a></span></li>
+    
+      <li><a href="https://developer.garmin.com/connect-iq/programmers-guide/resource-compiler/#datastorage" target="_parent" title="Programmer&#39;s Guide - Data Storage">Programmer's Guide - Data Storage</a></li>
+    
+      <li><span class='object_link'><a href="Properties.html" title="Toybox::Application::Properties (module)">Properties</a></span></li>
+    
+      <li><span class='object_link'><a href="Storage.html" title="Toybox::Application::Storage (module)">Storage</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2097
+2098</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2097</span>
+
+def setProperty(key, value)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="validateProperty-instance_method">
+  
+    <strong>validateProperty</strong>(key, value)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Validate a property being stored.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2135
+2136</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 2135</span>
+
+def validateProperty(key, value)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:36 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Toybox::Time::Moment
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::Time::Moment";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (M)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Toybox.html" title="Toybox (module)">Toybox</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Time.html" title="Toybox::Time (module)">Time</a></span></span>
+     &raquo; 
+    <span class="title">Moment</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../../class_list.html"></iframe>
+
+      <div id="content"><h1>Class: Toybox::Time::Moment
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></li>
+          
+            <li class="next">Toybox::Time::Moment</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>A Moment is an immutable moment in time.</p>
+
+<p>Moment objects are closely related to <span class='object_link'><a href="Duration.html" title="Toybox::Time::Duration (class)">Duration</a></span>
+objects, and are frequently used together for time calculations. While a
+<span class='object_link'><a href="Duration.html" title="Toybox::Time::Duration (class)">Duration</a></span> represents a span of time, a Moment
+represents a single point in time such as a specific date.</p>
+
+<p>Internally, Moment objects are stored as 32-bit integers representing the
+number of seconds since the UNIX epoch (January 1, 1970 at 00:00:00 UTC).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// This code will print the following
+// to the console:
+// 2018-02-24
+// day_of_week=7 month=2
+// day_of_week=Sat month=Feb
+
+// Saturday Feb 24th, 2018 12:12am
+var options = {
+    :year   =&gt; 2018,
+    :month  =&gt; 2,
+    :day    =&gt; 24,
+    :hour   =&gt; 0,
+    :min    =&gt; 12
+};
+
+var now = Gregorian.moment(options);
+
+var info;
+
+info = Gregorian.utcInfo(now, Time.FORMAT_SHORT);
+Sys.println(Lang.format(&quot;$1$-$2$-$3$&quot;, [
+    info.year.format(&quot;%04u&quot;),
+    info.month.format(&quot;%02u&quot;),
+    info.day.format(&quot;%02u&quot;)
+]));
+
+Sys.println(Lang.format(&quot;day_of_week=$1$ month=$2$&quot;, [
+    info.day_of_week,
+    info.month
+]));
+
+info = Gregorian.utcInfo(now, Time.FORMAT_LONG);
+
+Sys.println(Lang.format(&quot;day_of_week=$1$ month=$2$&quot;, [
+    info.day_of_week,
+    info.month
+]));</code></pre>
+    
+  </div>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time" target="_parent" title="UTC Time">UTC Time</a></li>
+    
+      <li><a href="https://en.wikipedia.org/wiki/Unix_time" target="_parent" title="UNIX Time">UNIX Time</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add-instance_method" title="#add (instance method)"><strong>add</strong>(duration)  &#x21d2; Toybox::Time::Moment </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Add a <span class='object_link'><a href="Duration.html" title="Toybox::Time::Duration (class)">Duration</a></span> to a Moment.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#compare-instance_method" title="#compare (instance method)"><strong>compare</strong>(moment)  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Determine if a Moment is before or after another Moment.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#greaterThan-instance_method" title="#greaterThan (instance method)"><strong>greaterThan</strong>(moment)  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Determine if a Moment is greater than another Moment.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)"><strong>initialize</strong>(seconds)  &#x21d2; Toybox::Time::Moment </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a Moment object.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lessThan-instance_method" title="#lessThan (instance method)"><strong>lessThan</strong>(moment)  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Determine if a Moment is less than another Moment.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#subtract-instance_method" title="#subtract (instance method)"><strong>subtract</strong>(subtrahend)  &#x21d2; Toybox::Time::Duration, Toybox::Time::Moment </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Subtract a <span class='object_link'><a href="Duration.html" title="Toybox::Time::Duration (class)">Duration</a></span> or <span class='object_link'><a href="" title="Toybox::Time::Moment (class)">Moment</a></span> from a Moment.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#value-instance_method" title="#value (instance method)"><strong>value</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the UTC value of a Moment.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Lang/Object.html#equals-instance_method" title="Toybox::Lang::Object#equals (method)">equals</a></span>, <span class='object_link'><a href="../Lang/Object.html#hashCode-instance_method" title="Toybox::Lang::Object#hashCode (method)">hashCode</a></span>, <span class='object_link'><a href="../Lang/Object.html#method-instance_method" title="Toybox::Lang::Object#method (method)">method</a></span>, <span class='object_link'><a href="../Lang/Object.html#toString-instance_method" title="Toybox::Lang::Object#toString (method)">toString</a></span>, <span class='object_link'><a href="../Lang/Object.html#weak-instance_method" title="Toybox::Lang::Object#weak (method)">weak</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    <strong>initialize</strong>(seconds)  &#x21d2; <tt><span class='object_link'><a href="" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a Moment object.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Create a Moment with a UNIX time stamp</p>
+</div></p>
+      
+      <pre class="example code"><code>using Toybox.Time;
+var garminFounded = new Time.Moment(631065600);</code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Create a Moment representing today</p>
+</div></p>
+      
+      <pre class="example code"><code>using Toybox.Time;
+var today = new Time.Moment(Time.today().value());</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>seconds</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Number of seconds with which to initialize the Moment</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time" target="_parent" title="UTC Time">UTC Time</a></li>
+    
+      <li><a href="https://en.wikipedia.org/wiki/Unix_time" target="_parent" title="UNIX Time">UNIX Time</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.1.2</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+11990
+11991</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 11990</span>
+
+def initialize(seconds)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="add-instance_method">
+  
+    <strong>add</strong>(duration)  &#x21d2; <tt><span class='object_link'><a href="" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Add a <span class='object_link'><a href="Duration.html" title="Toybox::Time::Duration (class)">Duration</a></span> to a Moment.</p>
+
+<p>This method functions the same as the <span class='object_link'><a href="Duration.html#add-instance_method" title="Toybox::Time::Duration#add (method)">Duration.add()</a></span> method when adding a Duration to a Moment.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Add one day to today</p>
+</div></p>
+      
+      <pre class="example code"><code>using Toybox.Time;
+using Toybox.Time.Gregorian;
+var today = new Time.Moment(Time.today().value());
+var oneDay = new Time.Duration(Gregorian.SECONDS_PER_DAY);
+var tomorrow = today.add(oneDay);</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>duration</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Duration.html" title="Toybox::Time::Duration (class)">Toybox::Time::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Duration to add to this Moment</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A Moment object that is the sum of the provided Moment and Duration objects</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Duration.html#add-instance_method" title="Toybox::Time::Duration#add (method)">Duration.add()</a></span></li>
+    
+      <li><span class='object_link'><a href="Gregorian.html#SECONDS_PER_DAY-constant" title="Toybox::Time::Gregorian::SECONDS_PER_DAY (constant)">SECONDS_PER_DAY</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12010
+12011</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 12010</span>
+
+def add(duration)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="compare-instance_method">
+  
+    <strong>compare</strong>(moment)  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Determine if a Moment is before or after another Moment.</p>
+
+<p>This computes a Number representing the difference between the two Moment
+objects in seconds. The <span class='object_link'><a href="#subtract-instance_method" title="Toybox::Time::Moment#subtract (method)">subtract()</a></span> method
+can also be used to get the absolute Duration between two Moment objects.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.System;
+using Toybox.Time;
+using Toybox.Time.Gregorian;
+var today = new Time.Moment(Time.today().value());
+var oneDay = new Time.Duration(Gregorian.SECONDS_PER_DAY);
+var tomorrow = today.add(oneDay);
+
+System.println(today.compare(tomorrow)); // -86400, or one day in the past
+System.println(tomorrow.compare(today)); //  86400, or one day in the future</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>moment</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Moment to compare to this Moment</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Number of seconds difference between the two Moment objects. If the
+Moment supplied for comparison is after this Moment, the value will be
+negative.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#subtract-instance_method" title="Toybox::Time::Moment#subtract (method)">Moment.subtract()</a></span></li>
+    
+      <li><span class='object_link'><a href="Gregorian.html#SECONDS_PER_DAY-constant" title="Toybox::Time::Gregorian::SECONDS_PER_DAY (constant)">SECONDS_PER_DAY</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12069
+12070</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 12069</span>
+
+def compare(moment)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="greaterThan-instance_method">
+  
+    <strong>greaterThan</strong>(moment)  &#x21d2; <tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Determine if a Moment is greater than another Moment.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.System;
+using Toybox.Time;
+using Toybox.Time.Gregorian;
+var today = new Time.Moment(Time.today().value());
+var oneDay = new Time.Duration(Gregorian.SECONDS_PER_DAY);
+var tomorrow = today.add(oneDay);
+
+System.println(today.greaterThan(tomorrow)); // false
+System.println(tomorrow.greaterThan(today)); // true</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>moment</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Moment to compare to this Moment</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><code>true</code> if this Moment is greater than the Moment supplied for
+comparison, otherwise <code>false</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Gregorian.html#SECONDS_PER_DAY-constant" title="Toybox::Time::Gregorian::SECONDS_PER_DAY (constant)">SECONDS_PER_DAY</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12109
+12110</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 12109</span>
+
+def greaterThan(moment)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="lessThan-instance_method">
+  
+    <strong>lessThan</strong>(moment)  &#x21d2; <tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Determine if a Moment is less than another Moment.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.System;
+using Toybox.Time;
+using Toybox.Time.Gregorian;
+var today = new Time.Moment(Time.today().value());
+var oneDay = new Time.Duration(Gregorian.SECONDS_PER_DAY);
+var tomorrow = today.add(oneDay);
+
+System.println(today.lessThan(tomorrow)); // true
+System.println(tomorrow.lessThan(today)); // false</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>moment</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Moment to compare to this Moment</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p><code>true</code> if this Moment is less than the Moment supplied for
+comparison, otherwise <code>false</code></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Gregorian.html#SECONDS_PER_DAY-constant" title="Toybox::Time::Gregorian::SECONDS_PER_DAY (constant)">SECONDS_PER_DAY</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12089
+12090</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 12089</span>
+
+def lessThan(moment)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="subtract-instance_method">
+  
+    <strong>subtract</strong>(subtrahend)  &#x21d2; <tt><span class='object_link'><a href="Duration.html" title="Toybox::Time::Duration (class)">Toybox::Time::Duration</a></span></tt>, <tt><span class='object_link'><a href="" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Subtracting a Duration from a Moment was not supported until ConnectIQ
+3.0.0. If backward compatibility is a concern, it may be best to add a
+negative Duration instead.</p>
+</div>
+  </div>
+
+
+<p>Subtract a <span class='object_link'><a href="Duration.html" title="Toybox::Time::Duration (class)">Duration</a></span> or <span class='object_link'><a href="" title="Toybox::Time::Moment (class)">Moment</a></span> from a Moment.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.Time;
+using Toybox.Time.Gregorian;
+var today = new Time.Moment(Time.today().value());
+var oneDay = new Time.Duration(Gregorian.SECONDS_PER_DAY);
+var tomorrow = today.add(oneDay);
+
+var duration1 = today.subtract(tomorrow);
+var duration2 = tomorrow.subtract(today);
+
+System.println(duration1.value()); // 86400, or one day
+System.println(duration2.value()); // 86400, or one day</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>subtrahend</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt>, <tt><span class='object_link'><a href="Duration.html" title="Toybox::Time::Duration (class)">Toybox::Time::Duration</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Moment or Duration to subtract from this Moment</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Duration.html" title="Toybox::Time::Duration (class)">Toybox::Time::Duration</a></span></tt>, <tt><span class='object_link'><a href="" title="Toybox::Time::Moment (class)">Toybox::Time::Moment</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Duration between the two Moment objects or the Moment offset by a
+Duration.</p>
+
+<p>When subtracting Moments, the computed Duration is always a positive value.
+The <span class='object_link'><a href="#compare-instance_method" title="Toybox::Time::Moment#compare (method)">compare()</a></span> method can be used to
+determine whether one Moment is before or after another Moment.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#compare-instance_method" title="Toybox::Time::Moment#compare (method)">Moment.compare()</a></span></li>
+    
+      <li><span class='object_link'><a href="Gregorian.html#SECONDS_PER_DAY-constant" title="Toybox::Time::Gregorian::SECONDS_PER_DAY (constant)">SECONDS_PER_DAY</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12042
+12043</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 12042</span>
+
+def subtract(subtrahend)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="value-instance_method">
+  
+    <strong>value</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the UTC value of a Moment.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The UTC date of the Moment in seconds since the UNIX epoch</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time" target="_parent" title="UTC Time">UTC Time</a></li>
+    
+      <li><a href="https://en.wikipedia.org/wiki/Unix_time" target="_parent" title="UNIX Time">UNIX Time</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12118
+12119</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 12118</span>
+
+def value()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:44 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

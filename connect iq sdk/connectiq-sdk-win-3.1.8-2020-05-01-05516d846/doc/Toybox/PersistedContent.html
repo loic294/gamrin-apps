@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Toybox::PersistedContent
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::PersistedContent";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (P)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Toybox.html" title="Toybox (module)">Toybox</a></span></span>
+     &raquo; 
+    <span class="title">PersistedContent</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../class_list.html"></iframe>
+
+      <div id="content"><h1>Module: Toybox::PersistedContent
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>As a general rule, Fitness and Edge devices will support .FIT format.
+Outdoor devices will support .GPX format.</p>
+</div>
+  </div>
+
+
+<p>The PersistedContent module allows access to stored routes, waypoints, and
+other stored user data.</p>
+
+<p>This module provides an Iterator class that gives access to content stored
+on the device. Included content types are as follows:</p>
+<ul><li>
+<p><span class='object_link'><a href="PersistedContent/Course.html" title="Toybox::PersistedContent::Course (class)">Course</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="PersistedContent/Route.html" title="Toybox::PersistedContent::Route (class)">Route</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="PersistedContent/Track.html" title="Toybox::PersistedContent::Track (class)">Track</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="PersistedContent/Waypoint.html" title="Toybox::PersistedContent::Waypoint (class)">Waypoint</a></span></p>
+</li><li>
+<p><span class='object_link'><a href="PersistedContent/Workout.html" title="Toybox::PersistedContent::Workout (class)">Workout</a></span></p>
+</li></ul>
+
+<p>Each of these objects can utilize <span class='object_link'><a href="System/Intent.html" title="Toybox::System::Intent (class)">System.Intents</a></span>
+to to launch the appropriate application type for the content type (e.g.
+The workout might launch the workout player). This is typically used in
+conjunction with the <span class='object_link'><a href="Communications.html" title="Toybox::Communications (module)">Communications</a></span> module to
+retrieve content of type .FIT and .GPX and later access it using the get
+methods provided within this module.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// Assumes content already saved on device
+using Toybox.PersistedContent;
+using Toybox.System;
+
+var iterator = PersistedContent.getCourses; // Get the Iterator
+var content = iterator.next();              // Get the next object in the iterator
+
+var name = content.getName();               // Get the content name
+var id = content.getId();                   // Get the content id
+System.ExitTo(content.toIntent());          // Use the content for a System.Intent</code></pre>
+    
+  </div>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="System/Intent.html" title="Toybox::System::Intent (class)">System::Intent</a></span></li>
+    
+      <li><span class='object_link'><a href="Communications.html" title="Toybox::Communications (module)">Communications</a></span></li>
+    
+      <li><a href="https://developer.garmin.com/connect-iq/programmers-guide/communication/#persistedcontent2.2" target="_parent" title="Programmer&#39;s Guide - Persisted Content 2.2">Programmer's Guide - Persisted Content 2.2</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">App Types:</p>
+<ul class="apptype">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Widget</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>App</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Audio Content Provider App</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Background Services</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Requires Permission:</p>
+<ul class="permission">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>PersistedContent</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="PersistedContent/Course.html" title="Toybox::PersistedContent::Course (class)">Course</a></span>, <span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Iterator</a></span>, <span class='object_link'><a href="PersistedContent/Route.html" title="Toybox::PersistedContent::Route (class)">Route</a></span>, <span class='object_link'><a href="PersistedContent/Track.html" title="Toybox::PersistedContent::Track (class)">Track</a></span>, <span class='object_link'><a href="PersistedContent/Waypoint.html" title="Toybox::PersistedContent::Waypoint (class)">Waypoint</a></span>, <span class='object_link'><a href="PersistedContent/Workout.html" title="Toybox::PersistedContent::Workout (class)">Workout</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getAppCourses-instance_method" title="#getAppCourses (instance method)"><strong>getAppCourses</strong>  &#x21d2; Toybox::PersistedContent::Iterator </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the subset of courses installed on the system that are owned by the
+application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getAppRoutes-instance_method" title="#getAppRoutes (instance method)"><strong>getAppRoutes</strong>  &#x21d2; Toybox::PersistedContent::Iterator </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the subset of routes installed on the system that are owned by the
+application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getAppTracks-instance_method" title="#getAppTracks (instance method)"><strong>getAppTracks</strong>  &#x21d2; Toybox::PersistedContent::Iterator </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the subset of tracks installed on the system that are owned by the
+application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getAppWaypoints-instance_method" title="#getAppWaypoints (instance method)"><strong>getAppWaypoints</strong>  &#x21d2; Toybox::PersistedContent::Iterator </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the subset of waypoints installed on the system that are owned by the
+application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getAppWorkouts-instance_method" title="#getAppWorkouts (instance method)"><strong>getAppWorkouts</strong>  &#x21d2; Toybox::PersistedContent::Iterator </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the subset of workouts installed on the system that are owned by the
+application.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getCourses-instance_method" title="#getCourses (instance method)"><strong>getCourses</strong>  &#x21d2; Toybox::PersistedContent::Iterator </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the courses installed on the system.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getRoutes-instance_method" title="#getRoutes (instance method)"><strong>getRoutes</strong>  &#x21d2; Toybox::PersistedContent::Iterator </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the routes installed on the system.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getTracks-instance_method" title="#getTracks (instance method)"><strong>getTracks</strong>  &#x21d2; Toybox::PersistedContent::Iterator </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the tracks installed on the system.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getWaypoints-instance_method" title="#getWaypoints (instance method)"><strong>getWaypoints</strong>  &#x21d2; Toybox::PersistedContent::Iterator </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the waypoints installed on the system.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getWorkouts-instance_method" title="#getWorkouts (instance method)"><strong>getWorkouts</strong>  &#x21d2; Toybox::PersistedContent::Iterator </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the workouts installed on the system.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#saveWaypoint-instance_method" title="#saveWaypoint (instance method)"><strong>saveWaypoint</strong>(location, options)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Save a <span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Location</a></span> as a
+<span class='object_link'><a href="PersistedContent/Waypoint.html" title="Toybox::PersistedContent::Waypoint (class)">Waypoint</a></span> to the device&#39;s location
+list.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="getAppCourses-instance_method">
+  
+    <strong>getAppCourses</strong>  &#x21d2; <tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the subset of courses installed on the system that are owned by the
+application</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// Assumes content already saved on device
+using Toybox.PersistedContent;
+
+// Get an iterator for all courses owned by this application
+var iterator = PersistedContent.getAppCourses();</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Iterator over the persisted content objects requested</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9105
+9106</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9105</span>
+
+def getAppCourses()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getAppRoutes-instance_method">
+  
+    <strong>getAppRoutes</strong>  &#x21d2; <tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the subset of routes installed on the system that are owned by the
+application</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// Assumes content already saved on device
+using Toybox.PersistedContent;
+
+// Get an iterator for all routes owned by this application
+var iterator = PersistedContent.getAppRoutes();</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Iterator over the persisted content objects requested</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9119
+9120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9119</span>
+
+def getAppRoutes()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getAppTracks-instance_method">
+  
+    <strong>getAppTracks</strong>  &#x21d2; <tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the subset of tracks installed on the system that are owned by the
+application</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// Assumes content already saved on device
+using Toybox.PersistedContent;
+
+// Get an iterator for all tracks owned by this application
+var iterator = PersistedContent.getAppTracks();</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Iterator over the persisted content objects requested</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9133
+9134</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9133</span>
+
+def getAppTracks()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getAppWaypoints-instance_method">
+  
+    <strong>getAppWaypoints</strong>  &#x21d2; <tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the subset of waypoints installed on the system that are owned by the
+application</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// Assumes content already saved on device
+using Toybox.PersistedContent;
+
+// Get an iterator for all waypoints owned by this application
+var iterator = PersistedContent.getAppWaypoints();</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Iterator over the persisted content objects requested</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices execept Approach S60 / vivoactive / vivoactive HR / Edge 130</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9147
+9148</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9147</span>
+
+def getAppWaypoints()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getAppWorkouts-instance_method">
+  
+    <strong>getAppWorkouts</strong>  &#x21d2; <tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the subset of workouts installed on the system that are owned by the
+application</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// Assumes content already saved on device
+using Toybox.PersistedContent;
+
+// Get an iterator for all workouts owned by this application
+var iterator = PersistedContent.getAppWorkouts();</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An Iterator over the persisted content objects requested</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9160
+9161</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9160</span>
+
+def getAppWorkouts()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getCourses-instance_method">
+  
+    <strong>getCourses</strong>  &#x21d2; <tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the courses installed on the system</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// Assumes content already saved on device
+using Toybox.PersistedContent;
+
+var iterator = PersistedContent.getCourses(); // Get the Iterator</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Iterator of <span class='object_link'><a href="PersistedContent/Course.html" title="Toybox::PersistedContent::Course (class)">Course</a></span> objects</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9172
+9173</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9172</span>
+
+def getCourses()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getRoutes-instance_method">
+  
+    <strong>getRoutes</strong>  &#x21d2; <tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the routes installed on the system</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// Assumes content already saved on device
+using Toybox.PersistedContent;
+
+var iterator = PersistedContent.getRoutes(); // Get the Iterator</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Iterator of <span class='object_link'><a href="PersistedContent/Route.html" title="Toybox::PersistedContent::Route (class)">Route</a></span> objects</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9183
+9184</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9183</span>
+
+def getRoutes()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getTracks-instance_method">
+  
+    <strong>getTracks</strong>  &#x21d2; <tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the tracks installed on the system</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// Assumes content already saved on device
+using Toybox.PersistedContent;
+
+var iterator = PersistedContent.getTracks(); // Get the Iterator</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Iterator of <span class='object_link'><a href="PersistedContent/Track.html" title="Toybox::PersistedContent::Track (class)">Track</a></span> objects</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9195
+9196</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9195</span>
+
+def getTracks()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getWaypoints-instance_method">
+  
+    <strong>getWaypoints</strong>  &#x21d2; <tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the waypoints installed on the system</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// Assumes content already saved on device
+using Toybox.PersistedContent;
+
+var iterator = PersistedContent.getWaypoints(); // Get the Iterator</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Iterator of <span class='object_link'><a href="PersistedContent/Waypoint.html" title="Toybox::PersistedContent::Waypoint (class)">Waypoints</a></span> from the
+routes list</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices execept Approach S60 / vivoactive / vivoactive HR / Edge 130</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9208
+9209</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9208</span>
+
+def getWaypoints()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getWorkouts-instance_method">
+  
+    <strong>getWorkouts</strong>  &#x21d2; <tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the workouts installed on the system</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// Assumes content already saved on device
+using Toybox.PersistedContent;
+
+var iterator = PersistedContent.getWorkouts(); // Get the Iterator</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PersistedContent/Iterator.html" title="Toybox::PersistedContent::Iterator (class)">Toybox::PersistedContent::Iterator</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Iterator of <span class='object_link'><a href="PersistedContent/Workout.html" title="Toybox::PersistedContent::Workout (class)">Workout</a></span> objects</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9219
+9220</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9219</span>
+
+def getWorkouts()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="saveWaypoint-instance_method">
+  
+    <strong>saveWaypoint</strong>(location, options)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Save a <span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Location</a></span> as a
+<span class='object_link'><a href="PersistedContent/Waypoint.html" title="Toybox::PersistedContent::Waypoint (class)">Waypoint</a></span> to the device&#39;s location
+list</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.PersistedContent;
+using Toybox.Position;
+
+var location = new Position.Location(
+       {
+       :latitude =&gt; &lt;latitude_coordinates&gt;,
+       :longitude =&gt; &lt;longitude_coordinates&gt;,
+       :format =&gt; :degrees
+       }
+);
+PersistedContent.saveWaypoint(location, {:name =&gt; &quot;Cool Waypoint Name&quot;});</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>location</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Toybox::Position::Location</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Location object to persist</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Dictionary of options, or <code>null</code> to accept defaults</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:name</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The name to assign to the waypoint. If not specified the waypoint will be
+named automatically.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Position/Location.html" title="Toybox::Position::Location (class)">Toybox::Position::Location</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices execept Approach S60 / vivoactive / vivoactive HR / Edge 130</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9246
+9247</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 9246</span>
+
+def saveWaypoint(location, options)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:32 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

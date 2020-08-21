@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Toybox::AntPlus::LightNetwork
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::AntPlus::LightNetwork";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (L)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Toybox.html" title="Toybox (module)">Toybox</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../AntPlus.html" title="Toybox::AntPlus (module)">AntPlus</a></span></span>
+     &raquo; 
+    <span class="title">LightNetwork</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../../class_list.html"></iframe>
+
+      <div id="content"><h1>Class: Toybox::AntPlus::LightNetwork
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="Device.html" title="Toybox::AntPlus::Device (class)">Device</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="Device.html" title="Toybox::AntPlus::Device (class)">Device</a></span></li>
+          
+            <li class="next">Toybox::AntPlus::LightNetwork</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>A class representing a network of bike lights</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>A basic example of LightNetwork and LightNetworkListener setup</p>
+</div></p>
+      
+      <pre class="example code"><code>using Toybox.AntPlus;
+class MyLightNetworkListener extends AntPlus.LightNetworkListener {
+    var mNetworkState = 0;
+
+    function onLightNetworkStateUpdate(data) {
+        mNetworkState = data;
+    }
+}
+
+// In app class…
+    function initialize() {
+        mLightNetworkListener = new MyLightNetworkListener();
+        mLightNetwork = new AntPlus.LightNetwork(mLightNetworkListener);
+    }
+
+    function onUpdate(dc) {
+        // Call parent&#39;s onUpdate(dc) to redraw the layout
+        View.onUpdate(dc);
+
+        if (null != mLightNetworkListener.mNetworkState) {
+            dc.drawText(
+                10,
+                10,
+                Gfx.FONT_TINY,
+                mLightNetworkListener.mNetworkState.toString(),
+                Gfx.TEXT_JUSTIFY_LEFT);
+        }
+
+        if (mode &lt; 15) {
+            mode++;
+        }
+        else {
+            mode = 0;
+        }
+        mLightNetwork.setHeadlightsMode(mode);
+    }</code></pre>
+    
+  </div>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Light Type
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getBikeLights-instance_method" title="#getBikeLights (instance method)"><strong>getBikeLights</strong>  &#x21d2; Toybox::Lang::Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get a list of lights in the network.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getNetworkMode-instance_method" title="#getNetworkMode (instance method)"><strong>getNetworkMode</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the light network mode.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getNetworkState-instance_method" title="#getNetworkState (instance method)"><strong>getNetworkState</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the light network state.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)"><strong>initialize</strong>(listener)  &#x21d2; LightNetwork </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Constructor for the LightNetwork object.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#restoreHeadlightsNetworkModeControl-instance_method" title="#restoreHeadlightsNetworkModeControl (instance method)"><strong>restoreHeadlightsNetworkModeControl</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Bring all headlights under the control of whichever light network mode has
+been chosen by the user.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#restoreTaillightsNetworkModeControl-instance_method" title="#restoreTaillightsNetworkModeControl (instance method)"><strong>restoreTaillightsNetworkModeControl</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Bring all taillights under the control of whichever light network mode has
+been chosen by the user.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setHeadlightsMode-instance_method" title="#setHeadlightsMode (instance method)"><strong>setHeadlightsMode</strong>(mode)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Tell all headlights to enter the same mode.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setTaillightsMode-instance_method" title="#setTaillightsMode (instance method)"><strong>setTaillightsMode</strong>(mode)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Tell all taillights to enter the same mode.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#toggleSignalLight-instance_method" title="#toggleSignalLight (instance method)"><strong>toggleSignalLight</strong>(left)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A signal switch for right and left singals.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Device.html" title="Toybox::AntPlus::Device (class)">Device</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Device.html#getBatteryStatus-instance_method" title="Toybox::AntPlus::Device#getBatteryStatus (method)">getBatteryStatus</a></span>, <span class='object_link'><a href="Device.html#getComponentIdentifiers-instance_method" title="Toybox::AntPlus::Device#getComponentIdentifiers (method)">getComponentIdentifiers</a></span>, <span class='object_link'><a href="Device.html#getDeviceState-instance_method" title="Toybox::AntPlus::Device#getDeviceState (method)">getDeviceState</a></span>, <span class='object_link'><a href="Device.html#getManufacturerInfo-instance_method" title="Toybox::AntPlus::Device#getManufacturerInfo (method)">getManufacturerInfo</a></span>, <span class='object_link'><a href="Device.html#getProductInfo-instance_method" title="Toybox::AntPlus::Device#getProductInfo (method)">getProductInfo</a></span>, <span class='object_link'><a href="Device.html#sendManufacturerMessage-instance_method" title="Toybox::AntPlus::Device#sendManufacturerMessage (method)">sendManufacturerMessage</a></span>, <span class='object_link'><a href="Device.html#sendPageRequest-instance_method" title="Toybox::AntPlus::Device#sendPageRequest (method)">sendPageRequest</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Lang/Object.html#equals-instance_method" title="Toybox::Lang::Object#equals (method)">equals</a></span>, <span class='object_link'><a href="../Lang/Object.html#hashCode-instance_method" title="Toybox::Lang::Object#hashCode (method)">hashCode</a></span>, <span class='object_link'><a href="../Lang/Object.html#method-instance_method" title="Toybox::Lang::Object#method (method)">method</a></span>, <span class='object_link'><a href="../Lang/Object.html#toString-instance_method" title="Toybox::Lang::Object#toString (method)">toString</a></span>, <span class='object_link'><a href="../Lang/Object.html#weak-instance_method" title="Toybox::Lang::Object#weak (method)">weak</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    <strong>initialize</strong>(listener)  &#x21d2; <tt><span class='object_link'><a href="" title="Toybox::AntPlus::LightNetwork (class)">LightNetwork</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Constructor for the LightNetwork object. takes an extension of the
+<span class='object_link'><a href="LightNetworkListener.html" title="Toybox::AntPlus::LightNetworkListener (class)">LightNetworkListener</a></span> class as a
+parameter. <code>null</code> can be passed in instead if the user plans to
+only poll for data using the get* methods.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>listener</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="LightNetworkListener.html" title="Toybox::AntPlus::LightNetworkListener (class)">Toybox::AntPlus::LightNetworkListener</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The light network instance optionally</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17448
+17449</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 17448</span>
+
+def initialize(listener)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="getBikeLights-instance_method">
+  
+    <strong>getBikeLights</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get a list of lights in the network.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>List of lights that are part of the network, <code>null</code> if light
+network state is not <span class='object_link'><a href="../AntPlus.html#LIGHT_NETWORK_STATE_FORMED-constant" title="Toybox::AntPlus::LIGHT_NETWORK_STATE_FORMED (constant)">LIGHT_NETWORK_STATE_FORMED</a></span></p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17387
+17388</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 17387</span>
+
+def getBikeLights()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getNetworkMode-instance_method">
+  
+    <strong>getNetworkMode</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the light network mode.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The <span class='object_link'><a href="../AntPlus.html#LIGHT_NETWORK_MODE_AUTO-constant" title="Toybox::AntPlus::LIGHT_NETWORK_MODE_AUTO (constant)">LIGHT_NETWORK_MODE_*</a></span> enum
+value</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17372
+17373</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 17372</span>
+
+def getNetworkMode()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getNetworkState-instance_method">
+  
+    <strong>getNetworkState</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the light network state.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The <span class='object_link'><a href="../AntPlus.html#LIGHT_NETWORK_STATE_FORMED-constant" title="Toybox::AntPlus::LIGHT_NETWORK_STATE_FORMED (constant)">LIGHT_NETWORK_STATE_*</a></span>
+enum value</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17379
+17380</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 17379</span>
+
+def getNetworkState()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="restoreHeadlightsNetworkModeControl-instance_method">
+  
+    <strong>restoreHeadlightsNetworkModeControl</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Bring all headlights under the control of whichever light network mode has
+been chosen by the user.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17393
+17394</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 17393</span>
+
+def restoreHeadlightsNetworkModeControl()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="restoreTaillightsNetworkModeControl-instance_method">
+  
+    <strong>restoreTaillightsNetworkModeControl</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Bring all taillights under the control of whichever light network mode has
+been chosen by the user.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17399
+17400</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 17399</span>
+
+def restoreTaillightsNetworkModeControl()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setHeadlightsMode-instance_method">
+  
+    <strong>setHeadlightsMode</strong>(mode)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Tell all headlights to enter the same mode.</p>
+
+<p>You should check the capable modes of each headlight in the network before
+sending light modes, as lights will ignore commands to go into modes that
+they do not support. Lights whose modes are set here will not be controlled
+by the Light Network Mode until they are restored OR until the user changes
+the Light Network Mode outside of ConnectIQ.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>mode</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The <span class='object_link'><a href="../AntPlus.html#LIGHT_MODE_AUTO-constant" title="Toybox::AntPlus::LIGHT_MODE_AUTO (constant)">LIGHT_MODE*</a></span> enum value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17413
+17414</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 17413</span>
+
+def setHeadlightsMode(mode)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setTaillightsMode-instance_method">
+  
+    <strong>setTaillightsMode</strong>(mode)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Tell all taillights to enter the same mode.</p>
+
+<p>You should check the capable modes of each taillight in the network before
+sending light modes, as lights will ignore commands to go into modes that
+they do not support. Lights whose modes are set here will not be controlled
+by the Light Network Mode until they are restored OR until the user changes
+the Light Network Mode outside of ConnectIQ.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>mode</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The <span class='object_link'><a href="../AntPlus.html#LIGHT_MODE_AUTO-constant" title="Toybox::AntPlus::LIGHT_MODE_AUTO (constant)">LIGHT_MODE*</a></span> enum value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17427
+17428</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 17427</span>
+
+def setTaillightsMode(mode)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="toggleSignalLight-instance_method">
+  
+    <strong>toggleSignalLight</strong>(left)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A signal switch for right and left singals.</p>
+<ul><li>
+<p>If signal light is engaged, disengage it.</p>
+</li><li>
+<p>If signal lgiht is disengaged, engage it.</p>
+</li></ul>
+
+<p>*This will automatically disengage the opposite signal if it is currently
+engaged.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>left</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><ul><li>
+<p><code>true</code> to control left signal</p>
+</li><li>
+<p><code>false</code> to control right signal</p>
+</li></ul>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17439
+17440</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 17439</span>
+
+def toggleSignalLight(left)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:50 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Toybox::WatchUi::MapView
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::WatchUi::MapView";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (M)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Toybox.html" title="Toybox (module)">Toybox</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../WatchUi.html" title="Toybox::WatchUi (module)">WatchUi</a></span></span>
+     &raquo; 
+    <span class="title">MapView</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../../class_list.html"></iframe>
+
+      <div id="content"><h1>Class: Toybox::WatchUi::MapView
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="View.html" title="Toybox::WatchUi::View (class)">View</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="View.html" title="Toybox::WatchUi::View (class)">View</a></span></li>
+          
+            <li class="next">Toybox::WatchUi::MapView</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>A <span class='object_link'><a href="View.html" title="Toybox::WatchUi::View (class)">View</a></span> for rendering a map on the screen.</p>
+
+<p>The map is rendered statically and focused on the bounding box and/or a
+MapMarker point or MapPolyline drawn on the map. The map can be rendered in
+<span class='object_link'><a href="../WatchUi.html" title="Toybox::WatchUi (module)">MAP_MODE_BROWSE</a></span> or <span class='object_link'><a href="../WatchUi.html" title="Toybox::WatchUi (module)">MAP_MODE_PREVIEW</a></span>
+mode.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="MapTrackView.html" title="Toybox::WatchUi::MapTrackView (class)">MapTrackView</a></span></p>
+</div>
+<div id="subclasses">
+  <h2>Direct Known Subclasses</h2>
+  <p class="children"><span class='object_link'><a href="MapTrackView.html" title="Toybox::WatchUi::MapTrackView (class)">MapTrackView</a></span></p>
+</div>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#clear-instance_method" title="#clear (instance method)"><strong>clear</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Clear all the objects from the map.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getMapMode-instance_method" title="#getMapMode (instance method)"><strong>getMapMode</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the current mode for the map in this MapView.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)"><strong>initialize</strong>  &#x21d2; MapView </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of MapView.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setMapMarker-instance_method" title="#setMapMarker (instance method)"><strong>setMapMarker</strong>(markers)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Add a <span class='object_link'><a href="MapMarker.html" title="Toybox::WatchUi::MapMarker (class)">MapMarker</a></span> object or an
+<span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Array</a></span> of MapMarker objects to be rendered on the map.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setMapMode-instance_method" title="#setMapMode (instance method)"><strong>setMapMode</strong>(mode)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the mode for the map in this MapView.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setMapVisibleArea-instance_method" title="#setMapVisibleArea (instance method)"><strong>setMapVisibleArea</strong>(topLeft, bottomRight)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Select the area of the map to render on the screen with a bounding box.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setPolyline-instance_method" title="#setPolyline (instance method)"><strong>setPolyline</strong>(polyline)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Add <span class='object_link'><a href="MapPolyline.html" title="Toybox::WatchUi::MapPolyline (class)">MapPolyline</a></span> object to be rendered on the
+map.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setScreenVisibleArea-instance_method" title="#setScreenVisibleArea (instance method)"><strong>setScreenVisibleArea</strong>(topLeftX, topLeftY, bottomRightX, bottomRightY)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the area on the screen to focus the map.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="View.html" title="Toybox::WatchUi::View (class)">View</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="View.html#addLayer-instance_method" title="Toybox::WatchUi::View#addLayer (method)">addLayer</a></span>, <span class='object_link'><a href="View.html#clearLayers-instance_method" title="Toybox::WatchUi::View#clearLayers (method)">clearLayers</a></span>, <span class='object_link'><a href="View.html#findDrawableById-instance_method" title="Toybox::WatchUi::View#findDrawableById (method)">findDrawableById</a></span>, <span class='object_link'><a href="View.html#getLayerIndex-instance_method" title="Toybox::WatchUi::View#getLayerIndex (method)">getLayerIndex</a></span>, <span class='object_link'><a href="View.html#getLayers-instance_method" title="Toybox::WatchUi::View#getLayers (method)">getLayers</a></span>, <span class='object_link'><a href="View.html#insertLayer-instance_method" title="Toybox::WatchUi::View#insertLayer (method)">insertLayer</a></span>, <span class='object_link'><a href="View.html#onHide-instance_method" title="Toybox::WatchUi::View#onHide (method)">onHide</a></span>, <span class='object_link'><a href="View.html#onLayout-instance_method" title="Toybox::WatchUi::View#onLayout (method)">onLayout</a></span>, <span class='object_link'><a href="View.html#onShow-instance_method" title="Toybox::WatchUi::View#onShow (method)">onShow</a></span>, <span class='object_link'><a href="View.html#onUpdate-instance_method" title="Toybox::WatchUi::View#onUpdate (method)">onUpdate</a></span>, <span class='object_link'><a href="View.html#removeLayer-instance_method" title="Toybox::WatchUi::View#removeLayer (method)">removeLayer</a></span>, <span class='object_link'><a href="View.html#setKeyToSelectableInteraction-instance_method" title="Toybox::WatchUi::View#setKeyToSelectableInteraction (method)">setKeyToSelectableInteraction</a></span>, <span class='object_link'><a href="View.html#setLayout-instance_method" title="Toybox::WatchUi::View#setLayout (method)">setLayout</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Lang/Object.html#equals-instance_method" title="Toybox::Lang::Object#equals (method)">equals</a></span>, <span class='object_link'><a href="../Lang/Object.html#hashCode-instance_method" title="Toybox::Lang::Object#hashCode (method)">hashCode</a></span>, <span class='object_link'><a href="../Lang/Object.html#method-instance_method" title="Toybox::Lang::Object#method (method)">method</a></span>, <span class='object_link'><a href="../Lang/Object.html#toString-instance_method" title="Toybox::Lang::Object#toString (method)">toString</a></span>, <span class='object_link'><a href="../Lang/Object.html#weak-instance_method" title="Toybox::Lang::Object#weak (method)">weak</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    <strong>initialize</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="Toybox::WatchUi::MapView (class)">MapView</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of MapView</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13216
+13217</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 13216</span>
+
+def initialize()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="clear-instance_method">
+  
+    <strong>clear</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Clear all the objects from the map.</p>
+
+<p>Removes all <span class='object_link'><a href="MapPolyline.html" title="Toybox::WatchUi::MapPolyline (class)">MapPolyline</a></span> and
+<span class='object_link'><a href="MapMarker.html" title="Toybox::WatchUi::MapMarker (class)">MapMarker</a></span> objects.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13298
+13299</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 13298</span>
+
+def clear()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getMapMode-instance_method">
+  
+    <strong>getMapMode</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the current mode for the map in this MapView.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The mode in which the map is rendered on the screen as a <span class='object_link'><a href="../WatchUi.html" title="Toybox::WatchUi (module)">MAP_MODE_*</a></span> enum value</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13256
+13257</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 13256</span>
+
+def getMapMode()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setMapMarker-instance_method">
+  
+    <strong>setMapMarker</strong>(markers)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Add a <span class='object_link'><a href="MapMarker.html" title="Toybox::WatchUi::MapMarker (class)">MapMarker</a></span> object or an
+<span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Array</a></span> of MapMarker objects to be rendered on the map.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>markers</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="MapMarker.html" title="Toybox::WatchUi::MapMarker (class)">Toybox::WatchUi::MapMarker</a></span></tt>, <tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A MapMarker object or an Array of Marker objects to be rendered on the map</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/UnexpectedTypeException.html" title="Toybox::Lang::UnexpectedTypeException (class)">Toybox::Lang::UnexpectedTypeException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Thrown if the <code>markers</code> param is not a valid MapMarker object or
+an Array of MapMarker objects</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13240
+13241</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 13240</span>
+
+def setMapMarker(markers)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setMapMode-instance_method">
+  
+    <strong>setMapMode</strong>(mode)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the mode for the map in this MapView.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>mode</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The mode in which the map will be rendered on the screen as a
+<span class='object_link'><a href="../WatchUi.html" title="Toybox::WatchUi (module)">MAP_MODE_*</a></span> enum value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13248
+13249</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 13248</span>
+
+def setMapMode(mode)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setMapVisibleArea-instance_method">
+  
+    <strong>setMapVisibleArea</strong>(topLeft, bottomRight)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Select the area of the map to render on the screen with a bounding box. A
+redraw of the current underlying map data will occur, so calling this
+function inside of onUpdate() is discouraged as it could lead to map
+flicker.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>topLeft</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Position/Location.html" title="Toybox::Position::Location (class)">Toybox::Position::Location</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The top left point of the visible area of the map</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>bottomRight</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Position/Location.html" title="Toybox::Position::Location (class)">Toybox::Position::Location</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The bottom right point of the visible area of the map</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/UnexpectedTypeException.html" title="Toybox::Lang::UnexpectedTypeException (class)">Toybox::Lang::UnexpectedTypeException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Thrown if <code>topLeft</code> or <code>bottomRight</code> are not a
+Location objects</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#setScreenVisibleArea-instance_method" title="Toybox::WatchUi::MapView#setScreenVisibleArea (method)">setScreenVisibleArea()</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13272
+13273</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 13272</span>
+
+def setMapVisibleArea(topLeft, bottomRight)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setPolyline-instance_method">
+  
+    <strong>setPolyline</strong>(polyline)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Add <span class='object_link'><a href="MapPolyline.html" title="Toybox::WatchUi::MapPolyline (class)">MapPolyline</a></span> object to be rendered on the
+map.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>polyline</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="MapPolyline.html" title="Toybox::WatchUi::MapPolyline (class)">Toybox::WatchUi::MapPolyline</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The polyline to be rendered on the map</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/UnexpectedTypeException.html" title="Toybox::Lang::UnexpectedTypeException (class)">Toybox::Lang::UnexpectedTypeException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Thrown if <code>polyline</code> is is not a valid MapPolyline object</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13227
+13228</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 13227</span>
+
+def setPolyline(polyline)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setScreenVisibleArea-instance_method">
+  
+    <strong>setScreenVisibleArea</strong>(topLeftX, topLeftY, bottomRightX, bottomRightY)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the area on the screen to focus the map.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>topLeftX</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The <code>x</code> location of the top-left visible pixel on the screen</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>topLeftY</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The <code>y</code> location of the top-left visible pixel on the screen</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>bottomRightX</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The <code>x</code> location of the bottom-right visible pixel on the screen</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>bottomRightY</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The <code>y</code> location of the bottom-right visible pixel on the screen</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="InvalidPointException.html" title="Toybox::WatchUi::InvalidPointException (class)">Toybox::WatchUi::InvalidPointException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Thrown if <code>topLeftX</code>, <code>topLeftY</code>,
+<code>bottomRightX</code>, or <code>bottomRightY</code> are outside the
+bounds of the device screen</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#setMapVisibleArea-instance_method" title="Toybox::WatchUi::MapView#setMapVisibleArea (method)">setMapVisibleArea()</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13290
+13291</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 13290</span>
+
+def setScreenVisibleArea(topLeftX, topLeftY, bottomRightX, bottomRightY)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:45 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

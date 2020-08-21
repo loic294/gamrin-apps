@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Toybox::Media::PlaybackProfile
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::Media::PlaybackProfile";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (P)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Toybox.html" title="Toybox (module)">Toybox</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Media.html" title="Toybox::Media (module)">Media</a></span></span>
+     &raquo; 
+    <span class="title">PlaybackProfile</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../../class_list.html"></iframe>
+
+      <div id="content"><h1>Class: Toybox::Media::PlaybackProfile
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></li>
+          
+            <li class="next">Toybox::Media::PlaybackProfile</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Provides the media player with specific rules about what playback options
+are supported.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>an example of the PlaybackProfile object</p>
+</div></p>
+      
+      <pre class="example code"><code>// Returns the playback profile
+function getPlaybackProfile() {
+   var profile = new PlaybackProfile();
+
+   // Set the parameters for the PlaybackProfile.playbackControls
+   profile.playbackControls =
+       [
+       Media.PLAYBACK_CONTROL_PLAYBACK,      // Allow Play/Pause control
+       Media.PLAYBACK_CONTROL_SHUFFLE,       // Allow Shuffle control
+       Media.PLAYBACK_CONTROL_PREVIOUS,      // Allow Previous control
+       Media.PLAYBACK_CONTROL_NEXT,          // Allow Next control
+       Media.PLAYBACK_CONTROL_SKIP_FORWARD,  // Allow Skip-Forward control
+       Media.PLAYBACK_CONTROL_SKIP_BACKWARD, // Allow Skip-Backward control
+       Media.PLAYBACK_CONTROL_REPEAT,        // Allow Repeat control
+       Media.PLAYBACK_CONTROL_RATING         // Allow Ratings control
+       ];
+
+   // Skip media content on thumbs-down
+   profile.attemptSkipAfterThumbsDown = true;
+
+   // Do not require playback notification
+   profile.requirePlaybackNotification = false;
+
+   // Set the notification threshold to 30 seconds
+   profile.playbackNotificationThreshold = 30;
+
+   // Set the skip previous threshold to 5 seconds
+   profile.skipPreviousThreshold = 5;
+
+   return profile;
+}</code></pre>
+    
+  </div>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#attemptSkipAfterThumbsDown-instance_method" title="#attemptSkipAfterThumbsDown (instance method)"><strong>attemptSkipAfterThumbsDown</strong>  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines if the current song is skipped if a thumbs-down operation is given.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#playbackControls-instance_method" title="#playbackControls (instance method)"><strong>playbackControls</strong>  &#x21d2; Toybox::Lang::Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Playback controls that should be rendered in the player.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#playbackNotificationThreshold-instance_method" title="#playbackNotificationThreshold (instance method)"><strong>playbackNotificationThreshold</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The number of seconds a song must play to trigger a “played” notification.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#playerColors-instance_method" title="#playerColors (instance method)"><strong>playerColors</strong>  &#x21d2; Toybox::Media::PlayerColors </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The colors for the media player.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#requirePlaybackNotification-instance_method" title="#requirePlaybackNotification (instance method)"><strong>requirePlaybackNotification</strong>  &#x21d2; Toybox::Lang::Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Defines if the system notifies the app when each song is played.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#skipPreviousThreshold-instance_method" title="#skipPreviousThreshold (instance method)"><strong>skipPreviousThreshold</strong>  &#x21d2; Toybox::Lang::Number </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The amount of time a song must be played so that pressing back restarts the
+track and requires a second back press to skip to the previous track in
+seconds.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  <h2>Method Summary</h2>
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Lang/Object.html#equals-instance_method" title="Toybox::Lang::Object#equals (method)">equals</a></span>, <span class='object_link'><a href="../Lang/Object.html#hashCode-instance_method" title="Toybox::Lang::Object#hashCode (method)">hashCode</a></span>, <span class='object_link'><a href="../Lang/Object.html#method-instance_method" title="Toybox::Lang::Object#method (method)">method</a></span>, <span class='object_link'><a href="../Lang/Object.html#toString-instance_method" title="Toybox::Lang::Object#toString (method)">toString</a></span>, <span class='object_link'><a href="../Lang/Object.html#weak-instance_method" title="Toybox::Lang::Object#weak (method)">weak</a></span></p>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="attemptSkipAfterThumbsDown=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="attemptSkipAfterThumbsDown-instance_method">
+  
+    <strong>attemptSkipAfterThumbsDown</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines if the current song is skipped if a thumbs-down operation is given</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8537
+8538
+8539</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 8537</span>
+
+def attemptSkipAfterThumbsDown
+  @attemptSkipAfterThumbsDown
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="playbackControls=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="playbackControls-instance_method">
+  
+    <strong>playbackControls</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Playback controls that should be rendered in the player.</p>
+
+<p>This is an Array that holds a combination of <span class='object_link'><a href="../Media.html" title="Toybox::Media (module)">PLAYBACK_CONTROL_*</a></span>, <span class='object_link'><a href="../Media.html" title="Toybox::Media (module)">CustomButton</a></span>, and <span class='object_link'><a href="../Media.html" title="Toybox::Media (module)">SystemButton</a></span> values defined by the developer. The values in this Array
+determine which native media player control options are rendered and
+available to the end user of the current device. The first entry in the
+array may be used as a hotkey in the media player. This is device
+dependent.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8531
+8532
+8533</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 8531</span>
+
+def playbackControls
+  @playbackControls
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="playbackNotificationThreshold=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="playbackNotificationThreshold-instance_method">
+  
+    <strong>playbackNotificationThreshold</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The number of seconds a song must play to trigger a “played” notification.
+A value of 0 means notify as soon as the song begins playing.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8549
+8550
+8551</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 8549</span>
+
+def playbackNotificationThreshold
+  @playbackNotificationThreshold
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="playerColors=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="playerColors-instance_method">
+  
+    <strong>playerColors</strong>  &#x21d2; <tt><span class='object_link'><a href="PlayerColors.html" title="Toybox::Media::PlayerColors (class)">Toybox::Media::PlayerColors</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The colors for the media player. If set to <code>null</code> the default
+colors that are device-dependent will be used.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="PlayerColors.html" title="Toybox::Media::PlayerColors (class)">Toybox::Media::PlayerColors</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.3</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8563
+8564
+8565</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 8563</span>
+
+def playerColors
+  @playerColors
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="requirePlaybackNotification=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="requirePlaybackNotification-instance_method">
+  
+    <strong>requirePlaybackNotification</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Defines if the system notifies the app when each song is played</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Boolean.html" title="Toybox::Lang::Boolean (class)">Toybox::Lang::Boolean</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8542
+8543
+8544</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 8542</span>
+
+def requirePlaybackNotification
+  @requirePlaybackNotification
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="skipPreviousThreshold=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="skipPreviousThreshold-instance_method">
+  
+    <strong>skipPreviousThreshold</strong>  &#x21d2; <tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The amount of time a song must be played so that pressing back restarts the
+track and requires a second back press to skip to the previous track in
+seconds. If set to <code>null</code> a default value that is
+device-dependent will be used.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+8557
+8558
+8559</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 8557</span>
+
+def skipPreviousThreshold
+  @skipPreviousThreshold
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:41 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

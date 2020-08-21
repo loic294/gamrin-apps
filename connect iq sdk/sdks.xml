@@ -1,0 +1,14 @@
+<sdks latestSdkVersion="3.1.8">
+    <sdk format="2">
+        <versionNumber>3.1.8</versionNumber>
+        <title>Connect IQ SDK 3.1.8</title>
+        <subtitle>release notes for 3.1.8</subtitle>
+        <agreement>http://developer.garmin.com/downloads/connect-iq/sdks/agreement.html</agreement>
+        <url>
+            <windows>sdks/connectiq-sdk-win-3.1.8-2020-05-01-05516d846.zip</windows>
+            <mac>sdks/connectiq-sdk-mac-3.1.8-2020-05-01-5a72d0ab2.dmg</mac>
+            <linux>sdks/connectiq-sdk-lin-3.1.8-2020-05-01-05516d846.zip</linux>
+        </url>
+        <releaseDate>May 5, 2020</releaseDate>
+    </sdk>
+</sdks>

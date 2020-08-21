@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="3" lineNum="6" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="3" lineNum="7" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="4" lineNum="10" pc="268435479" symbol="onSelectable"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="4" lineNum="11" pc="268435483" symbol="onSelectable"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="4" lineNum="13" pc="268435496" symbol="onSelectable"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="4" lineNum="14" pc="268435510" symbol="onSelectable"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="4" lineNum="17" pc="268435542" symbol="onSelectable"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="5" lineNum="21" pc="268435546" symbol="onKey"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="5" lineNum="22" pc="268435550" symbol="onKey"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="5" lineNum="23" pc="268435577" symbol="onKey"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="5" lineNum="24" pc="268435600" symbol="onKey"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonView.mc" id="5" lineNum="26" pc="268435621" symbol="onKey"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\SmartLifeTogglesApp.mc" id="7" lineNum="5" pc="268435625" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\SmartLifeTogglesApp.mc" id="7" lineNum="6" pc="268435629" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\SmartLifeTogglesApp.mc" id="8" lineNum="10" pc="268435648" symbol="onStart"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\SmartLifeTogglesApp.mc" id="9" lineNum="14" pc="268435653" symbol="onStop"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\SmartLifeTogglesApp.mc" id="10" lineNum="18" pc="268435658" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\SmartLifeTogglesApp.mc" id="10" lineNum="19" pc="268435662" symbol="getInitialView"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="12" lineNum="21" pc="268435730" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="12" lineNum="23" pc="268435734" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="12" lineNum="25" pc="268435744" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="12" lineNum="27" pc="268435764" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="12" lineNum="28" pc="268435788" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="12" lineNum="29" pc="268435812" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="12" lineNum="31" pc="268435836" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="12" lineNum="32" pc="268435862" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="12" lineNum="34" pc="268435882" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="13" lineNum="38" pc="268435900" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="13" lineNum="39" pc="268435904" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="13" lineNum="41" pc="268435927" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="13" lineNum="42" pc="268435947" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="13" lineNum="44" pc="268435964" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="13" lineNum="45" pc="268435984" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="13" lineNum="47" pc="268436001" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="13" lineNum="48" pc="268436021" symbol="handleEvent"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="14" lineNum="53" pc="268436039" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="14" lineNum="55" pc="268436043" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="14" lineNum="56" pc="268436063" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="14" lineNum="57" pc="268436080" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="14" lineNum="60" pc="268436106" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="14" lineNum="61" pc="268436126" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="14" lineNum="62" pc="268436143" symbol="unHighlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="15" lineNum="67" pc="268436170" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="15" lineNum="70" pc="268436174" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="15" lineNum="71" pc="268436185" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="15" lineNum="73" pc="268436205" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="15" lineNum="74" pc="268436216" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="15" lineNum="75" pc="268436233" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="15" lineNum="77" pc="268436256" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="15" lineNum="78" pc="268436282" symbol="reset"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="16" lineNum="83" pc="268436306" symbol="highlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="16" lineNum="86" pc="268436310" symbol="highlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="16" lineNum="87" pc="268436321" symbol="highlight"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="17" lineNum="92" pc="268436342" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="17" lineNum="94" pc="268436346" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="17" lineNum="95" pc="268436357" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="17" lineNum="98" pc="268436377" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="17" lineNum="99" pc="268436388" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="17" lineNum="100" pc="268436405" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="17" lineNum="102" pc="268436428" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="17" lineNum="103" pc="268436454" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="17" lineNum="106" pc="268436477" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="17" lineNum="107" pc="268436488" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="17" lineNum="108" pc="268436505" symbol="select"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="18" lineNum="112" pc="268436532" symbol="vibrate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="18" lineNum="113" pc="268436536" symbol="vibrate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="18" lineNum="114" pc="268436551" symbol="vibrate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="18" lineNum="118" pc="268436603" symbol="vibrate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="19" lineNum="125" pc="268436625" symbol="onReceive"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="19" lineNum="126" pc="268436629" symbol="onReceive"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="19" lineNum="127" pc="268436640" symbol="onReceive"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="19" lineNum="130" pc="268436666" symbol="onReceive"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="20" lineNum="135" pc="268436693" symbol="makeRequest"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="20" lineNum="136" pc="268436697" symbol="makeRequest"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="20" lineNum="138" pc="268436709" symbol="makeRequest"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="20" lineNum="140" pc="268436725" symbol="makeRequest"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="20" lineNum="142" pc="268436751" symbol="makeRequest"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="20" lineNum="145" pc="268436759" symbol="makeRequest"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="20" lineNum="153" pc="268436841" symbol="makeRequest"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="20" lineNum="156" pc="268436859" symbol="makeRequest"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="22" lineNum="166" pc="268436884" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="22" lineNum="167" pc="268436888" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="22" lineNum="168" pc="268436901" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="171" pc="268436918" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="172" pc="268436922" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="173" pc="268436984" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="175" pc="268437046" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="177" pc="268437059" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="178" pc="268437066" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="180" pc="268437091" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="194" pc="268437257" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="197" pc="268437283" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="209" pc="268437487" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="211" pc="268437501" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="23" lineNum="212" pc="268437517" symbol="renderItem"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="24" lineNum="215" pc="268437534" symbol="getItems"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="24" lineNum="216" pc="268437538" symbol="getItems"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="26" lineNum="229" pc="268437548" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="26" lineNum="230" pc="268437552" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="26" lineNum="231" pc="268437570" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="26" lineNum="233" pc="268437580" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="26" lineNum="235" pc="268437597" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="26" lineNum="240" pc="268437656" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="26" lineNum="245" pc="268437715" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="26" lineNum="250" pc="268437774" symbol="initialize"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="27" lineNum="258" pc="268437834" symbol="onLayout"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="27" lineNum="259" pc="268437838" symbol="onLayout"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="27" lineNum="260" pc="268437848" symbol="onLayout"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="27" lineNum="261" pc="268437879" symbol="onLayout"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="28" lineNum="264" pc="268437903" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="28" lineNum="265" pc="268437907" symbol="onUpdate"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="29" lineNum="268" pc="268437928" symbol="handleSwipe"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="29" lineNum="270" pc="268437932" symbol="handleSwipe"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="29" lineNum="271" pc="268437958" symbol="handleSwipe"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="29" lineNum="273" pc="268437974" symbol="handleSwipe"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="29" lineNum="276" pc="268437993" symbol="handleSwipe"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="29" lineNum="277" pc="268438025" symbol="handleSwipe"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="29" lineNum="278" pc="268438065" symbol="handleSwipe"/>
+<entry filename="C:\\Users\\loicb\\dev\\eclipse\\Smart Life Toggles\\source\\ToggleButtonDelegate.mc" id="29" lineNum="279" pc="268438088" symbol="handleSwipe"/>
+<entry filename="Rez" id="35" lineNum="17" pc="268438105" symbol="ToggleLayout"/>
+<entry filename="Rez" id="35" lineNum="19" pc="268438117" symbol="ToggleLayout"/>
+<entry filename="Rez" id="35" lineNum="20" pc="268438160" symbol="ToggleLayout"/>
+<entry filename="Rez" id="35" lineNum="22" pc="268438326" symbol="ToggleLayout"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="37" method="true" symbol="unHighlight"/>
+<entry id="16" object="true" symbol="ToggleView"/>
+<entry field="true" id="30" symbol="items"/>
+<entry id="8388987" method="true" symbol="vibrate"/>
+<entry field="true" id="18" symbol="toggles"/>
+<entry field="true" id="36" symbol="deviceName"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="8388637" module="true" symbol="Communications"/>
+<entry id="8389097" method="true" symbol="onKey"/>
+<entry id="8390424" module="true" symbol="Storage"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="8389897" symbol="stateDefault"/>
+<entry id="39" method="true" symbol="highlight"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="28" method="true" symbol="ToggleLayout"/>
+<entry id="15" object="true" symbol="Toggle"/>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="11" symbol="currentView"/>
+<entry id="10" object="true" symbol="SmartLifeTogglesApp"/>
+<entry field="true" id="20" symbol="deviceCount"/>
+<entry id="8388636" module="true" symbol="Attention"/>
+<entry id="22" method="true" symbol="handleSwipe"/>
+<entry field="true" id="8389900" symbol="stateDisabled"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="29" symbol="AppName"/>
+<entry field="true" id="8389898" symbol="stateHighlighted"/>
+<entry id="42" method="true" symbol="makeRequest"/>
+<entry field="true" id="8389899" symbol="stateSelected"/>
+<entry id="8389594" symbol="headers"/>
+<entry id="8389084" method="true" symbol="handleEvent"/>
+<entry id="32" method="true" symbol="getItems"/>
+<entry field="true" id="27" symbol="LauncherIcon"/>
+<entry id="8388786" method="true" symbol="method"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="13" symbol="dcView"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry field="true" id="19" symbol="currentIndex"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="34" symbol="openAction"/>
+<entry id="8389348" symbol="font"/>
+<entry field="true" id="25" symbol="toggleOff"/>
+<entry id="40" method="true" symbol="select"/>
+<entry id="8389347" symbol="color"/>
+<entry field="true" id="21" symbol="localDc"/>
+<entry field="true" id="8389067" symbol="height"/>
+<entry id="38" method="true" symbol="reset"/>
+<entry id="8389890" method="true" symbol="onSelectable"/>
+<entry id="23" module="true" symbol="Layouts"/>
+<entry id="17" object="true" symbol="ToogleButtonView"/>
+<entry field="true" id="35" symbol="closeAction"/>
+<entry field="true" id="12" symbol="currentToggle"/>
+<entry id="8389345" symbol="rezId"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry id="8389844" symbol="responseType"/>
+<entry id="8389346" symbol="text"/>
+<entry field="true" id="8389066" symbol="width"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="9" object="true" symbol="ToggleButtonDelegate"/>
+<entry id="24" module="true" symbol="Menus"/>
+<entry field="true" id="33" symbol="stateHighlightedSelected"/>
+<entry field="true" id="14" symbol="devices"/>
+<entry id="41" method="true" symbol="onReceive"/>
+<entry field="true" id="26" symbol="toggleOn"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="31" method="true" symbol="renderItem"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435545" name="instance" stackId="2" startPc="268435483"/>
+<entry endPc="268435546" name="event" stackId="1" startPc="268435479"/>
+<entry endPc="268435625" name="keyEvent" stackId="1" startPc="268435546"/>
+<entry endPc="268435653" name="state" stackId="1" startPc="268435648"/>
+<entry endPc="268435658" name="state" stackId="1" startPc="268435653"/>
+<entry endPc="268435900" name="options" stackId="1" startPc="268435730"/>
+<entry endPc="268436039" name="previousState" stackId="1" startPc="268435900"/>
+<entry endPc="268436306" name="previousState" stackId="1" startPc="268436170"/>
+<entry endPc="268436342" name="previousState" stackId="1" startPc="268436306"/>
+<entry endPc="268436532" name="previousState" stackId="1" startPc="268436342"/>
+<entry endPc="268436621" name="vibeData" stackId="1" startPc="268436551"/>
+<entry endPc="268436693" name="responseCode" stackId="1" startPc="268436625"/>
+<entry endPc="268436693" name="data" stackId="2" startPc="268436625"/>
+<entry endPc="268436883" name="options" stackId="4" startPc="268436697"/>
+<entry endPc="268436883" name="url" stackId="2" startPc="268436697"/>
+<entry endPc="268436883" name="responseCallback" stackId="5" startPc="268436697"/>
+<entry endPc="268436883" name="params" stackId="3" startPc="268436697"/>
+<entry endPc="268436884" name="action" stackId="1" startPc="268436693"/>
+<entry endPc="268436917" name="device" stackId="3" startPc="268436888"/>
+<entry endPc="268436918" name="dc" stackId="1" startPc="268436884"/>
+<entry endPc="268436918" name="index" stackId="2" startPc="268436884"/>
+<entry endPc="268437533" name="toggle" stackId="9" startPc="268436922"/>
+<entry endPc="268437533" name="initY" stackId="6" startPc="268436922"/>
+<entry endPc="268437533" name="initX" stackId="7" startPc="268436922"/>
+<entry endPc="268437533" name="toggleDefault" stackId="3" startPc="268436922"/>
+<entry endPc="268437533" name="options" stackId="8" startPc="268436922"/>
+<entry endPc="268437533" name="toggleOn" stackId="4" startPc="268436922"/>
+<entry endPc="268437533" name="text" stackId="10" startPc="268436922"/>
+<entry endPc="268437533" name="dims" stackId="5" startPc="268436922"/>
+<entry endPc="268437534" name="dc" stackId="1" startPc="268436918"/>
+<entry endPc="268437534" name="device" stackId="2" startPc="268436918"/>
+<entry endPc="268437902" name="toggleView" stackId="2" startPc="268437838"/>
+<entry endPc="268437903" name="dc" stackId="1" startPc="268437834"/>
+<entry endPc="268437928" name="dc" stackId="1" startPc="268437903"/>
+<entry endPc="268438104" name="toggleView" stackId="1" startPc="268437932"/>
+<entry endPc="268438353" name="rez_cmp_local_custom_drawable_Toggle" stackId="2" startPc="268438117"/>
+<entry endPc="268438353" name="rez_cmp_local_textarea_Name" stackId="3" startPc="268438117"/>
+<entry endPc="268438354" name="dc" stackId="1" startPc="268438105"/>
+</localVars>
+<annotations/>
+<dataEntryOffsetMappings>
+<dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry offset="206" parentId="globals" symbolId="ToogleButtonView" type="class"/>
+<dataEntry offset="309" parentId="globals" symbolId="ToggleButtonDelegate" type="class"/>
+<dataEntry offset="372" parentId="globals" symbolId="SmartLifeTogglesApp" type="class"/>
+<dataEntry offset="443" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="522" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="577" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="608" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="639" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="678" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="709" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="748" parentId="globals" symbolId="ToggleView" type="class"/>
+<dataEntry offset="819" parentId="globals" symbolId="Toggle" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" name="initialize" parent="ToggleButtonDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onSelectable" parent="ToggleButtonDelegate">
+<param id="event"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onKey" parent="ToggleButtonDelegate">
+<param id="keyEvent"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="SmartLifeTogglesApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStart" parent="SmartLifeTogglesApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStop" parent="SmartLifeTogglesApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getInitialView" parent="SmartLifeTogglesApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="Toggle">
+<param id="options"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="handleEvent" parent="Toggle">
+<param id="previousState"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="unHighlight" parent="Toggle">
+<documentation><![CDATA[<div class="description"> Special case - handle unhighlighting of a CheckBox<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="reset" parent="Toggle">
+<param id="previousState"/>
+<documentation><![CDATA[<div class="description"> Handle onSelectable() returning stateDefault<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="highlight" parent="Toggle">
+<param id="previousState"/>
+<documentation><![CDATA[<div class="description"> Handle onSelectable() returning stateHighlighted<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="select" parent="Toggle">
+<param id="previousState"/>
+<documentation><![CDATA[<div class="description"> Handle onSelectable() returning stateSelected<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="vibrate" parent="Toggle">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onReceive" parent="Toggle">
+<param id="responseCode"/>
+<param id="data"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="makeRequest" parent="Toggle">
+<param id="action"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="ToggleView">
+<param id="dc"/>
+<param id="index"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="renderItem" parent="ToggleView">
+<param id="dc"/>
+<param id="device"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getItems" parent="ToggleView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="ToogleButtonView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onLayout" parent="ToogleButtonView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onUpdate" parent="ToogleButtonView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="handleSwipe" parent="ToogleButtonView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="ToggleLayout" parent="Layouts">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>

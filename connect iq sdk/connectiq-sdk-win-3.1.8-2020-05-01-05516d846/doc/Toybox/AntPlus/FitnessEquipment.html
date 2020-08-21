@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Toybox::AntPlus::FitnessEquipment
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::AntPlus::FitnessEquipment";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (F)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Toybox.html" title="Toybox (module)">Toybox</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../AntPlus.html" title="Toybox::AntPlus (module)">AntPlus</a></span></span>
+     &raquo; 
+    <span class="title">FitnessEquipment</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../../class_list.html"></iframe>
+
+      <div id="content"><h1>Class: Toybox::AntPlus::FitnessEquipment
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="Device.html" title="Toybox::AntPlus::Device (class)">Device</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="Device.html" title="Toybox::AntPlus::Device (class)">Device</a></span></li>
+          
+            <li class="next">Toybox::AntPlus::FitnessEquipment</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Represents a Fitness Equipment Device instance.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.AntPlus;
+
+// Assuming Valid FitnessEquipmentListener object &quot;MyFitnessEquipmentListener&quot;
+
+// Initialize the AntPlus.FitnessEquipmentListener object
+listener = new MyFitnessEquipmentListener();
+
+// Initialize the AntPlus.BikePower object with a listener
+fitnessEquipment = new AntPlus.FitnessEquipment(listener);
+
+fitnessEquipment.setTrainerMode(TRAINER_MODE_BASIC_RESISTANCE);
+fitnessEquipment.controlEquipment(TRAINER_RESISTANCE, 30); //sets basic resistance to 30% of maximum.
+// ...etc</code></pre>
+    
+  </div>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Fitness Equipment Training Setting Type
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#controlEquipment-instance_method" title="#controlEquipment (instance method)"><strong>controlEquipment</strong>(setting, data)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Control the fitness Equipment Note: Setting a value related to a specific
+training mode will cause the fitness equipment to change to that mode.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getEquipmentData-instance_method" title="#getEquipmentData (instance method)"><strong>getEquipmentData</strong>  &#x21d2; Toybox::AntPlus::FitnessEquipmentData </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the current training data from the FE.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getResistanceSettings-instance_method" title="#getResistanceSettings (instance method)"><strong>getResistanceSettings</strong>  &#x21d2; Toybox::AntPlus::ResistanceSettings </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the resistance percentage setting of the fitness equipment for basic
+resistance training mode.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getSimulationSettings-instance_method" title="#getSimulationSettings (instance method)"><strong>getSimulationSettings</strong>  &#x21d2; Toybox::AntPlus::SimulationSettings </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the wind and track resistance simulation settings.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getTargetPowerSettings-instance_method" title="#getTargetPowerSettings (instance method)"><strong>getTargetPowerSettings</strong>  &#x21d2; Toybox::AntPlus::TargetPowerSettings </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the target power setting of the fitness equipment for target power
+training mode.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getTrainerMode-instance_method" title="#getTrainerMode (instance method)"><strong>getTrainerMode</strong>  &#x21d2; Toybox::AntPlus::FitnessEquipmentMode </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the current training mode and supported modes of the fitness equipment.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#getUserSettings-instance_method" title="#getUserSettings (instance method)"><strong>getUserSettings</strong>  &#x21d2; Toybox::AntPlus::UserSettings </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get the user configuration settings of the fitness equipment for simulation
+training mode.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)"><strong>initialize</strong>(listener)  &#x21d2; FitnessEquipment </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The Constructor for the FitnessEquipment object.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#setTrainerMode-instance_method" title="#setTrainerMode (instance method)"><strong>setTrainerMode</strong>(mode)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the trainer mode.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Device.html" title="Toybox::AntPlus::Device (class)">Device</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Device.html#getBatteryStatus-instance_method" title="Toybox::AntPlus::Device#getBatteryStatus (method)">getBatteryStatus</a></span>, <span class='object_link'><a href="Device.html#getComponentIdentifiers-instance_method" title="Toybox::AntPlus::Device#getComponentIdentifiers (method)">getComponentIdentifiers</a></span>, <span class='object_link'><a href="Device.html#getDeviceState-instance_method" title="Toybox::AntPlus::Device#getDeviceState (method)">getDeviceState</a></span>, <span class='object_link'><a href="Device.html#getManufacturerInfo-instance_method" title="Toybox::AntPlus::Device#getManufacturerInfo (method)">getManufacturerInfo</a></span>, <span class='object_link'><a href="Device.html#getProductInfo-instance_method" title="Toybox::AntPlus::Device#getProductInfo (method)">getProductInfo</a></span>, <span class='object_link'><a href="Device.html#sendManufacturerMessage-instance_method" title="Toybox::AntPlus::Device#sendManufacturerMessage (method)">sendManufacturerMessage</a></span>, <span class='object_link'><a href="Device.html#sendPageRequest-instance_method" title="Toybox::AntPlus::Device#sendPageRequest (method)">sendPageRequest</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="../Lang/Object.html" title="Toybox::Lang::Object (class)">Lang::Object</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="../Lang/Object.html#equals-instance_method" title="Toybox::Lang::Object#equals (method)">equals</a></span>, <span class='object_link'><a href="../Lang/Object.html#hashCode-instance_method" title="Toybox::Lang::Object#hashCode (method)">hashCode</a></span>, <span class='object_link'><a href="../Lang/Object.html#method-instance_method" title="Toybox::Lang::Object#method (method)">method</a></span>, <span class='object_link'><a href="../Lang/Object.html#toString-instance_method" title="Toybox::Lang::Object#toString (method)">toString</a></span>, <span class='object_link'><a href="../Lang/Object.html#weak-instance_method" title="Toybox::Lang::Object#weak (method)">weak</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    <strong>initialize</strong>(listener)  &#x21d2; <tt><span class='object_link'><a href="" title="Toybox::AntPlus::FitnessEquipment (class)">FitnessEquipment</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The Constructor for the FitnessEquipment object. takes an extension of the
+<span class='object_link'><a href="FitnessEquipmentListener.html" title="Toybox::AntPlus::FitnessEquipmentListener (class)">FitnessEquipmentListener</a></span> class
+as a parameter. <code>null</code> can be passed in instead if the user
+plans to only poll for data using the get* methods.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>listener</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="FitnessEquipmentListener.html" title="Toybox::AntPlus::FitnessEquipmentListener (class)">Toybox::AntPlus::FitnessEquipmentListener</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The fitness equipment instance optionally</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18371
+18372</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 18371</span>
+
+def initialize(listener)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="controlEquipment-instance_method">
+  
+    <strong>controlEquipment</strong>(setting, data)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Control the fitness Equipment Note: Setting a value related to a specific
+training mode will cause the fitness equipment to change to that mode. For
+example, controlEquipment(TRAINER_TARGET_POWER, 100) will set the fitness
+equipment to target power mode with target power set to 100W if such mode
+is supported. Values out of range will be set to within the nearest range
+boundary value.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>setting</span>
+      
+      
+        <span class='type'>(<tt>Toybox::AntPlus::TRAINER_*</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>enum value</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>data</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Lang/Float.html" title="Toybox::Lang::Float (class)">Toybox::Lang::Float</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The value of the setting to be sent or TRAINER_MODE_*
+enum value if setting mode.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18423
+18424</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 18423</span>
+
+def controlEquipment(setting, data)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getEquipmentData-instance_method">
+  
+    <strong>getEquipmentData</strong>  &#x21d2; <tt><span class='object_link'><a href="FitnessEquipmentData.html" title="Toybox::AntPlus::FitnessEquipmentData (class)">Toybox::AntPlus::FitnessEquipmentData</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the current training data from the FE</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="FitnessEquipmentData.html" title="Toybox::AntPlus::FitnessEquipmentData (class)">Toybox::AntPlus::FitnessEquipmentData</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Fitness Equipment training data</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18438
+18439</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 18438</span>
+
+def getEquipmentData()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getResistanceSettings-instance_method">
+  
+    <strong>getResistanceSettings</strong>  &#x21d2; <tt><span class='object_link'><a href="ResistanceSettings.html" title="Toybox::AntPlus::ResistanceSettings (class)">Toybox::AntPlus::ResistanceSettings</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the resistance percentage setting of the fitness equipment for basic
+resistance training mode. You should set resistance values and be in basic
+resistance training mode before calling this method, otherwise
+<code>null</code> or default values may be returned.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="ResistanceSettings.html" title="Toybox::AntPlus::ResistanceSettings (class)">Toybox::AntPlus::ResistanceSettings</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Fitness Equipment resistance Setting</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18386
+18387</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 18386</span>
+
+def getResistanceSettings()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getSimulationSettings-instance_method">
+  
+    <strong>getSimulationSettings</strong>  &#x21d2; <tt><span class='object_link'><a href="SimulationSettings.html" title="Toybox::AntPlus::SimulationSettings (class)">Toybox::AntPlus::SimulationSettings</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the wind and track resistance simulation settings. You should set wind
+and track settings, as well as be in simulation training mode before
+calling this method or <code>null</code> or default values may be returned.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="SimulationSettings.html" title="Toybox::AntPlus::SimulationSettings (class)">Toybox::AntPlus::SimulationSettings</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Fitness Equipment simulation settings</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18394
+18395</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 18394</span>
+
+def getSimulationSettings()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getTargetPowerSettings-instance_method">
+  
+    <strong>getTargetPowerSettings</strong>  &#x21d2; <tt><span class='object_link'><a href="TargetPowerSettings.html" title="Toybox::AntPlus::TargetPowerSettings (class)">Toybox::AntPlus::TargetPowerSettings</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the target power setting of the fitness equipment for target power
+training mode. You should set the target power and be in target power
+training mode before calling this method, otherwise <code>null</code> or
+default values may be returned.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="TargetPowerSettings.html" title="Toybox::AntPlus::TargetPowerSettings (class)">Toybox::AntPlus::TargetPowerSettings</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Fitness Equipment target power Setting</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18403
+18404</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 18403</span>
+
+def getTargetPowerSettings()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getTrainerMode-instance_method">
+  
+    <strong>getTrainerMode</strong>  &#x21d2; <tt><span class='object_link'><a href="FitnessEquipmentMode.html" title="Toybox::AntPlus::FitnessEquipmentMode (class)">Toybox::AntPlus::FitnessEquipmentMode</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the current training mode and supported modes of the fitness equipment</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="FitnessEquipmentMode.html" title="Toybox::AntPlus::FitnessEquipmentMode (class)">Toybox::AntPlus::FitnessEquipmentMode</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Fitness Equipment training mode</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18377
+18378</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 18377</span>
+
+def getTrainerMode()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getUserSettings-instance_method">
+  
+    <strong>getUserSettings</strong>  &#x21d2; <tt><span class='object_link'><a href="UserSettings.html" title="Toybox::AntPlus::UserSettings (class)">Toybox::AntPlus::UserSettings</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get the user configuration settings of the fitness equipment for simulation
+training mode. You should set user settings values and be in simulation
+mode before calling this method, otherwise <code>null</code> or default
+values may be returned.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="UserSettings.html" title="Toybox::AntPlus::UserSettings (class)">Toybox::AntPlus::UserSettings</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Fitness Equipment user profile settings</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18412
+18413</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 18412</span>
+
+def getUserSettings()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setTrainerMode-instance_method">
+  
+    <strong>setTrainerMode</strong>(mode)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Set the trainer mode. You should check the capable modes of the fitness
+equipment, as the command will be ignored by the fitness equipment if the
+mode is not supported.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>mode</span>
+      
+      
+        <span class='type'>(<tt>Toybox::Lang::Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The TRAINER_MODE_* enum value</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18432
+18433</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 18432</span>
+
+def setTrainerMode(mode)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:51 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>

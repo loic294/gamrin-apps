@@ -1,0 +1,8 @@
+<layout id="ToggleLayout">
+	<drawable id="Toggle"  class="ToggleView" />
+	<text-area id="Name" text="Table de chevet" x="center" y="bottom" width="100%" height="20%" justification="Graphics.TEXT_JUSTIFY_CENTER">
+		<fonts>
+			<font>Gfx.FONT_TINY</font>
+			</fonts>
+	</text-area>
+</layout>

@@ -1,0 +1,12 @@
+build_for_device_build_type=true
+build_for_device_device_id=vivoactive3
+build_for_device_output_dir=C\:\\Users\\loicb\\dev\\eclipse\\apps
+build_for_device_project_name=Comm
+build_for_device_target_sdk=3.1.0
+cmp_developerKey=C\:\\Users\\loicb\\dev\\eclipse\\connect iq\\developer_key
+debugging_automatically_switch_perspective=0
+eclipse.preferences.version=1
+logging_log_file_location=C\:\\Users\\loicb\\AppData\\Local\\Temp\\GARMIN\\plugin.log
+notification_one_time_warning=true
+pathPreference=C\:\\Users\\loicb\\dev\\eclipse\\connect iq sdk\\connectiq-sdk-win-3.1.8-2020-05-01-05516d846
+sdk_manager_new_sdk_available=true

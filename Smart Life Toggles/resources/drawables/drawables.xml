@@ -1,0 +1,6 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="toggleOff" filename="../Toggle-Off.png"  dithering="none" />
+    <bitmap id="toggleOn" filename="../Toggle-On.png"  dithering="none" />
+</drawables>
+

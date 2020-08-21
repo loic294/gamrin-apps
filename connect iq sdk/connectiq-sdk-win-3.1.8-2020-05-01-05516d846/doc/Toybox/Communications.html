@@ -1,0 +1,4325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: Toybox::Communications
+  
+    &mdash; Connect IQ SDK
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "Toybox::Communications";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (C)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../Toybox.html" title="Toybox (module)">Toybox</a></span></span>
+     &raquo; 
+    <span class="title">Communications</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <iframe id="search_frame" src="../class_list.html"></iframe>
+
+      <div id="content"><h1>Module: Toybox::Communications
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>The Communications Module provides tools for communication.</p>
+
+<p>With the Communications module, widgets and apps will be able to
+communicate with a mobile phone via Bluetooth Low Energy (BLE). The mobile
+phone may be sharing data with the device, or it may act as a bridge
+between the app and the Internet. This allows the device to become part of
+the Internet of Things.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Supported Devices:</p>
+<ul class="supported">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>All devices</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">App Types:</p>
+<ul class="apptype">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Widget</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>App</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Audio Content Provider App</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Glance Support</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Background Services</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Requires Permission:</p>
+<ul class="permission">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>Communications</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Communications/ConnectionListener.html" title="Toybox::Communications::ConnectionListener (class)">ConnectionListener</a></span>, <span class='object_link'><a href="Communications/MailboxIterator.html" title="Toybox::Communications::MailboxIterator (class)">MailboxIterator</a></span>, <span class='object_link'><a href="Communications/Message.html" title="Toybox::Communications::Message (class)">Message</a></span>, <span class='object_link'><a href="Communications/OAuthMessage.html" title="Toybox::Communications::OAuthMessage (class)">OAuthMessage</a></span>, <span class='object_link'><a href="Communications/PhoneAppMessage.html" title="Toybox::Communications::PhoneAppMessage (class)">PhoneAppMessage</a></span>, <span class='object_link'><a href="Communications/SyncDelegate.html" title="Toybox::Communications::SyncDelegate (class)">SyncDelegate</a></span>
+    
+  
+</p>
+
+  <h2>Constant Summary</h2>
+  <dl class="constants">
+    
+      <dt id="UNKNOWN_ERROR-constant" class="">UNKNOWN_ERROR = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>An unknown error has occured.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="BLE_ERROR-constant" class="">BLE_ERROR = -1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>A generic BLE error has occured.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="BLE_HOST_TIMEOUT-constant" class="">BLE_HOST_TIMEOUT = -2
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>We timed out waiting for a response from the host.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="BLE_SERVER_TIMEOUT-constant" class="">BLE_SERVER_TIMEOUT = -3
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>We timed out waiting for a response from a server.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="BLE_NO_DATA-constant" class="">BLE_NO_DATA = -4
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Response contained no data.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="BLE_REQUEST_CANCELLED-constant" class="">BLE_REQUEST_CANCELLED = -5
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>The request was cancelled at the request of the system.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="BLE_QUEUE_FULL-constant" class="">BLE_QUEUE_FULL = -101
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Too many requests have been made.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="BLE_REQUEST_TOO_LARGE-constant" class="">BLE_REQUEST_TOO_LARGE = -102
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Serialized input data for the request was too large.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="BLE_UNKNOWN_SEND_ERROR-constant" class="">BLE_UNKNOWN_SEND_ERROR = -103
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Send failed for an unknown reason.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="BLE_CONNECTION_UNAVAILABLE-constant" class="">BLE_CONNECTION_UNAVAILABLE = -104
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>No BLE connection is available.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="INVALID_HTTP_HEADER_FIELDS_IN_REQUEST-constant" class="">INVALID_HTTP_HEADER_FIELDS_IN_REQUEST = -200
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Request contained invalid http header fields.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="INVALID_HTTP_BODY_IN_REQUEST-constant" class="">INVALID_HTTP_BODY_IN_REQUEST = -201
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Request contained an invalid http body.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="INVALID_HTTP_METHOD_IN_REQUEST-constant" class="">INVALID_HTTP_METHOD_IN_REQUEST = -202
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Request used an invalid http method.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="NETWORK_REQUEST_TIMED_OUT-constant" class="">NETWORK_REQUEST_TIMED_OUT = -300
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Request timed out before a response was received.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="INVALID_HTTP_BODY_IN_NETWORK_RESPONSE-constant" class="">INVALID_HTTP_BODY_IN_NETWORK_RESPONSE = -400
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Response body data is invalid for the request type.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="INVALID_HTTP_HEADER_FIELDS_IN_NETWORK_RESPONSE-constant" class="">INVALID_HTTP_HEADER_FIELDS_IN_NETWORK_RESPONSE = -401
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Response contained invalid http header fields.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="NETWORK_RESPONSE_TOO_LARGE-constant" class="">NETWORK_RESPONSE_TOO_LARGE = -402
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Serialized response was too large.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="NETWORK_RESPONSE_OUT_OF_MEMORY-constant" class="">NETWORK_RESPONSE_OUT_OF_MEMORY = -403
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Ran out of memory processing network response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="STORAGE_FULL-constant" class="">STORAGE_FULL = -1000
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Filesystem too full to store response data.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="SECURE_CONNECTION_REQUIRED-constant" class="">SECURE_CONNECTION_REQUIRED = -1001
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Indicates an https connection is required for the request.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="UNSUPPORTED_CONTENT_TYPE_IN_RESPONSE-constant" class="">UNSUPPORTED_CONTENT_TYPE_IN_RESPONSE = -1002
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Content type given in response is not supported or does not match what is
+expected.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.1</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="REQUEST_CANCELLED-constant" class="">REQUEST_CANCELLED = -1003
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Http request was cancelled by the system.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.4.2</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="REQUEST_CONNECTION_DROPPED-constant" class="">REQUEST_CONNECTION_DROPPED = -1004
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Connection was lost before a response could be obtained.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="UNABLE_TO_PROCESS_MEDIA-constant" class="">UNABLE_TO_PROCESS_MEDIA = -1005
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Downloaded media file was unable to be read.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.2</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="UNABLE_TO_PROCESS_IMAGE-constant" class="">UNABLE_TO_PROCESS_IMAGE = -1006
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Downloaded image file was unable to be processed.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.3</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="UNABLE_TO_PROCESS_HLS-constant" class="">UNABLE_TO_PROCESS_HLS = -1007
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>HLS content could not be downloaded. Most often occurs when requested and
+provided bit rates do not match.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.10</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="OAUTH_RESULT_TYPE_URL-constant" class="">OAUTH_RESULT_TYPE_URL = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>How the OAuth token will be returned in the final step.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="OAUTH_SIGNING_METHOD_HMAC_SHA1-constant" class="">OAUTH_SIGNING_METHOD_HMAC_SHA1 = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>How the OAuth request will be signed</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_REQUEST_METHOD_GET-constant" class="">HTTP_REQUEST_METHOD_GET = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Specifies a request be executed using the GET method.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_REQUEST_METHOD_PUT-constant" class="">HTTP_REQUEST_METHOD_PUT = 2
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Specifies a request be executed using the PUT method.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_REQUEST_METHOD_POST-constant" class="">HTTP_REQUEST_METHOD_POST = 3
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Specifies a request be executed using the POST method.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_REQUEST_METHOD_DELETE-constant" class="">HTTP_REQUEST_METHOD_DELETE = 4
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Specifies a request be executed using the DELETE method.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_RESPONSE_CONTENT_TYPE_JSON-constant" class="">HTTP_RESPONSE_CONTENT_TYPE_JSON = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Content type specifier for response is expected to be a json type. Content
+type string must be “application/json”.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_RESPONSE_CONTENT_TYPE_URL_ENCODED-constant" class="">HTTP_RESPONSE_CONTENT_TYPE_URL_ENCODED = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Content type specifier for response is expected to indicate url encoding.
+Content type string must be “application/x-www-form-urlencoded”.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_RESPONSE_CONTENT_TYPE_GPX-constant" class="">HTTP_RESPONSE_CONTENT_TYPE_GPX = 2
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Content type specifier for response is expected to be a gpx type.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_RESPONSE_CONTENT_TYPE_FIT-constant" class="">HTTP_RESPONSE_CONTENT_TYPE_FIT = 3
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Content type specifier for response is expected to be a FIT type.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>2.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_RESPONSE_CONTENT_TYPE_AUDIO-constant" class="">HTTP_RESPONSE_CONTENT_TYPE_AUDIO = 4
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Content type specifier for response is expected to be an audio type.
+Content type string must be of the “audio/*” format.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_RESPONSE_CONTENT_TYPE_TEXT_PLAIN-constant" class="">HTTP_RESPONSE_CONTENT_TYPE_TEXT_PLAIN = 5
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Content type specifier for response is expected to be plain text type.
+Content type string must be “text/plain”</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_RESPONSE_CONTENT_TYPE_HLS_DOWNLOAD-constant" class="">HTTP_RESPONSE_CONTENT_TYPE_HLS_DOWNLOAD = 6
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Content type specifier for response is expected to be an HLS data type.
+Content type string must be either “application/vnd.apple.mpegurl” or
+“audio/mpegurl”.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.0.10</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_RESPONSE_CONTENT_TYPE_ANIMATION_MANIFEST-constant" class="">HTTP_RESPONSE_CONTENT_TYPE_ANIMATION_MANIFEST = 7
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Content type specifier for response is expected to be a CIQ animation
+manifest data type. Content type string must be
+“application/vnd.garmin.connectiq.animation.manifest”.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="HTTP_RESPONSE_CONTENT_TYPE_ANIMATION-constant" class="">HTTP_RESPONSE_CONTENT_TYPE_ANIMATION = 8
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Content type specifier for response is expected to be a CIQ animation data
+type. Content type string must be “image/vnd.garmin.connectiq.animation”.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="REQUEST_CONTENT_TYPE_URL_ENCODED-constant" class="">REQUEST_CONTENT_TYPE_URL_ENCODED = 0
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Specifies a content type of application/x-www-form-urlencoded</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="REQUEST_CONTENT_TYPE_JSON-constant" class="">REQUEST_CONTENT_TYPE_JSON = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Specifies a content type of application/json</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="IMAGE_DITHERING_NONE-constant" class="">IMAGE_DITHERING_NONE = 1
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Do not apply dithering to an image.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+      <dt id="IMAGE_DITHERING_FLOYD_STEINBERG-constant" class="">IMAGE_DITHERING_FLOYD_STEINBERG = 2
+        <div class="docstring">
+  <div class="discussion">
+    
+<p>Apply Floyd-Steinberg dithering to an image.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+      </dt>
+    
+  </dl>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cancelAllRequests-instance_method" title="#cancelAllRequests (instance method)"><strong>cancelAllRequests</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Cancel all pending JSON and Image requests.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#emptyMailbox-instance_method" title="#emptyMailbox (instance method)"><strong>emptyMailbox</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#encodeURL-instance_method" title="#encodeURL (instance method)"><strong>encodeURL</strong>(url)  &#x21d2; Toybox::Lang::String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Convert a URL String into a percent-encoded string.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#generateSignedOAuthHeader-instance_method" title="#generateSignedOAuthHeader (instance method)"><strong>generateSignedOAuthHeader</strong>(url, params, requestMethod, signatureMethod, token, tokenSecret, consumerKey, consumerSecret)  &#x21d2; Toybox::Lang::String </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Generate the value for the “Authorization” header in an OAuth 1.0a request.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#getMailbox-instance_method" title="#getMailbox (instance method)"><strong>getMailbox</strong>  &#x21d2; Toybox::Communications::MailboxIterator </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#makeImageRequest-instance_method" title="#makeImageRequest (instance method)"><strong>makeImageRequest</strong>(url, parameters, options, responseCallback)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Request an image through Garmin Connect Mobile.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#makeJsonRequest-instance_method" title="#makeJsonRequest (instance method)"><strong>makeJsonRequest</strong>(url, parameters, options, responseCallback)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#makeOAuthRequest-instance_method" title="#makeOAuthRequest (instance method)"><strong>makeOAuthRequest</strong>(requestUrl, requestParams, resultUrl, resultType, resultKeys)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Request an OAuth sign-in through Garmin Connect Mobile.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#makeWebRequest-instance_method" title="#makeWebRequest (instance method)"><strong>makeWebRequest</strong>(url, parameters, options, responseCallback)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Use Garmin Connect Mobile as a proxy to the web.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#notifySyncComplete-instance_method" title="#notifySyncComplete (instance method)"><strong>notifySyncComplete</strong>(errorMessage)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Send a system notification to indicate that the sync completed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#notifySyncProgress-instance_method" title="#notifySyncProgress (instance method)"><strong>notifySyncProgress</strong>(percentageComplete)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Send a system notification to indicate overall sync progress.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#openWebPage-instance_method" title="#openWebPage (instance method)"><strong>openWebPage</strong>(url, params, options)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Request that GCM issue a phone notification that will open a web page.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#registerForOAuthMessages-instance_method" title="#registerForOAuthMessages (instance method)"><strong>registerForOAuthMessages</strong>(method)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Register a callback for receiving OAuth messages.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#registerForPhoneAppMessages-instance_method" title="#registerForPhoneAppMessages (instance method)"><strong>registerForPhoneAppMessages</strong>(method)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Register a callback for receiving Phone App messages.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#setMailboxListener-instance_method" title="#setMailboxListener (instance method)"><strong>setMailboxListener</strong>(listener)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#startSync-instance_method" title="#startSync (instance method)"><strong>startSync</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Exit the <span class='object_link'><a href="Application/AppBase.html" title="Toybox::Application::AppBase (class)">AppBase</a></span> and launch it in sync mode.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#transmit-instance_method" title="#transmit (instance method)"><strong>transmit</strong>(content, options, listener)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Send data across the the BLE link.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="cancelAllRequests-instance_method">
+  
+    <strong>cancelAllRequests</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Cancel all pending JSON and Image requests.</p>
+
+<p>The number of active requests running in parallel is limited in the Connect
+IQ platform. This call will cancel all outstanding requests.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4283
+4284</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4283</span>
+
+def cancelAllRequests()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="emptyMailbox-instance_method">
+  
+    <strong>emptyMailbox</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></div>
+
+<p>Clear the contents of the mailbox.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#registerForPhoneAppMessages-instance_method" title="Toybox::Communications#registerForPhoneAppMessages (method)">Communications.registerForPhoneAppMessages()</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4324
+4325</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4324</span>
+
+def emptyMailbox()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="encodeURL-instance_method">
+  
+    <strong>encodeURL</strong>(url)  &#x21d2; <tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Convert a URL String into a percent-encoded string.</p>
+
+<p>The reserved characters in the string will be replaced with their
+corresponding hex-value pairs. This follows the URI-encoding scheme as
+detailed by RFC 3986.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>url</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The URL String to be encoded</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A percent-encoded String</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><a href="https://www.ietf.org/rfc/rfc3986.txt" target="_parent" title="RFC 3986">RFC 3986</a></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.1.2</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+3919
+3920</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 3919</span>
+
+def encodeURL(url)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="generateSignedOAuthHeader-instance_method">
+  
+    <strong>generateSignedOAuthHeader</strong>(url, params, requestMethod, signatureMethod, token, tokenSecret, consumerKey, consumerSecret)  &#x21d2; <tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Generate the value for the “Authorization” header in an OAuth 1.0a request.</p>
+
+<p>The returned value can be set as the “Authorization” header for
+<span class='object_link'><a href="#makeWebRequest-instance_method" title="Toybox::Communications#makeWebRequest (method)">makeWebRequest()</a></span>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>url</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The request URL</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>params</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The parameters of the request</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>requestMethod</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An HTTP_REQUEST_METHOD_* value</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>signatureMethod</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An OAUTH_SIGNING_METHOD_* value</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>token</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The token given by the OAuth service</p>
+<ul><li>
+<p>Can be <code>null</code></p>
+</li></ul>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>tokenSecret</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The token secret given by the OAuth service. Used to sign the request</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>consumerKey</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The key that identifies your application</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>consumerSecret</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The consumer secret that is used to sign the request</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The value for the “Authorization” header</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4204
+4205</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4204</span>
+
+def generateSignedOAuthHeader(url, params, requestMethod, signatureMethod, token, tokenSecret, consumerKey, consumerSecret)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="getMailbox-instance_method">
+  
+    <strong>getMailbox</strong>  &#x21d2; <tt><span class='object_link'><a href="Communications/MailboxIterator.html" title="Toybox::Communications::MailboxIterator (class)">Toybox::Communications::MailboxIterator</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></div>
+
+<p>Get the MailboxIterator for this Application&#39;s mailbox.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Communications/MailboxIterator.html" title="Toybox::Communications::MailboxIterator (class)">Toybox::Communications::MailboxIterator</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Iterator for the mailbox</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#registerForPhoneAppMessages-instance_method" title="Toybox::Communications#registerForPhoneAppMessages (method)">Communications.registerForPhoneAppMessages()</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4305
+4306</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4305</span>
+
+def getMailbox()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="makeImageRequest-instance_method">
+  
+    <strong>makeImageRequest</strong>(url, parameters, options, responseCallback)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Request an image through Garmin Connect Mobile.</p>
+
+<p>GCM will scale and dither the image based on the capabilities of the
+device, but the user will be able to pass additional options (like
+dithering it down to a one color image)</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.System;
+using Toybox.Communications;
+
+var image;
+var responseCode;
+
+    // Set up the responseCallback function to return an image or null
+    function responseCallback(responseCode, data) {
+        responseCode = responseCode;
+        if (responseCode == 200) {
+            image = data;
+        } else {
+            image = null;
+        }
+    }
+
+    // wrap the request in a function
+    function makeRequest() {
+        var url = &quot;http://www.garmin.com/image-path&quot;;           // set the image url
+        var parameters = null;                                  // set the parameters
+        var options = {                                         // set the options
+            :palette =&gt; [ Gfx.COLOR_ORANGE,                     // set the palette
+                          Gfx.COLOR_DK_BLUE,
+                          Gfx.COLOR_BLUE,
+                          Gfx.COLOR_BLACK ],
+            :maxWidth =&gt; 100,                                   // set the max width
+            :maxHeight =&gt; 100,                                  // set the max height
+            :dithering =&gt; Communications.IMAGE_DITHERING_NONE   // set the dithering
+        };
+
+        // Make the image request
+        Communications.makeImageRequest(url, parameters, options, method(:responseCallback));
+    }</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>url</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The URL of an image to request</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>parameters</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Dictionary of keys and values</p>
+<ul><li>
+<p>Appended to the URL</p>
+</li><li>
+<p>Can be <code>null</code></p>
+</li></ul>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Additional image options</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>responseCallback</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Method.html" title="Toybox::Lang::Method (class)">Toybox::Lang::Method</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A reference to a callback method which must accept two arguments:</p>
+<ul><li>
+<p>responseCode: The server response code or a BLE_* error type</p>
+</li><li>
+<p>data: A <span class='object_link'><a href="WatchUi/BitmapResource.html" title="Toybox::WatchUi::BitmapResource (class)">BitmapResource</a></span> from a successful
+request</p>
+</li></ul>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:palette</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Array.html" title="Toybox::Lang::Array (class)">Toybox::Lang::Array</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The color palette to restrict the image dithering to. Using a smaller
+palette can reduce the size of the image data to speed up transfers</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:maxWidth</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The maximum width an image should be scaled to</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:maxHeight</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The maximum height an image should be scaled to</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:dithering</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The type of dithering to use when processing the image. Defaults to
+<span class='object_link'><a href="#IMAGE_DITHERING_FLOYD_STEINBERG-constant" title="Toybox::Communications::IMAGE_DITHERING_FLOYD_STEINBERG (constant)">IMAGE_DITHERING_FLOYD_STEINBERG</a></span></p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+    
+    
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.2.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4179
+4180</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4179</span>
+
+def makeImageRequest(url, parameters, options, responseCallback)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="makeJsonRequest-instance_method">
+  
+    <strong>makeJsonRequest</strong>(url, parameters, options, responseCallback)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></div>
+
+<p>To use Garmin Connect Mobile as a proxy to the web, use makeJsonRequest().</p>
+
+<p>The request is asynchronous; the responseCallback will be called when the
+request returns.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>url</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The URL being requested</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>parameters</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A Dictionary of keys and values</p>
+<ul><li>
+<p>Appended to the URL for GET/DELETE request</p>
+</li><li>
+<p>Set as the body for a POST/PUT request</p>
+</li><li>
+<p>These values must be URL encoded</p>
+</li><li>
+<p>Can be <code>null</code></p>
+</li></ul>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A Dictionary of options</p>
+<ul><li>
+<p>Can be <code>null</code></p>
+</li></ul>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>responseCallback</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Method.html" title="Toybox::Lang::Method (class)">Toybox::Lang::Method</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A reference to a callback method which must accept two arguments:</p>
+<ul><li>
+<p>responseCode: the server response code</p>
+</li><li>
+<p>data: the Dictionary of content from a successful request of content if the
+request was successful.</p>
+</li></ul>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:method</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The HTTP method of the request. This option should be an
+HTTP_REQUEST_METHOD_* value.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A Dictionary of HTTP headers to include in the request</p>
+<ul><li>
+<p>The “Content-Type” header for the body of the request can be specified
+using a REQUEST_CONTENT_TYPE_* value</p>
+<ul><li>
+<p>This is only valid for methods PUT and POST (you cannot set a body for a
+GET or DELETE request)</p>
+</li><li>
+<p>If the content type is not specified, it will default to “application/json”
+for GET and DELETE requests, and will default to
+“application/x-www-form-urlencoded” for POST and PUT requests</p>
+</li></ul>
+</li></ul>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+    
+    
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#makeWebRequest-instance_method" title="Toybox::Communications#makeWebRequest (method)">Communications.makeWebRequest().</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4019
+4020</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4019</span>
+
+def makeJsonRequest(url, parameters, options, responseCallback)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="makeOAuthRequest-instance_method">
+  
+    <strong>makeOAuthRequest</strong>(requestUrl, requestParams, resultUrl, resultType, resultKeys)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Request an OAuth sign-in through Garmin Connect Mobile.</p>
+
+<p>A notification will trigger on the phone, that when clicked, provides a web
+view that shows <code>requestUrl</code>. If the user grants permission to
+the app, then the callback registered by
+<span class='object_link'><a href="#registerForOAuthMessages-instance_method" title="Toybox::Communications#registerForOAuthMessages (method)">registerForOAuthMessages()</a></span> will be called with an
+<span class='object_link'><a href="Communications/OAuthMessage.html" title="Toybox::Communications::OAuthMessage (class)">OAuthMessage</a></span> from the OAuth
+response.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.Communications;
+using Toybox.System;
+
+const CLIENT_ID = &quot;myClientID&quot;;
+const OAUTH_CODE = &quot;myOAuthCode&quot;;
+const OAUTH_ERROR = &quot;myOAuthError&quot;;
+
+// register a callback to capture results from OAuth requests
+Communications.registerForOAuthMessages(method(:onOAuthMessage));
+
+// wrap the OAuth request in a function
+function getOAuthToken() {
+   status = &quot;Look at OAuth screen\n&quot;;
+   Ui.requestUpdate();
+
+   // set the makeOAuthRequest parameters
+   var params = {
+       &quot;scope&quot; =&gt; Comm.encodeURL(&quot;https://www.serviceurl.com/&quot;),
+       &quot;redirect_uri&quot; =&gt; &quot;http://localhost&quot;,
+       &quot;response_type&quot; =&gt; &quot;code&quot;,
+       &quot;client_id&quot; =&gt; $.CLIENT_ID
+   };
+
+   // makeOAuthRequest triggers login prompt on mobile device.
+   // &quot;responseCode&quot; and &quot;responseError&quot; are the parameters passed
+   // to the resultUrl. Check the oauth provider&#39;s documentation
+   // to determine the correct strings to use.
+   Comm.makeOAuthRequest(
+       &quot;https://requesturl.com&quot;,
+       params,
+       &quot;http://resulturl.com&quot;,
+       Comm.OAUTH_RESULT_TYPE_URL,
+       {&quot;responseCode&quot; =&gt; $.OAUTH_CODE, &quot;responseError&quot; =&gt; $.OAUTH_ERROR}
+   );
+}
+
+// implement the OAuth callback method
+function onOAuthMessage(message) {
+    if (message.data != null) {
+        var code = message.data[$.OAUTH_CODE];
+        var error = message.data[$.OAUTH_ERROR];
+    } else {
+        // return an error
+    }
+}
+// the OAuth service can now be used with a makeWebRequest() call</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>requestUrl</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The URL to load in the web view to begin authentication</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>requestParams</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Non-URL encoded parameters for the <code>requestUrl</code></p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>resultUrl</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The URL of the final page of authentication that contains the
+<code>resultKeys</code></p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>resultType</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An OAUTH_RESULT_TYPE_* value that specifies the format of the result</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>resultKeys</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The desired OAuth response values passed to the callback method. The keys
+map to the actual OAuth response keys, and the values map to the keys of
+the <span class='object_link'><a href="Communications/OAuthMessage.html" title="Toybox::Communications::OAuthMessage (class)">OAuthMessage</a></span> data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4275
+4276</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4275</span>
+
+def makeOAuthRequest(requestUrl, requestParams, resultUrl, resultType, resultKeys)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="makeWebRequest-instance_method">
+  
+    <strong>makeWebRequest</strong>(url, parameters, options, responseCallback)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Use Garmin Connect Mobile as a proxy to the web.</p>
+
+<p>Web requests are asynchronous. The supplied response callback method will
+be called when the request returns. TVM will select the audio stream with
+the highest bandwidth that&#39;s less than or equal to the maximum This
+option is only effective when processing HLS content</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>// It is common for developers to wrap a makeWebRequest() call in a function
+// as displayed below. The function defines the variables for each of the
+// necessary arguments in a Communications.makeWebRequest() call, then passes
+// these variables as the arguments. This allows for a clean layout of your web
+// request and expandability.
+using Toybox.System;
+using Toybox.Communications;
+
+   // set up the response callback function
+   function onReceive(responseCode, data) {
+       if (responseCode == 200) {
+           System.println(&quot;Request Successful&quot;);                   // print success
+       }
+       else {
+           System.println(&quot;Response: &quot; + responseCode);            // print response code
+       };
+
+   };
+
+   function makeRequest() {
+       var url = &quot;https://www.garmin.com&quot;;                         // set the url
+
+       var params = {                                              // set the parameters
+              &quot;definedParams&quot; =&gt; &quot;123456789abcdefg&quot;
+       };
+
+       var options = {                                             // set the options
+           :method =&gt; Communications.HTTP_REQUEST_METHOD_GET,      // set HTTP method
+           :headers =&gt; {                                           // set headers
+                   &quot;Content-Type&quot; =&gt; Communications.REQUEST_CONTENT_TYPE_URL_ENCODED},
+                                                                   // set response type
+           :responseType =&gt; Communications.HTTP_RESPONSE_CONTENT_TYPE_URL_ENCODED
+       };
+
+       var responseCallback = method(:onReceive);                  // set responseCallback to
+                                                                   // onReceive() method
+       // Make the Communications.makeWebRequest() call
+       Communications.makeWebRequest(url, params, options, method(:onReceive));
+  }</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>url</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The URL being requested</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>parameters</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A Dictionary of keys and values.</p>
+<ul><li>
+<p>These values should not be URL encoded.</p>
+</li><li>
+<p>Can be <code>null</code>.</p>
+</li></ul>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A Dictionary of options.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:method</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The HTTP method of the request. This should be an HTTP_REQUEST_METHOD_*
+value.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A Dictionary of HTTP headers to include in the request.</p>
+<ul><li>
+<p>The “Content-Type” header for the body of the request can be specified
+using a <span class='object_link'><a href="" title="Toybox::Communications (module)">REQUEST_CONTENT_TYPE_*</a></span> value.</p>
+</li><li>
+<p>If the content type is not specified, it will default to “application/json”
+for GET and DELETE requests, and will default to
+“application/x-www-form-urlencoded” for POST and PUT requests.</p>
+</li><li>
+<p>By default, DELETE requests will have their parameters appended to the URL.</p>
+</li><li>
+<p>Setting the method as DELETE as well as a “Content-Type” header will result
+in the parameters being set in the body of the request and they will not be
+appended to the URL.</p>
+</li><li>
+<p>GET requests can only have their parameters appended to the URL, specifying
+the “Content-Type” header will not set the body.</p>
+</li></ul>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:responseType</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The format of the response.</p>
+<ul><li>
+<p>This should be an <span class='object_link'><a href="" title="Toybox::Communications (module)">HTTP_RESPONSE_CONTENT_TYPE_*</a></span>
+value.</p>
+</li><li>
+<p>If HTTP_RESPONSE_CONTENT_TYPE_FIT or HTTP_RESPONSE_CONTENT_TYPE_GPX is
+given, the system will attempt to download and parse a FIT or GPX file and
+store the contained data in the device, based on the contents of the file.</p>
+</li><li>
+<p>If not given, the system will use the Content-Type header from the server
+response to determine the format of the response body. If the Content-Type
+header from the response is not one of the known
+HTTP_RESPONSE_CONTENT_TYPE_* types, an error will occur.</p>
+</li></ul>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:context</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Object.html" title="Toybox::Lang::Object (class)">Toybox::Lang::Object</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A user-specific context object to be passed to the response callback. The
+callback will need to accept a third parameter if this value is populated.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:mediaEncoding</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The encoding of the audio content that is being downloaded. Should be a
+<span class='object_link'><a href="Media.html" title="Toybox::Media (module)">Media.ENCODING_*</a></span> value.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:responseCallback</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Method.html" title="Toybox::Lang::Method (class)">Toybox::Lang::Method</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A reference to a callback method which must accept two arguments:</p>
+<ul><li>
+<p>responseCode: The server response code or a BLE_* error type</p>
+</li><li>
+<p>data: Dictionary of content from a successful request</p>
+</li></ul>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:maxBandwidth</span>
+          <span class="type">(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>maximum bandwidth.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+    
+    
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/InvalidOptionsException.html" title="Toybox::Lang::InvalidOptionsException (class)">Toybox::Lang::InvalidOptionsException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Raised if a required option for a particular request is omitted</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/SymbolNotAllowedException.html" title="Toybox::Lang::SymbolNotAllowedException (class)">Toybox::Lang::SymbolNotAllowedException</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Raised if a given :responseType option is not supported for the device the
+reqest is being made from. An example would be using
+HTTP_RESPONSE_CONTENT_TYPE_AUDIO on a device that does not support audio
+content provider apps</p>
+</div>
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4105
+4106</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4105</span>
+
+def makeWebRequest(url, parameters, options, responseCallback)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="notifySyncComplete-instance_method">
+  
+    <strong>notifySyncComplete</strong>(errorMessage)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Send a system notification to indicate that the sync completed.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>errorMessage</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A descriptive error message if a failure occurred. If the sync completes
+successfully, <code>null</code> should be passed to this method.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4526
+4527</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4526</span>
+
+def notifySyncComplete(errorMessage)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="notifySyncProgress-instance_method">
+  
+    <strong>notifySyncProgress</strong>(percentageComplete)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Send a system notification to indicate overall sync progress.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>percentageComplete</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Number.html" title="Toybox::Lang::Number (class)">Toybox::Lang::Number</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An integer from 0 to 100 indicating the completion percentage.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4518
+4519</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4518</span>
+
+def notifySyncProgress(percentageComplete)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="openWebPage-instance_method">
+  
+    <strong>openWebPage</strong>(url, params, options)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Request that GCM issue a phone notification that will open a web page.</p>
+
+<p>This method will push a phone notification that must be accepted by the
+user. If the used accepts it, a web page defined by this method will be
+opened in the default browser on the phone.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.Communications;
+Communications.openWebPage(
+   &quot;http://www.bing.com/images/search&quot;,
+   {&quot;q&quot; =&gt; &quot;cute kitten&quot;},
+   null
+);
+// passes the url: http://bing.com/images/search?q=cute kitten to the
+// browser on the phone</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>url</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/String.html" title="Toybox::Lang::String (class)">Toybox::Lang::String</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The URL to open.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>params</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The URL parameters used to add to the pages web page URL. Parameters should
+not be URL encoded.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Additional options for the request</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4488
+4489</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4488</span>
+
+def openWebPage(url, params, options)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="registerForOAuthMessages-instance_method">
+  
+    <strong>registerForOAuthMessages</strong>(method)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Register a callback for receiving OAuth messages.</p>
+
+<p>The callback will be called once for each received OAuth message. If there
+are messages waiting for the app when this function is called, the callback
+will immediately be called once for each waiting message.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Toybox.Communications;
+
+function onOAuthMessage(message) {
+    if (message.data != null) {
+        var code = message.data[OAUTH_CODE];
+        var error = message.data[OAUTH_ERROR];
+    } else {
+        // return an error
+    }
+}
+Communications.registerForOAuthMessages(method(:onOAuthMessage));</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>method</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Method.html" title="Toybox::Lang::Method (class)">Toybox::Lang::Method</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A reference to a callback, which must receive a <code>data</code> argument
+of the type <span class='object_link'><a href="Communications/OAuthMessage.html" title="Toybox::Communications::OAuthMessage (class)">OAuthMessage</a></span>.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.3.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4464
+4465</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4464</span>
+
+def registerForOAuthMessages(method)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="registerForPhoneAppMessages-instance_method">
+  
+    <strong>registerForPhoneAppMessages</strong>(method)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Register a callback for receiving Phone App messages.</p>
+
+<p>The callback will be called once for each message received. If there are
+messages waiting for the app when this function is called, the callback
+will immediately be called once for each waiting message.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code>using Communications;
+// set up somewhere to store the message
+var message = new Communications.PhoneAppMessage;
+// set up phoneMessageCallback
+function phoneMessageCallback(msg) {
+   message = msg.data;
+}
+// register the messages from the callback to capture the results
+Communications.registerForPhoneAppMessages(method(:phoneMessageCallback));</code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>method</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Method.html" title="Toybox::Lang::Method (class)">Toybox::Lang::Method</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A reference to a callback, which must receive a <code>data</code> argument
+of the type <span class='object_link'><a href="Communications/PhoneAppMessage.html" title="Toybox::Communications::PhoneAppMessage (class)">PhoneAppMessage</a></span>.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="Communications/PhoneAppMessage.html" title="Toybox::Communications::PhoneAppMessage (class)">PhoneAppMessage</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.4.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4511
+4512</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4511</span>
+
+def registerForPhoneAppMessages(method)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="setMailboxListener-instance_method">
+  
+    <strong>setMailboxListener</strong>(listener)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>This method will be removed in Connect IQ 4.0.0</p>
+</div></div>
+
+<p>Add a listener for mailbox events.</p>
+
+<p>The listener method is called whenever a new message is received.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>listener</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Method.html" title="Toybox::Lang::Method (class)">Toybox::Lang::Method</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A reference to a callback method which must accept an iterator. The
+iterator is the mailbox iterator for the app</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="#registerForPhoneAppMessages-instance_method" title="Toybox::Communications#registerForPhoneAppMessages (method)">Communications.registerForPhoneAppMessages()</a></span></li>
+    
+  </ul>
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4317
+4318</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4317</span>
+
+def setMailboxListener(listener)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="startSync-instance_method">
+  
+    <strong>startSync</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Exit the <span class='object_link'><a href="Application/AppBase.html" title="Toybox::Application::AppBase (class)">AppBase</a></span> and launch it in sync mode.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>3.1.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4532
+4533</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4532</span>
+
+def startSync()
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="transmit-instance_method">
+  
+    <strong>transmit</strong>(content, options, listener)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Send data across the the BLE link.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>content</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Object.html" title="Toybox::Lang::Object (class)">Toybox::Lang::Object</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The object to be sent</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Lang/Dictionary.html" title="Toybox::Lang::Dictionary (class)">Toybox::Lang::Dictionary</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Additional transmit options for future proofing. For now, an empty
+Dictionary is used.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>listener</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Communications/ConnectionListener.html" title="Toybox::Communications::ConnectionListener (class)">Toybox::Communications::ConnectionListener</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>An extension of the ConnectionListener class</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>1.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+4334
+4335</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'Monkeybrains.rb', line 4334</span>
+
+def transmit(content, options, listener)
+end</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Fri May  1 07:41:31 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.5 (ruby-2.1.5).
+</div>
+
+    </div>
+  </body>
+</html>
